@@ -1,0 +1,198 @@
+.main-section{
+    background: #FFFFFF;
+}
+
+.page-full {
+	padding-bottom: 3.5rem;
+}
+
+.page-full-2 {
+	padding-bottom: 6rem;
+}
+
+a, a:hover, a:focus, a:active {
+	text-decoration: none !important;
+	color: inherit;
+}
+
+h1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+    font-size: 2rem;
+	color: #000000;
+    text-transform: uppercase;
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #696969;
+    text-transform: uppercase;
+}
+
+h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+	font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #646464;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+    font-size: 0.925rem;
+    color: #696969;
+}
+
+.sub-text{
+	font-family: 'Roboto', sans-serif;
+    font-size: 0.5625rem;
+    color: #696969;
+}
+
+.quote-text{
+    margin-top: 1rem;
+    width: 60%;
+	font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #2FABFE;
+}
+
+.product-grid{
+    margin-bottom: 3rem;
+}
+
+.login-body {
+	padding-top: 1rem;
+    height: 35rem !important;
+}
+
+.game-body, .favourites-body, .order-history-body{
+    padding-top: 1rem;
+}
+
+.account-body, .share-favourites-body {
+	padding-top: 1rem;
+	height: 35.5rem !important;
+}
+
+.register-body{
+    padding-top: 1rem;
+    height: 62rem !important;
+}
+
+.forgot-password{
+    position: relative;
+    top: 11rem;
+	font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: #1E1E1E;
+}
+
+.modal-dialog {
+	width: 75% !important;
+	margin: 0 auto !important;
+}
+
+.alert{
+    font-size: 0.825rem;
+    padding: 0;
+    display: none;
+}
+
+.alert.warning{
+    color: #FF0014;
+}
+
+.alert.success{
+    color: #029535;
+}
+
+.secondary-text{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.825rem;
+    font-family: 'roboto';
+}
+
+.small-text{
+    font-size: 0.825rem;
+    font-family: 'roboto';
+}
+
+.message-reset{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.progress{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 5px;
+}
+
+.progress-bar{
+    background-color: #2FABFE;
+}
+
+.progress-text{
+    margin-top: 1rem !important;
+}
+
+.game-banner{
+    width: 100vw;
+}
+
+.game-info{
+    font-size: 0.825rem !important;
+}
+
+.stats{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stat{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #646464;
+}
+
+.stat-name{
+    font-size: 0.625rem;
+    font-family: 'roboto';
+}
+
+.product-card-section{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: #F8F8F8;
+}
+
+.table-row{
+    margin-top: 0.625rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    background: #FFFFFF;
+    font-size: 0.825rem;
+    color: #696969;
+    font-weight: 600;
+    font-family: 'roboto';
+}
+
+.share-modal {
+	margin-top: -15% !important;
+	overflow-y: hidden !important;
+}
+
+.prod-image-container{
+    height: 160px;
+    width: 160px;
+    overflow: hidden;
+}

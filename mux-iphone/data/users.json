@@ -1,0 +1,80 @@
+[
+  {
+	"user_id": "user_12345",
+	"user_name": "Raneesh Gomez",
+	"email": "raneesh2307@gmail.com",
+	"password": "s7T0Sd20",
+	"mobile_no": "0772099949",
+	"address": "63, Kadawatha Road, Ragama",
+	"image": "assets\/images\/prof_img\/user_12345.jpg",
+	"times_shopped": 10,
+	"promotions_redeemed": 23,
+	"amount_saved": 34000,
+	"in_raffle": true
+  },
+  {
+	"user_id": "user_23456",
+	"user_name": "Suleka Helmini",
+	"email": "sulekahelmini9628@gmail.com",
+	"password": "abc123",
+	"mobile_no": "0772099949",
+	"address": "55A, Woodland Avenue, Kohuwala",
+	"image": "assets\/images\/prof_img\/user_23456.jpg",
+	"times_shopped": 12,
+	"promotions_redeemed": 15,
+	"amount_saved": 20000,
+	"in_raffle": true
+  },
+  {
+	"user_id": "user_34567",
+	"user_name": "Dillon Lakshman",
+	"email": "dillonlakshman@gmail.com",
+	"password": "abc123",
+	"mobile_no": "0772099949",
+	"address": "289, Fergusons Road, Colombo 15",
+	"image": "assets\/images\/prof_img\/user_34567.jpg",
+	"times_shopped": 8,
+	"promotions_redeemed": 0,
+	"amount_saved": 2000,
+	"in_raffle": false
+  },
+  {
+	"user_id": "user_45678",
+	"user_name": "Dilum De Silva",
+	"email": "dilumdesilva.info@gmail.com",
+	"password": "abc123",
+	"mobile_no": "0772099949",
+	"address": "35, Piliyandala Road, Piliyandala",
+	"image": "assets\/images\/prof_img\/user_45678.jpg",
+	"times_shopped": 40,
+	"promotions_redeemed": 56,
+	"amount_saved": 98000,
+	"in_raffle": true
+  },
+  {
+	"user_id": "user_75337",
+	"user_name": "Samantha Lee",
+	"email": "samantha@gmail.com",
+	"password": "abc123",
+	"mobile_no": "0772637485",
+	"address": "23, Auburn Side, Colombo 6",
+	"image": "assets\/images\/prof_img\/user_75337.jpg",
+	"times_shopped": 0,
+	"promotions_redeemed": 0,
+	"amount_saved": 0,
+	"in_raffle": false
+  },
+  {
+	"user_id": "user_33561",
+	"user_name": "John Doe",
+	"email": "john@gmail.com",
+	"password": "abc123",
+	"mobile_no": "0772637485",
+	"address": "45, Alvin Avenue, Ragama",
+	"image": "assets\/images\/prof_img\/user_33561.jpg",
+	"times_shopped": 0,
+	"promotions_redeemed": 0,
+	"amount_saved": 0,
+	"in_raffle": false
+  }
+]
