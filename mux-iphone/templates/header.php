@@ -18,6 +18,8 @@
 
 
 	</head>
+
+	<body>
 	<div data-role="header" class ="header-iphone">
 	<div class ="header-line"></div>
 	<div class="ui-block-g"><img src="../assets/images/logo.png" class ="logo-iphone"></div>
@@ -34,13 +36,7 @@
   </div>
 </div>
 	</div>
-	
-	
-    
-
-
-    
 </div>
-	<body>
+</body>
 
 
