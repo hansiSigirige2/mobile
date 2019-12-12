@@ -62,7 +62,17 @@
 
 <!-- promo -->
 <div class="container promo-container">
-   
+    <div class="row align-items-center v-center-height">
+      <div class="msg-box">
+        <div class="caption">HOTTEST DEALS</div>
+		<div class="card promo-card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
+      </div>
+
+    </div>
   </div>
 </body>
 </html>

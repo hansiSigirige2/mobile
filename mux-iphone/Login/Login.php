@@ -25,23 +25,17 @@
             <div class="ui-block-a">    
             </div>
             <div class="ui-block-b">
-                <h1 align=center> Sign Up </h1>
+                <h1 align=center> Login </h1>
                 <br>
                 <form action="handler.php" method="post">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" value="" placeholder="" width="10px" />
-                    <label for="number">Mobile Number</label>
-                    <input type="text" name="number" id="number" value="" placeholder="" />
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" value="" placeholder="" />
                     <label for="password">Password</label>
                     <input type="text" name="password" id="password" value="" placeholder="" />
-                    <label for="conpassword">Confirm Password</label>
-                    <input type="text" name="conpassword" id="conpassword" value="" placeholder="" />
-                </form>
+                    </form>
                 <br>
                 <!--<input class="button" type="button" name="signup" id="signup" value="Sign Up" width="50%"/>  -->
-                <button class="button" style=>Sign Up</button>           
+                <button class="button" style=>Login</button>           
                 <br><br>
                 <hr>
                 <br>
@@ -49,7 +43,9 @@
                     <img src="F:\IIT\UIUX\CW\UX Stuff\Icons\google.svg" alt="google" width="10%" height="10%" hspace="20">                      
                     <img src="F:\IIT\UIUX\CW\UX Stuff\Icons\facebook.svg" alt="facebook" width="10%" height="10%" hspace="20">
                     <br>
-                    <p>Already have an account? <a href="#login">Login</a> </p>  
+                    <br>
+                    <a href="#forgotpassword">Forgot your password?</a>
+                    <p>Dont have an account? <a href="#signup">Sign up</a> </p>  
                 </div>            
             </div>
         </div>       
