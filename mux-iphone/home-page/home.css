@@ -1,0 +1,21 @@
+/* slider */
+.carousel-container{
+    height: 171px;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-left: auto;
+}
+
+.content-slide{
+    color:black;
+
+}
+
+.slide1content{
+    height: 100%;
+}
+.box{
+    background-color: #cfc ;
+    padding: 10px ;
+    border: 1px solid green ;
+}
