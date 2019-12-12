@@ -103,11 +103,43 @@ input:focus {
     font-size: 14px;
 }
 .promo-card{
-    margin-left: 4rem;
+    margin-left: 2rem;
     margin-top: 1rem;
-    width: 33rem;
+    width: 37rem;
     height: 110px;
     border-radius: 10px;
     margin-bottom: 2rem;
     box-shadow: -5px 5px 5px #aaaaaa
+}
+.promo-image{
+    margin-top: 10px;
+    width: 105px;
+}
+.promo-sale{
+    font-family: Ovsyanka;
+    margin-top: -8.5rem;
+    font-size: 4rem;
+    margin-left: 15rem;
+}
+.promo-name{
+    font-family: Ovsyanka;
+    margin-top: -1rem;
+    font-size: 1.5rem;
+    margin-left: 18rem;
+}
+
+.promo-strike {
+    font-family: Ovsyanka;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: line-through;
+    margin-left: 17.5rem;
+}
+
+.promo-price{
+    font-family: Ovsyanka;
+    margin-top: -21px;
+    font-size: 1.5rem;
+    margin-left: 25rem;
 }
