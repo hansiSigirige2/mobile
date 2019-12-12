@@ -77,6 +77,14 @@ $(document).ready(function () {
 	$('.ais-SearchBox-reset').removeClass('ui-btn ui-shadow ui-corner-all');
 });
 
+function hamburger() {
+	var x = document.getElementById("myLinks");
+	if (x.style.display === "block") {
+	  x.style.display = "none";
+	} else {
+	  x.style.display = "block";
+	}
+  }
 function loginNavigation() {
 	console.log("in");
 	window.location.replace("login.php");

@@ -13,10 +13,34 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css"
 			  integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
 
-		<link rel="stylesheet" href="assets/styles/main.css">
+		<link rel="stylesheet" href="../assets/styles/header.css">
+		<script src="../assets/scripts/main.js"></script>
 
 
 	</head>
+	<div data-role="header" class ="header-iphone">
+	<div class ="header-line"></div>
+	<div class="ui-block-g"><img src="../assets/images/logo.png" class ="logo-iphone"></div>
+	<div class="ui-block-g"><img src="../assets/images/avatar.png" class ="avatar-iphone"></div>
+	<div class="ui-block-g"><img src="../assets/images/cart.png" class ="cart-iphone"></div>
+	<div class="ui-block-g">
+	<img src="../assets/images/ham-menu.png" class ="ham-iphone" onclick="hamburger()">
+	<div class="topnav">
+  <div id="myLinks">
+  <a href="#home">Logo</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+	</div>
+	
+	
+    
+
+
+    
+</div>
 	<body>
 
 

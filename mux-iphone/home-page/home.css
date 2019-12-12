@@ -1,12 +1,13 @@
-.header{
+
+.header-iphone{
     overflow:hidden;
     border-bottom: 2px solid black;
 }
 
-.logo{
-    margin-left: 22rem;
-    margin-bottom: -5rem;
-    margin-top: -4rem;
-    width: 15rem;
-    height: 13rem;
+.logo-iphone{
+    margin-left: 20rem;
+    margin-bottom: 2rem;
+    margin-top: -3rem;
+    width: 14rem;
+    height: 6rem;
 }
