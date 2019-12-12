@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Ovsyanka;
+    src: url(../assets/fonts/WOFF/Ovsyanka.woff);
+  }
+  
+  div {
+    font-family: myFirstFont;
+  }
+
+
 /* slider */
 .carousel-container{
     height: 171px;
@@ -50,7 +60,7 @@ input:focus {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 50px;
+    top: 36px;
     display: flex;
 }
 .searchbox > .btn-menu {
@@ -81,5 +91,23 @@ input:focus {
 }
 /* promo */
 .promo-container{
-    background:#ececec;
+    background: #ececec;
+    margin-top: 53px;
+    height: 19rem !important;
+    margin-bottom: 94rem;
+}
+.caption{
+    font-family: Ovsyanka;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 14px;
+}
+.promo-card{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    width: 33rem;
+    height: 110px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: -5px 5px 5px #aaaaaa
 }
