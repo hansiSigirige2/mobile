@@ -51,6 +51,19 @@
   </div>
 </div>
 
+<!-- search bar -->
+<div class="searchbox">
+		<input id="search" type="text" placeholder="Search..." name="search" class="search">
+		<div class="line">|</div>
+	<button  class="btn-search">
+			<img src="../assets/images/search.png" class="imgsearch">
+		</button>
+</div>
+
+<!-- promo -->
+<div class="container promo-container">
+   
+  </div>
 </body>
 </html>
 
