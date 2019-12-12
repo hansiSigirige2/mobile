@@ -7,6 +7,12 @@
 	<link rel="stylesheet" href="../home-page/home.css">
 	</header>
 <body>
-<!-- /header -->
+<div data-role="header" class="header-ipad">
+<h1></h1>
+<a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-gear">hamburger check</a>
+<img src="assets/images/logo.png" class ="logo">
+   
+    
+</div><!-- /header -->
    </body>
 </div>
