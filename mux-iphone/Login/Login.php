@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<style>
+body {
+  background-image: url('signupbk.jpg');
+}
+</style>
     <!--<style>
     button {background-color: #4CAF50;
             border: none;
@@ -10,6 +15,8 @@
             display: inline-block;
             font-size: 16px;}
     </style>-->
+    
+    <?php include '../templates/header.php'; ?>
     <head>
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <link rel = "stylesheet" href ="signup.css">
@@ -20,14 +27,15 @@
         <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     </head> 
     <body>
+    <div style="background-image: url('../assets/images/loginbk.jpg'); background-size: 100% 100%;">
         <br><br><br>
         <div class="ui-grid-b">
             <div class="ui-block-a">    
             </div>
-            <div class="ui-block-b">
+            <div class="ui-block-b" >
                 <h1 align=center> Login </h1>
                 <br>
-                <form action="handler.php" method="post">
+                <form action="handler.php" method="post" >
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" value="" placeholder="" />
                     <label for="password">Password</label>
@@ -35,20 +43,21 @@
                     </form>
                 <br>
                 <!--<input class="button" type="button" name="signup" id="signup" value="Sign Up" width="50%"/>  -->
-                <button class="button" style=>Login</button>           
+                <button class="button">Login</button>           
                 <br><br>
                 <hr>
                 <br>
                 <div align=center>
-                    <img src="F:\IIT\UIUX\CW\UX Stuff\Icons\google.svg" alt="google" width="10%" height="10%" hspace="20">                      
-                    <img src="F:\IIT\UIUX\CW\UX Stuff\Icons\facebook.svg" alt="facebook" width="10%" height="10%" hspace="20">
+                    <img src="../assets/images/google.svg" alt="google" width="20%" hspace="5">                      
+                    <img src="../assets/images/facebook.svg" alt="facebook" width="20%" hspace="5">
                     <br>
                     <br>
                     <a href="#forgotpassword">Forgot your password?</a>
                     <p>Dont have an account? <a href="#signup">Sign up</a> </p>  
                 </div>            
             </div>
-        </div>       
+        </div>
+    </div>           
     </body>
 </html>        
      

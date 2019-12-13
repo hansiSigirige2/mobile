@@ -10,7 +10,13 @@
             display: inline-block;
             font-size: 16px;}
     </style>-->
-    
+<!--     <style>
+    body {
+        background-image: url('../assets/images/signupbk.jpg');
+        
+        }
+    </style> -->
+    <?php include '../templates/header.php'; ?>
     <head>
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <link rel = "stylesheet" href ="signup.css">
@@ -21,13 +27,13 @@
         <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     </head> 
     <body>
-    
+    <div style="background-image: url('../assets/images/signupbk.jpg'); background-size: 120% 120%;">
         <br><br><br>
         <div class="ui-grid-b">
             <div class="ui-block-a">    
             </div>
-            <div class="ui-block-b">
-                <h1 align=center> Sign hello</h1>
+            <div class="ui-block-b" style="background-color: #ffffff">
+                <h1 align=center> Sign Up</h1>
                 <br>
                 <form action="handler.php" method="post">
                     <label for="name">Name</label>
@@ -43,18 +49,20 @@
                 </form>
                 <br>
                 <!--<input class="button" type="button" name="signup" id="signup" value="Sign Up" width="50%"/>  -->
-                <button class="button" style=>Sign Up</button>           
+                <button class="button">Sign Up</button>           
                 <br><br>
                 <hr>
                 <br>
                 <div align=center>
-                    <img src="F:\IIT\UIUX\CW\UX Stuff\Icons\google.svg" alt="google" width="10%" height="10%" hspace="20">                      
-                    <img src="F:\IIT\UIUX\CW\UX Stuff\Icons\facebook.svg" alt="facebook" width="10%" height="10%" hspace="20">
+                    <img src="../assets/images/google.svg" alt="google" width="20%" hspace="5">                      
+                    <img src="../assets/images/facebook.svg" alt="facebook" width="20%" hspace="5">
+                    <br>
                     <br>
                     <p>Already have an account? <a href="#login">Login</a> </p>  
                 </div>            
             </div>
-        </div>       
+        </div> 
+    </div>      
     </body>
 </html>        
      
