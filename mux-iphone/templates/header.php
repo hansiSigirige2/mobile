@@ -20,12 +20,12 @@
 	</head>
 
 	<body>
-	<div data-role="header" class ="header-iphone">
-	<div class ="header-line"></div>
+	<div class ="header-iphone">
+	
 	<div class="ui-block-g"><img src="../assets/images/logo.png" class ="logo-iphone"></div>
 	<div class="ui-block-g"><img src="../assets/images/avatar.png" class ="avatar-iphone"></div>
 	<div class="ui-block-g"><img src="../assets/images/cart.png" class ="cart-iphone"></div>
-	<div class="ui-block-g">
+	<div class="hamburger">
 	<img src="../assets/images/ham-menu.png" class ="ham-iphone" onclick="hamburger()">
 	<div class="topnav">
   <div id="myLinks" style="display:none">
@@ -37,6 +37,6 @@
 </div>
 	</div>
 </div>
-</body>
+
 
 
