@@ -1,10 +1,46 @@
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+@font-face {
+  font-family: Ovsyanka;
+  src: url(../assets/fonts/WOFF/Ovsyanka.woff);
 }
+
+div {
+  font-family: Ovsyanka;
+}
+
+
+  button img {
+      transition: transform 0.25s;
+  }
+  button:hover > img {
+      transform: scale(1.2);
+  }
+  button:focus {
+      outline: none;
+  }
+  input {
+      font-family: 'Lexend Deca', sans-serif;
+  }
+  input::placeholder {
+      font-family: 'Lexend Deca', sans-serif;
+  }
+  input:focus {
+      outline: none;
+  }    
+
+  .ui-grid-solo>.ui-block-a {
+      margin-left: 1.2rem;
+      margin-bottom: 2rem;
+      width: 90% !important;
+      padding: 2rem;
+      border-radius: .5rem; 
+      float: none;
+  }
+
+  [class*=ui-block-]>button.ui-btn {
+      border-radius: 2rem;
+      margin: 2rem;
+      width: 11rem;
+      font-family: Ovsyanka !important;
+      background-color: black;
+      color: white;
+  }
