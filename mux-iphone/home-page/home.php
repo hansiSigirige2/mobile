@@ -89,11 +89,11 @@
 		
 		$categories_json = file_get_contents('../data/categories.json');
 		$category_arr = json_decode($categories_json, true);	
-			echo '<div class="ui-grid-a">';
+			
 		
 			foreach ($category_arr as $var) {
 				if ($var['category_name']==="Vegetables") {
-				
+				echo '<div class="ui-grid-a">';
 				echo '<div class="ui-block-a card cat-card">';
 				echo '<div class="card-body">';
 				echo '<img src="../assets/images/potatoes.png" class="cat-image">';
@@ -105,6 +105,7 @@
 				echo '</div>';
 			}
 			if ($var['category_name']==="Meat") {
+				echo '<div class="ui-grid-a">';
 				echo '<div class="ui-block-b card cat-card">';
 				echo '<div class="card-body">';
 				echo '<img src="../assets/images/meat.jpg" class="cat-image">';
@@ -114,11 +115,12 @@
 				echo '</div>';
 				echo '</div>';
 				echo '</div>';
-				echo '</div>';
+			
 			}
 
-			echo '<div class="ui-grid-b">';
+		
 			if ($var['category_name']==="Dairy") {
+				echo '<div class="ui-grid-b">';
 				echo '<div class="ui-block-a card cat-card">';
 				echo '<div class="card-body">';
 				echo '<img src="../assets/images/dairy2.jpg" class="cat-image">';
@@ -130,6 +132,7 @@
 				echo '</div>';
 			}
 			if ($var['category_name']==="Grains") {
+				echo '<div class="ui-grid-b">';
 				echo '<div class="ui-block-b card cat-card">';
 				echo '<div class="card-body">';
 				echo '<img src="../assets/images/grains.jpg" class="cat-image">';
