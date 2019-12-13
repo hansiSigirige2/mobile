@@ -1,0 +1,51 @@
+.category-card {
+    margin-bottom: 2rem;
+    width: 91%;
+}
+
+.category-section {
+    padding: 10px;
+}
+
+.divider {
+    border-top: 2px solid grey;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.categories-name {
+    font-family: Ovsyanka;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.category-image {
+    margin-top: 15px;
+    width: 75px;
+}
+
+.categories-heading {
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.categories-viewall {
+    font-family: Ovsyanka;
+    font-size: 12px;
+    margin-right: 12px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: right;
+}
+
+.categories-viewbutton {
+    margin-left: 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
