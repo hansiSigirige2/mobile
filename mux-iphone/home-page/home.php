@@ -4,13 +4,14 @@
 		session_start();
 	?>
 	<?php include '../templates/header.php'; ?>
+	<?php include '../templates/footer.php'; ?>
 	<header>
 	<link rel="stylesheet" href="../home-page/home.css">
 		<link rel="stylesheet" href="../assets/styles/header.css">
 		<script src="../assets/scripts/main.js"></script>
 	</header>
 
-<body>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,6 +62,7 @@
 </div>
 
 <!-- promo -->
+
 <div class="container promo-container">
     <div class="row align-items-center v-center-height">
       <div class="msg-box">
@@ -78,9 +80,29 @@
 
 	</div>
 	<div class="view-all-promo">VIEW ALL</div>
-</div>
+
+
+	<div class="container cat-container">
+		<div class="category-header">CATEGORIES</div>
+			<div class="card cat-card">
+				<div class="card-body">
+				<img src="../assets/images/potatoes.png" class="cat-image">
+				<div class="line-sep"><div>
+					<div class="cat-name"> Vegetables</div>
+
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	<div class="view-all-cat">VIEW ALL</div>
+<!-- promo -->
+<!-- categories -->
+
+<!-- cate -->
+
+
 </body>
 </html>
 
 
-</body>
