@@ -5,9 +5,9 @@
 	?>
 	<?php include '../templates/header.php'; ?>
 	<header>
-	<link rel="stylesheet" href="../home-page/home.css">
+	<link rel="stylesheet" href="../categories/categories.css">
 		<link rel="stylesheet" href="../assets/styles/header.css">
-		<script src="../assets/scripts/main.js"></script>
+		<!-- <script src="../assets/scripts/main.js"></script> -->
 	</header>
 
 <body>
@@ -23,34 +23,62 @@
 </head>
 <body>
 
-<div class="container">
-  <h2>Card Deck</h2>
-  <div class="card-deck">
-    <div style = "boxshadow">
-      <div class="card-body text-center" border="20px">
-        <img src="C:\Users\Sachin Rajaratnam\Desktop\Card\dairy.jpg" alt="card" style="float:center;width:150px;height:150px;">
-        <hr></hr>
-        <h1> Dairy Milk </h1>
-        <p class="card-text">Some text inside the first card</p>
+<p class="categories-heading">CATEGORIES</p>
+
+  <div class="ui-grid-b category-section">
+    <div class="ui-block-a">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">VEGETABLES</p>
       </div>
-    </div>
-    <div class="card bg-warning">
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the second card</p>
       </div>
-    </div>
-    <div class="card bg-success">
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the third card</p>
       </div>
-    </div>
-    <div class="card bg-danger">
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the fourth card</p>
+    <div class="ui-block-b"><div class="card category-card"><div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">Dairy</p>
+
+      </div></div></div>
+    <div class="ui-block-c"><div class="card category-card"><div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">Meat</p>
+      </div></div></div>
+
+      <div class="ui-block-a">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">FRUITS</p>
       </div>
-    </div>
-  </div>
-</div>
+      </div>
+      </div>
+
+      <div class="ui-block-b">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">BEVERAGES</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="ui-block-c">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">SEAFOOD</p>
+      </div>
+      </div>
+      </div>
+
+  
+</div><!-- /grid-b -->
 
 </body>
 </html>
