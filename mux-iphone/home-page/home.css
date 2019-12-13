@@ -159,8 +159,8 @@ input:focus {
   
 }
 .cat-card{
-    width: 12rem;
-    margin-left: 0rem;
+    width: 12rem !important;
+    margin-left: 4.25rem;
     margin-top: 2rem;
     height: 120px;
     border-radius: 10px;

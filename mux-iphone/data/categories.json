@@ -1,0 +1,25 @@
+[{
+	"category_id": "1",
+	"category_name": "Vegetables",
+	"image": "../assets/images/vegetables.png",
+	"link": ""
+},
+{
+	"category_id": "2",
+	"category_name": "Dairy",
+	"image": "../assets/images/dairy2.jpg",
+	"link": ""
+},
+{
+	"category_id": "3",
+	"category_name": "Meat",
+	"image": "../assets/images/meat.jpg",
+	"link": ""
+},
+{
+	"category_id": "4",
+	"category_name": "Grains",
+	"image": "../assets/images/grains.jpg",
+	"link": ""
+}
+]
