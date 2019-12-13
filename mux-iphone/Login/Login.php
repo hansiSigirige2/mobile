@@ -1,4 +1,5 @@
-
+<div data-role="page" id="home" class="page-full">
+    
 <?php 
 		session_start();
 	?>
@@ -12,13 +13,6 @@
 
 <!DOCTYPE html>
 <html>
-<style>
-body {
-  background-image: url('signupbk.jpg');
-}
-</style>
- 
- 
     <head>
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">

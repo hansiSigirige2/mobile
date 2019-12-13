@@ -36,7 +36,6 @@
                     <input type="text" name="password" id="password" value="" placeholder="" />
                     </form>
                 <br>
-                <!--<input class="button" type="button" name="signup" id="signup" value="Sign Up" width="50%"/>  -->
                 <button class="button" style=>Login</button>           
                 <br><br>
                 <hr>
