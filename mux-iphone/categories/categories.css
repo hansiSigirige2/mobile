@@ -1,43 +1,3 @@
-.promo-card {
-    margin-left: 2rem;
-    margin-top: 1rem;
-    width: 17rem;
-    height: 210px;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    box-shadow: -5px 5px 5px #aaaaaa
-}
-
-.promo-sale {
-    font-family: Ovsyanka;
-    margin-top: -8.5rem;
-    font-size: 4rem;
-    margin-left: 15rem;
-}
-
-.promo-name {
-    font-family: Ovsyanka;
-    margin-top: -1rem;
-    font-size: 1.5rem;
-    margin-left: 18rem;
-}
-
-.promo-strike {
-    font-family: Ovsyanka;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: red;
-    text-decoration: line-through;
-    margin-left: 17.5rem;
-}
-
-.promo-price {
-    font-family: Ovsyanka;
-    margin-top: -21px;
-    font-size: 1.5rem;
-    margin-left: 25rem;
-}
-
 .category-card {
     margin-bottom: 2rem;
     width: 91%;
@@ -57,6 +17,7 @@
     font-family: Ovsyanka;
     font-size: 12px;
     text-align: center;
+    font-weight: bold;
 }
 
 .category-image {
@@ -69,5 +30,22 @@
     margin-top: 15px;
     margin-left: 15px;
     font-size: 12px;
+    font-weight: bold;
     text-align: left;
+}
+
+.categories-viewall {
+    font-family: Ovsyanka;
+    font-size: 12px;
+    margin-right: 12px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: right;
+}
+
+.categories-viewbutton {
+    margin-left: 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
 }

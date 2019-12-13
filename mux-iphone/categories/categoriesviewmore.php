@@ -76,13 +76,13 @@
       </div>
       </div>
     <div class="ui-block-b"><div class="card category-card"><div class="card-body">
-      <img src="../assets/images/potatoes.png" class="category-image">
+      <img src="../assets/images/dairy2.jpg" class="category-image">
       <hr class="divider">
       <p class="categories-name">Dairy</p>
 
       </div></div></div>
     <div class="ui-block-c"><div class="card category-card"><div class="card-body">
-      <img src="../assets/images/potatoes.png" class="category-image">
+      <img src="../assets/images/meat.jpg" class="category-image">
       <hr class="divider">
       <p class="categories-name">Meat</p>
       </div></div></div>
@@ -116,6 +116,68 @@
       </div>
       </div>
       </div>
+
+      <div class="ui-block-a">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">FROZEN FOODS</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="ui-block-b">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">GRAINS</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="ui-block-c">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">HEALTH AND BEAUTY</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="ui-block-a">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">PAPER PRODUCTS</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="ui-block-b">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">PET CARE</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="ui-block-c">
+      <div class="card category-card">
+      <div class="card-body">
+      <img src="../assets/images/potatoes.png" class="category-image">
+      <hr class="divider">
+      <p class="categories-name">SNACKS</p>
+      </div>
+      </div>
+      </div>
+
+
 
       <div class="ui-block-a">
       
