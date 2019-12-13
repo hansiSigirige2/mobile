@@ -1,35 +1,35 @@
-
-.header-iphone{
+.header-iphone {
     overflow: hidden;
-    margin-top: -44px;
+    margin-top: -34px;
     margin-bottom: -20px;
     border-bottom: 2px solid black;
 }
 
-
-.logo-iphone{
-    margin-left: 157px;
-    margin-bottom: -4px;
-    margin-top: 50px;
+.logo-iphone {
+    margin-left: 145px;
+    margin-bottom: 5px;
+    margin-top: 40px;
     width: 100px;
 }
 
-.avatar-iphone{
+.avatar-iphone {
     width: 24px;
     margin-left: 33rem;
-    margin-top: -23px;
+    margin-top: -31px;
     margin-bottom: 0rem;
 }
-.cart-iphone{
+
+.cart-iphone {
     width: 24px;
     margin-left: 37rem;
-    margin-top: -23px;
+    margin-top: -31px;
     margin-bottom: 0rem;
 }
-.ham-iphone{
+
+.ham-iphone {
     width: 24px;
     margin-left: 2rem;
-    margin-top: -22px;
+    margin-top: -32px;
     margin-bottom: 0rem;
 }
 
@@ -39,36 +39,35 @@
     margin-top: 0rem;
     margin-left: 1rem;
     width: 10rem;
-  }
-  
-  .topnav #myLinks {
+}
+
+.topnav #myLinks {
     display: block;
     border: 1px solid black;
-  }
-  
-  .topnav a {
+}
+
+.topnav a {
     color: black;
     padding: 5px 16px;
     text-decoration: none;
     border-bottom: 1px solid black;
     font-size: 13px;
     display: block;
-  }
-  
-  .topnav a.icon {
+}
+
+.topnav a.icon {
     background: black;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
-  }
-  
-  .topnav a:hover {
+}
+
+.topnav a:hover {
     color: red;
-    
-  }
-  
-  .active {
+}
+
+.active {
     background-color: #4CAF50;
     color: white;
-  }
+}

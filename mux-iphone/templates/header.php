@@ -23,8 +23,8 @@
 	<div class ="header-iphone">
 	
 	<div class="ui-block-g"><img src="../assets/images/logo.png" class ="logo-iphone"></div>
-	<div class="ui-block-g"><img src="../assets/images/avatar.png" class ="avatar-iphone"></div>
-	<div class="ui-block-g"><img src="../assets/images/cart.png" class ="cart-iphone"></div>
+	<div class="ui-block-g" style="margin-left: -20px;"><img src="../assets/images/avatar.png" class ="avatar-iphone"></div>
+	<div class="ui-block-g" style="margin-left: -25px;"><img src="../assets/images/cart.png" class ="cart-iphone"></div>
 	<div class="hamburger">
 	<img src="../assets/images/ham-menu.png" class ="ham-iphone" onclick="hamburger()">
 	<div class="topnav">
