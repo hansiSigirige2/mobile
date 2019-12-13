@@ -93,7 +93,7 @@ input:focus {
 .promo-container{
     background: #ececec;
     margin-top: 53px;
-    height: 19rem !important;
+    height: 20rem !important;
     margin-bottom: 94rem;
 }
 .caption{
@@ -142,4 +142,11 @@ input:focus {
     margin-top: -21px;
     font-size: 1.5rem;
     margin-left: 25rem;
+}
+.view-all-promo{
+    font-family: Ovsyanka;
+    margin-top: -5px;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-left: 32rem;
 }

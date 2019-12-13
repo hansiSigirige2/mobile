@@ -66,19 +66,19 @@
       <div class="msg-box">
         <div class="caption">HOTTEST DEALS</div>
 		<div class="card promo-card">
-  <div class="card-body">
-  <img src="../assets/images/potatoes.png" class="promo-image">
-  <div class="promo-sale">50% OFF</div>
-  <div class="promo-name">potatoes 1kg</div>
-  <div class="promo-strike">RS.240</div>
-
-  <div class="promo-price">rs.120</div>
-  </div>
-</div>
+			<div class="card-body">
+			<img src="../assets/images/potatoes.png" class="promo-image">
+			<div class="promo-sale">50% OFF</div>
+			<div class="promo-name">potatoes 1kg</div>
+			<div class="promo-strike">RS.240</div>
+			<div class="promo-price">rs.120</div>
+			</div>
+		</div>
       </div>
 
-    </div>
-  </div>
+	</div>
+	<div class="view-all-promo">VIEW ALL</div>
+</div>
 </body>
 </html>
 
