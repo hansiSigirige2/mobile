@@ -5,7 +5,7 @@ session_start();
 
 <div role="main" class="ui-grid-solo main-section" style="background: #000000 !important;">
 	<div class="qr-btn-block">
-		<button id="scan-qr" class="qr-btn" onclick="scanQr()">text</button>
+		<button id="scan-qr" class="qr-btn" onclick="scanQr()">SCAN QR CODE</button>
 	</div>
 	<video class="qr-viewport" id="preview" style="height: 100vh;" autoplay></video>
 	<canvas class="hide"></canvas>
@@ -28,29 +28,42 @@ session_start();
 <!-- Custom Scripts -->
 <script src="../assets/scripts/main.js"></script>
 <script src="../assets/scripts/qr_scan.js"></script>
+<link rel="stylesheet" href="qr.css">
 
 
+<!-- Modal -->
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog model-box" role="document">
+    <div class="modal-content">
+      <div class="modal-header no-border">
+        <h5 class="modal-title message-header-s" id="exampleModalLabel">Scan Successful!</h5>
+       
+          
+      
+      </div>
+      <div class="modal-footer no-border">
+	  <button type="button" class="btn btn-primary">Proceed</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- QR Good Result Modal -->
-<!-- <div class="modal fade share-modal" data-role="dialog" id="qr-good-result-modal" tabindex="-1" role="dialog"
-	aria-labelledby="qr-good-result-modal-title" aria-hidden="true">
-	<div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-		<div class="modal-content share-modal-content">
-			<div class="modal-body text-center">
-				YES
-			</div>
-		</div>
-	</div>
-</div> -->
-
-<!-- QR Bad Result Modal -->
-<!-- <div class="modal fade share-modal" data-role="dialog" id="qr-bad-result-modal" tabindex="-1" role="dialog"
-	aria-labelledby="qr-bad-result-modal-title" aria-hidden="true">
-	<div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-		<div class="modal-content share-modal-content">
-			<div class="modal-body text-center">
-				NO
-			</div>
-		</div>
-	</div>
-</div> -->
+<!-- Modal -->
+<div class="modal fade" id="fail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog model-box" role="document">
+    <div class="modal-content">
+      <div class="modal-header no-border">
+        <h5 class="modal-title message-header" id="exampleModalLabel">Scan Failed!</h5>
+        
+        
+      </div>
+      <div class="modal-footer no-border">
+	  <button type="button" class="btn btn-primary"data-dismiss="modal">Try Again</button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
