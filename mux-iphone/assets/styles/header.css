@@ -1,4 +1,4 @@
-.header-iphone {
+/* .header-iphone {
     overflow: hidden;
     margin-top: -34px;
     height: 95px;
@@ -7,10 +7,11 @@
 }
 
 .logo-iphone {
-    margin-left: 145px;
+    margin-left: -3rem;
     margin-bottom: 5px;
     margin-top: 40px;
     width: 100px;
+
 }
 
 .avatar-iphone {
@@ -29,46 +30,26 @@
 
 .ham-iphone {
     width: 24px;
-    margin-left: 2rem;
-    margin-top: -151px;
+    margin-left: 1rem;
+    margin-top: 57px;
     margin-bottom: 0rem;
 }
-
-.topnav {
-    overflow: hidden;
-    background-color: white;
-    margin-top: 0rem;
-    margin-left: 1rem;
-    width: 10rem;
+ */
+.ham-iphone{
+    width:24px;
 }
-
-.topnav #myLinks {
-    display: block;
-    border: 1px solid black;
+.cart-iphone{
+    width:24px;
 }
-
-.topnav a {
-    color: black;
-    padding: 5px 16px;
-    text-decoration: none;
-    border-bottom: 1px solid black;
-    font-size: 13px;
-    display: block;
+.avatar-iphone{
+    width:24px;
 }
-
-.topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+.logo-iphone{
+    width:100px;
+    margin-top: -10px;
 }
-
-.topnav a:hover {
-    color: red;
-}
-
-.active {
-    background-color: #4CAF50;
-    color: white;
+.header-iphone {
+    padding: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
 }

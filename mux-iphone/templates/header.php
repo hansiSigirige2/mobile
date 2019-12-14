@@ -20,14 +20,24 @@
 	</head>
 
 	<body>
-	<div class ="ui-grid-a header-iphone">
+	<div class ="ui-grid-b header-iphone">
+		<div class ="ui-block-a">
+		<img src="../assets/images/ham-menu.png" class ="ham-iphone">
+		</div>
+		<div class ="ui-block-b text-center">
+		<img src="../assets/images/logo.png" class ="logo-iphone">
+		</div>
+		<div class ="ui-block-c text-right">
+		<img src="../assets/images/avatar.png" class ="avatar-iphone">
+		<img src="../assets/images/cart.png" class ="cart-iphone">
+		</div>
 	
-		<div><img src="../assets/images/logo.png" class ="logo-iphone"></div>
+		<!-- <div><img src="../assets/images/logo.png" class ="logo-iphone"></div>
 		<div><img src="../assets/images/avatar.png" class ="avatar-iphone"></div>
 		<div><img src="../assets/images/cart.png" class ="cart-iphone"></div>
 		<div>
 		<img src="../assets/images/ham-menu.png" class ="ham-iphone" onclick="hamburger()">
-		</div>
+		</div> -->
 	</div>
 
 
