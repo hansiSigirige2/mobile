@@ -1,0 +1,26 @@
+.message-header{
+    margin-left: 15vh;
+}
+
+.message-header-s{
+    margin-left: 4.5rem;
+}
+
+.model-box{
+    margin-top: 17rem;
+}
+
+.no-border{
+    border: none !important;
+}
+.btn{
+    border-radius: 35px !important;
+}
+.btn-primary{
+    background: black !important;
+    color: white !important;
+}
+.btn-secondary{
+    border: 1px solid red !important;
+    color: red !important;
+}
