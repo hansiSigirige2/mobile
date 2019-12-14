@@ -7,11 +7,3 @@
     font-family: Ovsyanka;
   }
 
-.carousel-indicators-item{
-border-radius: 50% !important;
-width: 10px !important;
-height: 10px !important;
-}
-.carousel-indicators .carousel-dots{
-    top: 141px !important;
-}
