@@ -55,7 +55,7 @@
 <!-- global search cards -->
 <div class="search-container">
 <?php 	
-$products_json = file_get_contents('../data/products.json');
+		$products_json = file_get_contents('../data/products.json');
 		$products_arr = json_decode($products_json, true);
 		$searchresult_arr =array();
 		

@@ -51,12 +51,10 @@ function interpretQr(data) {
 	alert(data);
 	qr.callback = function (err, val) {
 		if (err) {
-			$('#qr-bad-result').html('Boohoo! You have scanned something weird.');
-			$('#qr-bad-result-modal').modal('show');
+			$('#fail').modal('show');
 		}
 		if (val) {
-			$('#qr-good-result').html('Bravo! You have entered this month\'s Buy More raffle successfully.');
-			$('#qr-good-result-modal').modal('show');
+			$('#success').modal('show');
 		}
 	};
 	qr.decode(data);

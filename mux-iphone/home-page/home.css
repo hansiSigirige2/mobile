@@ -12,61 +12,6 @@
     padding: 0.25rem;
   }
 
-  .promocontainer{
-    background: #ececec;
-    height: 153px;
-    width: 100%;
-    margin-top: 5rem;
-  }
-
-  .promo-image{
-    margin-left: 0.5rem;
-    margin-top: 11px;
-    width: 30px;
-}
-.promo-item{
-padding-bottom: 1rem;;
-}
-.promo-sale{
-    font-family: Ovsyanka;
-    margin-left: 8rem;
-    margin-top: -5rem;
-    font-size: 2rem;
-}
-.promo-name{
-    font-family: Ovsyanka;
-    margin-top: 0rem;
-    font-size: 1rem;
-    margin-left: 9rem;
-}
-
-.promo-inner{
-    width: 100%;
-}
-
-.promo-card{
-    width: 83%;
-    margin: 1.5rem;
-    border-radius: 10px;
-    box-shadow: -5px 5px 15px #aaaaaa;
-}
-
-.promo-strike {
-    font-family: Ovsyanka;
-    margin-top: 0rem;
-    font-size: 0.7rem;
-    color: red;
-    text-decoration: line-through;
-    margin-left: 9.5rem;
-}
-
-.promo-price{
-    font-family: Ovsyanka;
-    margin-top: -0.9rem;
-    font-size: 0.7rem;
-    color: black;
-    margin-left: 13rem;
-}
 .card-image-border{
     border-bottom: 1.5px solid black;
     height: 90px;
@@ -139,4 +84,79 @@ input:focus {
     background: transparent;
     border: none;
     cursor: pointer;
+}
+
+.promo-card-container{
+    background-color: #ECECEC;
+    padding: 2.5rem;
+}
+
+.promo-card{
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px #aaaaaa;
+}
+
+.promo-slider-image{
+    width: 100%;
+}
+
+.promo-item{
+    padding-bottom: 1rem;;
+}
+    
+.promo-sale{
+    font-family: Ovsyanka;
+    font-size: 1.8rem;
+}
+
+.promo-sale-land{
+    font-family: Ovsyanka;
+    font-size: 3.5rem;
+}
+    
+.promo-name{
+    font-family: Ovsyanka;
+    font-size: 1rem;
+}    
+
+.promo-name-land{
+    font-family: Ovsyanka;
+    font-size: 2.5rem;
+}   
+    
+.promo-inner{
+    width: 100%;
+}
+    
+.promo-strike {
+    font-family: Ovsyanka;
+    color: red;
+    text-decoration: line-through;
+}
+    
+.promo-price{
+    font-family: Ovsyanka;
+    font-size: 0.7rem;
+    color: black;
+}
+
+.promo-strike-land {
+    font-family: Ovsyanka;
+    color: red;
+    font-size: 2rem;
+    text-decoration: line-through;
+}
+    
+.promo-price-land{
+    font-family: Ovsyanka;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.no-padding-right{
+    padding-right: 0;
+}
+
+.no-padding-all{
+    padding: 0;
 }
