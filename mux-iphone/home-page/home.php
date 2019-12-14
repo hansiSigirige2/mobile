@@ -1,28 +1,14 @@
-<div data-role="page" id="home" class="page-full">
-
-	<?php 
+<?php 
 		session_start();
 	?>
 	<?php include '../templates/header.php'; ?>
-	<?php include '../templates/footer.php'; ?>
+
+<div data-role="page" id="home" class="page-full">
 	<header>
 	<link rel="stylesheet" href="../home-page/home.css">
 		<link rel="stylesheet" href="../assets/styles/header.css">
 		<script src="../assets/scripts/main.js"></script>
 	</header>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-
 
 <div class="carousel-container">
  
@@ -159,5 +145,8 @@
 
 
 </html>
+
+
+<?php include '../templates/footer.php'; ?>
 
 

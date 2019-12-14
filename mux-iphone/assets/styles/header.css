@@ -1,6 +1,7 @@
 .header-iphone {
     overflow: hidden;
     margin-top: -34px;
+    height: 95px;
     margin-bottom: -20px;
     border-bottom: 2px solid black;
 }
@@ -14,22 +15,22 @@
 
 .avatar-iphone {
     width: 24px;
-    margin-left: 33rem;
-    margin-top: -31px;
+    margin-left: 21rem;
+    margin-top: -60px;
     margin-bottom: 0rem;
 }
 
 .cart-iphone {
     width: 24px;
-    margin-left: 37rem;
-    margin-top: -31px;
+    margin-left: 23.5rem;
+    margin-top: -106px;
     margin-bottom: 0rem;
 }
 
 .ham-iphone {
     width: 24px;
     margin-left: 2rem;
-    margin-top: -32px;
+    margin-top: -151px;
     margin-bottom: 0rem;
 }
 
