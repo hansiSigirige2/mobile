@@ -48,6 +48,7 @@ function scanQr() {
 }
 
 function interpretQr(data) {
+	alert(data);
 	qr.callback = function (err, val) {
 		if (err) {
 			$('#qr-bad-result').html('Boohoo! You have scanned something weird.');
