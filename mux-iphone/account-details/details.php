@@ -7,7 +7,7 @@
 	<?php include '../templates/footer.php'; ?>
 	<header>
 	    <link rel="stylesheet" href="../account-details/details.css">
-	    <!-- <link rel="stylesheet" href="../assets/styles/header.css"> -->
+	    <link rel="stylesheet" href="../assets/styles/header.css">
 	    <script src="../assets/scripts/main.js"></script>
 	</header>
 
@@ -40,7 +40,15 @@
             <img src="../assets/images/expandbtn.svg" alt="expand" width="5%" align="right">
         </button>
         <div class="content">
-            <p>Total redeemable points:2500</p>
+            <div align=center >
+                    <br>
+                    <img src="../assets/images/gold tier.svg" alt="expand" width="15%" align=left >
+                    <img src="../assets/images/silver tier.svg" alt="expand" width="15%" align=right><br>
+                    <img src="../assets/images/bar50.svg" alt="expand" width="60%" align=center >
+                    <br><br><br><p>Total Loyalty Points: 2500 <br>
+                        Redeemable Points: 1700
+                    </p>
+            </div>        
         </div>     
     <script>
         var coll = document.getElementsByClassName("collapsible");

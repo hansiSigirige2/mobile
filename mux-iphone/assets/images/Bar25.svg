@@ -1,0 +1,21 @@
+<svg id="Bar" xmlns="http://www.w3.org/2000/svg" width="548.4" height="43.688" viewBox="0 0 548.4 43.688">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="filler" class="cls-1" d="M15693,863.14h96.5a20.029,20.029,0,0,1,20,20v1.71a20.029,20.029,0,0,1-20,20H15693a20.029,20.029,0,0,1-20-20v-1.71A20.029,20.029,0,0,1,15693,863.14Z" transform="translate(-15672 -862.156)"/>
+  <path class="cls-2" d="M15693,863.141h506.4a19.966,19.966,0,0,1,20,20v1.717a19.965,19.965,0,0,1-20,20H15693a20.029,20.029,0,0,1-20-20v-1.717A20.03,20.03,0,0,1,15693,863.141Z" transform="translate(-15672 -862.156)"/>
+</svg>
