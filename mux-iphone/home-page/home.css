@@ -7,20 +7,15 @@
     font-family: Ovsyanka;
   }
 
-  .card{
-    margin-left: 2.8rem;
-    margin-top: 2rem;
-    width: 18rem;
-    border-radius: 10px;
-    box-shadow: -5px 5px 15px #aaaaaa;
-  }
-  .card-body{
+ 
+  .product-body{
     padding: 0.25rem;
   }
 
   .promocontainer{
     background: #ececec;
     height: 153px;
+    width: 100%;
   }
 
   .promo-image{
@@ -44,6 +39,17 @@ padding-bottom: 1rem;;
     margin-left: 9rem;
 }
 
+.promo-inner{
+    width: 100%;
+}
+
+.promo-card{
+    width: 83%;
+    margin: 1.5rem;
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px #aaaaaa;
+}
+
 .promo-strike {
     font-family: Ovsyanka;
     margin-top: 0rem;
@@ -62,12 +68,16 @@ padding-bottom: 1rem;;
 }
 .card-image-border{
     border-bottom: 1.5px solid black;
-
+    height: 90px;
 }
 .product-card{
     width: 8rem;
     height: 9.5rem;
     margin-left: 1.7rem;
+    margin-right: 2.8rem !important;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px #aaaaaa;
 }
 .product-title{
     font-family: Ovsyanka;

@@ -1,0 +1,29 @@
+[{
+	"product_id": "1",
+    "product_name": "Carrots",
+    "product_price": "110",
+	"image": "\"../assets/images/carrot.png\"",
+	"link": ""
+},
+{
+	"product_id": "2",
+    "product_name": "Avocado",
+    "product_price": "120",
+	"image": "\"../assets/images/avocado.jpg\"",
+	"link": ""
+},
+{
+	"product_id": "3",
+    "product_name": "Chillies",
+    "product_price": "70",
+	"image": "\"../assets/images/chillies.jpg\"",
+	"link": ""
+},
+{
+	"product_id": "4",
+    "product_name": "Tomatoes",
+    "product_price": "110",
+	"image": "\"../assets/images/tomatoes.jpeg\"",
+	"link": ""
+}
+]

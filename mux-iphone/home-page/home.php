@@ -36,9 +36,23 @@
 <!-- carousel promo -->
 <div class="promocontainer">
 	<div id="carouselpromo" class="carousel slide" data-ride="carousel">
-	<div class="carousel-inner">
+	<div class="carousel-inner promo-inner">
 		<div class="carousel-item promo-item active">
-			<div class="card">
+			<div class="card promo-card">
+				
+				<!-- <div class="card-body">
+				<div class="promo-image">	
+				<img src="../assets/images/potatoes.png" style=" width: 105px;">
+				</div>
+				<div class="promo-sale">50% OFF</div>
+				<div class="promo-name">potatoes 1kg</div>
+				<div class="promo-strike">RS.240</div>
+				<div class="promo-price">rs.120</div>
+				</div> -->
+			</div>
+		</div>
+		<!-- <div class="carousel-item promo-item ">
+			<div class="card promo-card">
 				<div class="card-body">
 				<div class="promo-image">	
 				<img src="../assets/images/potatoes.png" style=" width: 105px;">
@@ -51,20 +65,7 @@
 			</div>
 		</div>
 		<div class="carousel-item promo-item ">
-			<div class="card">
-				<div class="card-body">
-				<div class="promo-image">	
-				<img src="../assets/images/potatoes.png" style=" width: 105px;">
-				</div>
-				<div class="promo-sale">50% OFF</div>
-				<div class="promo-name">potatoes 1kg</div>
-				<div class="promo-strike">RS.240</div>
-				<div class="promo-price">rs.120</div>
-				</div>
-			</div>
-		</div>
-		<div class="carousel-item promo-item ">
-			<div class="card">
+			<div class="card promo-card">
 				<div class="card-body">
 				<div class="promo-image">	
 				<img src="../assets/images/potatoes.png"style=" width: 105px;">
@@ -75,7 +76,7 @@
 				<div class="promo-price">rs.120</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<a class="carousel-control-prev" href="#carouselpromo" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -90,29 +91,32 @@
 
 <!-- global search cards -->
 <div class="search-container">
-<div class="ui-grid-a">
-	<div class ="ui-block-a product-padding">
-		<div class="card product-card">
-		<img class="card-img-top card-image-border" src="../assets/images/carrot.png" alt="Card image cap">
-		<div class="card-body">
-			<h5 class="product-title">carrots 100g</h5>
-			<img class="favorite-icon" src="../assets/images/favorite-empty.png" >
-			<div class="product-price">rs.110</div>
-		</div>
-		</div>
-	</div>
-	<div class ="ui-block-b product-padding">
-		<div class="card product-card">
-		<img class="card-img-top card-image-border" src="../assets/images/carrot.png" alt="Card image cap">
-		<div class="card-body">
-			<h5 class="product-title">carrots 100g</h5>
-			<img class="favorite-icon" src="../assets/images/favorite-empty.png" >
-			<div class="product-price">rs.110</div>
-		</div>
-		</div>
-	</div>
-</div>
-</div>
+<?php 	
+$products_json = file_get_contents('../data/products.json');
+		$products_arr = json_decode($products_json, true);
+		$prod_length=count($products_arr);
+		
+		echo '<div class ="ui-grid-a">';
+		for ($x = 0; $x <$prod_length; $x++) {
+			if ($x === 0){
+				echo '<div class ="ui-block-a product-padding">';
+			}
+			else{
+				echo '<div class ="ui-block-b product-padding">';
+			}
+				echo'<div class="card product-card">';
+				echo '<img class="card-img-top card-image-border" src='.$products_arr[$x]['image'].'alt="Card image cap">';
+				echo '<div class="card-body product-body">';
+				echo '	<h5 class="product-title">'.$products_arr[$x]['product_name'].'</h5>';
+				echo '	<img class="favorite-icon" src="../assets/images/favorite-empty.png" >';
+				echo '<div class="product-price">RS.'.$products_arr[$x]['product_price'].'</div>';
+				echo '</div>';
+				echo '</div>';
+			    echo '</div>';
+		}
+		echo '</div>';
+?>
+
 <!-- global search cards -->
 
 
