@@ -16,7 +16,7 @@
 
 <link rel="stylesheet" href="../assets/styles/footer.css">
 
-<html>
+<!-- <html>
 <body>
 <div class="footer">
  <div class="aboutus">About Us</div>
@@ -24,4 +24,4 @@
  <div class="terms">Terms and conditions</div>
 </div>
 </body>
-</html>
+</html> -->
