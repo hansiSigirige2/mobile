@@ -1,40 +1,11 @@
-/* .header-iphone {
-    overflow: hidden;
-    margin-top: -34px;
-    height: 95px;
-    margin-bottom: -20px;
-    border-bottom: 2px solid black;
-}
-
-.logo-iphone {
-    margin-left: -3rem;
-    margin-bottom: 5px;
-    margin-top: 40px;
-    width: 100px;
-
-}
-
-.avatar-iphone {
-    width: 24px;
-    margin-left: 21rem;
-    margin-top: -60px;
-    margin-bottom: 0rem;
-}
-
-.cart-iphone {
-    width: 24px;
-    margin-left: 23.5rem;
-    margin-top: -106px;
-    margin-bottom: 0rem;
-}
-
-.ham-iphone {
-    width: 24px;
-    margin-left: 1rem;
-    margin-top: 57px;
-    margin-bottom: 0rem;
-}
- */
+@font-face {
+    font-family: Ovsyanka;
+    src: url(../fonts/WOFF/Ovsyanka.woff);
+  }
+  
+  div {
+    font-family: Ovsyanka;
+  }
 .ham-iphone{
     width:24px;
 }
@@ -52,4 +23,29 @@
     padding: 15px;
     padding-bottom: 5px;
     border-bottom: 2px solid black;
+}
+
+.menu-container{
+background: white;
+border: 1px solid black;
+position: absolute;
+height: 100vh;
+width:46vw;
+z-index:1;
+}
+
+ul{
+list-style: none;
+}
+
+.menu-item{
+    border-bottom: 1px solid black;
+    font-family: Ovsyanka;
+    font-size:15px;
+    padding: 2px;
+}
+
+.hide-menu{
+    width:-50vw;
+    transition: 0.3s ease;
 }

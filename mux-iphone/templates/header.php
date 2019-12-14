@@ -20,9 +20,10 @@
 	</head>
 
 	<body>
+		<!-- header -->
 	<div class ="ui-grid-b header-iphone">
 		<div class ="ui-block-a">
-		<img src="../assets/images/ham-menu.png" class ="ham-iphone">
+		<img src="../assets/images/ham-menu.png" class ="ham-iphone" onclick="navMenu()">
 		</div>
 		<div class ="ui-block-b text-center">
 		<img src="../assets/images/logo.png" class ="logo-iphone">
@@ -31,14 +32,21 @@
 		<img src="../assets/images/avatar.png" class ="avatar-iphone">
 		<img src="../assets/images/cart.png" class ="cart-iphone">
 		</div>
-	
-		<!-- <div><img src="../assets/images/logo.png" class ="logo-iphone"></div>
-		<div><img src="../assets/images/avatar.png" class ="avatar-iphone"></div>
-		<div><img src="../assets/images/cart.png" class ="cart-iphone"></div>
-		<div>
-		<img src="../assets/images/ham-menu.png" class ="ham-iphone" onclick="hamburger()">
-		</div> -->
 	</div>
+	<!-- hamburger -->
+	<div id="menucon" class="menu-container">
+			<div class="ui-grid-solo menu-item text-center">Home</div>
+			<div class="ui-grid-solo menu-item text-center">Categories</div>
+			<div class="ui-grid-solo menu-item text-center">Favorites</div>
+			<div class="ui-grid-solo menu-item text-center">Promotions</div>
+			<div class="ui-grid-solo menu-item text-center">My Account</div>
+			<div class="ui-grid-solo menu-item text-center">Cart</div>
+			<div class="ui-grid-solo menu-item text-center">About us</div>
+			<div class="ui-grid-solo menu-item text-center">Contact Us</div>
+			<div class="ui-grid-solo menu-item text-center">Previously ordered</div>
+			<div class="ui-grid-solo menu-item text-center">FAQ's</div>		
+ 
+    </div>  
 
 
 
