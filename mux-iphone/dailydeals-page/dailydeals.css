@@ -1,0 +1,132 @@
+        /* Styles for wrapping the search box */
+        /* Bootstrap 4 text input with search icon */
+        
+        .has-search .dailydealsform-control {
+            padding-left: 2.375rem;
+            margin-top: -28px
+        }
+        
+        .has-search .dailydealsform-control-feedback {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            height: 2.375rem;
+            line-height: 2.375rem;
+            text-align: center;
+            pointer-events: none;
+            color: #ffffff;
+        }
+        
+        .input-group-append {
+            margin-left: 180px;
+            margin-top: -28px;
+        }
+        
+        .dailydeals-card {
+            margin-bottom: 2rem;
+            margin-left: 10px;
+            width: 91%;
+            box-shadow: 10px !important;
+        }
+        
+        .dailydeals-section {
+            padding: 10px;
+        }
+        
+        .divider {
+            border-top: 2px solid grey;
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+        
+        .dailydeals-name {
+            font-family: Ovsyanka;
+            font-size: 12px;
+            text-align: centerleft;
+            font-weight: bold;
+            margin-top: -4px;
+        }
+        
+        .dailydeals-image {
+            margin-top: 15px;
+            width: 145px;
+        }
+        
+        .dailydeals-heading {
+            font-family: Ovsyanka;
+            margin-top: 15px;
+            margin-left: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: left;
+        }
+        
+        .dailydeals-viewall {
+            font-family: Ovsyanka;
+            font-size: 12px;
+            margin-right: 12px;
+            text-decoration: underline;
+            font-weight: bold;
+            text-align: right;
+        }
+        
+        .dailydeals-viewbutton {
+            margin-left: 15px;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+        }
+        
+        .productprice {
+            color: green;
+            font-family: Ovsyanka;
+            margin-top: 15px;
+            margin-left: 2px;
+            font-size: 14px;
+        }
+        
+        .oldprice {
+            color: red;
+            font-family: Ovsyanka;
+            font-size: 14px;
+            margin-left: 3px;
+        }
+        
+        #dealsminus {
+            width: 18px;
+            margin-top: 2px;
+        }
+        
+        #dealsplus {
+            width: 18px;
+            margin-top: 2px;
+            margin-left: -32px;
+        }
+        
+        #dealsquantity {
+            border: 1px solid #CCCCCC;
+            border-radius: 0;
+            background-color: white;
+            width: 35px;
+            height: 18px;
+            margin-top: 3px;
+            margin-left: -25px;
+        }
+        
+        #favdeals {
+            margin-left: 5px;
+            width: 20px;
+        }
+        
+        .dailydeals-addbutton {
+            margin-left: 100px;
+            border-radius: 10px;
+            background: black;
+            color: white;
+            border: none;
+            font-weight: bold;
+            text-align: center;
+            margin-top: -21px;
+            font-weight: bold;
+        }
