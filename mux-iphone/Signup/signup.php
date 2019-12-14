@@ -5,7 +5,7 @@
 	?>
 	<?php include '../templates/header.php'; ?>
 	<header>
-	<link rel="stylesheet" href="../signup/signup.css">
+	 <link rel="stylesheet" href="../signup/signup.css">
 		<link rel="stylesheet" href="../assets/styles/header.css">
 		<script src="../assets/scripts/main.js"></script>
 	</header>
@@ -22,7 +22,7 @@
         <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     </head> 
     <body>
-    <div style="background-image: url('../assets/images/signupbk.jpg'); background-size: 100% 100%;">
+    <div style="background-image: url('../assets/images/signup.jpg'); background-size: 100% 100%;">
         <br><br><br>
         <div class="ui-grid-solo">
            <!-- <div class="ui-block-a">    

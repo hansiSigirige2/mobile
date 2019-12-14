@@ -22,7 +22,7 @@
         <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     </head> 
     <body>
-    <div style="background-image: url('../assets/images/loginbk.jpg'); background-size: 100% 100%;">
+    <div style="background-image: url('../assets/images/login.jpg'); background-size: 100% 100%;">
         <br><br><br>
         <div class="ui-grid-solo">
            <!-- <div class="ui-block-a">    

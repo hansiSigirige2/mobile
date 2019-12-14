@@ -28,12 +28,14 @@ div {
   }    
 
   .ui-grid-solo>.ui-block-a {
+      width: 90% !important;
       margin-left: 1.2rem;
       margin-bottom: 2rem;
-      width: 90% !important;
+      
       padding: 2rem;
       border-radius: .5rem; 
       float: none;
+      
   }
 
   [class*=ui-block-]>button.ui-btn {
