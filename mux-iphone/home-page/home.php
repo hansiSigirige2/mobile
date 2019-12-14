@@ -37,7 +37,7 @@
 <div class="promocontainer">
 	<div id="carouselpromo" class="carousel slide" data-ride="carousel">
 	<div class="carousel-inner">
-		<div class="carousel-item active">
+		<div class="carousel-item promo-item active">
 			<div class="card">
 				<div class="card-body">
 				<div class="promo-image">	
@@ -50,7 +50,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="carousel-item">
+		<div class="carousel-item promo-item ">
 			<div class="card">
 				<div class="card-body">
 				<div class="promo-image">	
@@ -63,7 +63,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="carousel-item">
+		<div class="carousel-item promo-item ">
 			<div class="card">
 				<div class="card-body">
 				<div class="promo-image">	
@@ -91,7 +91,7 @@
 <!-- global search cards -->
 <div class="search-container">
 <div class="ui-grid-a">
-	<div class ="ui-block-a">
+	<div class ="ui-block-a product-padding">
 		<div class="card product-card">
 		<img class="card-img-top card-image-border" src="../assets/images/carrot.png" alt="Card image cap">
 		<div class="card-body">
@@ -101,7 +101,7 @@
 		</div>
 		</div>
 	</div>
-	<div class ="ui-block-b">
+	<div class ="ui-block-b product-padding">
 		<div class="card product-card">
 		<img class="card-img-top card-image-border" src="../assets/images/carrot.png" alt="Card image cap">
 		<div class="card-body">

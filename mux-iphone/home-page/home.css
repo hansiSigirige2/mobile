@@ -28,7 +28,9 @@
     margin-top: 11px;
     width: 30px;
 }
-
+.promo-item{
+padding-bottom: 1rem;;
+}
 .promo-sale{
     font-family: Ovsyanka;
     margin-left: 8rem;
@@ -81,4 +83,7 @@
     font-size: 0.8rem;
     color: green;
     margin-top: -16px;
+}
+.product-padding{
+    padding-bottom: 1rem;
 }
