@@ -140,3 +140,10 @@ input:focus {
     border: none;
     cursor: pointer;
 }
+
+.form-margin{
+    margin-top: -39px;
+}
+.search-container{
+    margin-top: 59px;
+}

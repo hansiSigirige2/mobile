@@ -12,7 +12,7 @@
 <!--<script src="libraries/instascan.min.js"></script>-->
 
 <!-- Custom Scripts -->
-<script src="assets/scripts/main.js"></script>
+<script src="../assets/scripts/main.js"></script>
 
 <link rel="stylesheet" href="../assets/styles/footer.css">
 

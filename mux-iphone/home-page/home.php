@@ -1,7 +1,9 @@
 <?php 
 		session_start();
 	?>
-	<?php include '../templates/header.php'; ?>
+	<?php include '../templates/header.php';?>
+	
+
 <header>
 <link rel="stylesheet" href="home.css">
 </header>
@@ -32,7 +34,28 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<!-- search -->
+<form name="search" action="../search-page/searchpage.php" method="post" data-ajax="false" enctype="multipart/form-data">
 
+<div class="row">
+	<div class="searchbox">
+		<div class= "col-10">
+			<input id="search" type="text" placeholder="Search" name="search" class="search ">
+	</div>
+	<div class="col-2">
+		<button name="submit" type="submit" class="btn-search">
+				<img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+			</button>
+	</div>
+	</div>
+</div> 
+</form>
+<?php
+if(isset($_POST['search'])){
+	$search_value = $_POST['search'];
+}
+?>
+<!-- search -->
 <!-- carousel promo -->
 <div class="promocontainer">
 	<div id="carouselpromo" class="carousel slide" data-ride="carousel">
@@ -88,36 +111,6 @@
 	</a>
 	</div>
 </div>
-
-<!-- global search cards -->
-<div class="search-container">
-<?php 	
-$products_json = file_get_contents('../data/products.json');
-		$products_arr = json_decode($products_json, true);
-		$prod_length=count($products_arr);
-		
-		echo '<div class ="ui-grid-a">';
-		for ($x = 0; $x <$prod_length; $x++) {
-			if ($x === 0){
-				echo '<div class ="ui-block-a product-padding">';
-			}
-			else{
-				echo '<div class ="ui-block-b product-padding">';
-			}
-				echo'<div class="card product-card">';
-				echo '<img class="card-img-top card-image-border" src='.$products_arr[$x]['image'].'alt="Card image cap">';
-				echo '<div class="card-body product-body">';
-				echo '	<h5 class="product-title">'.$products_arr[$x]['product_name'].'</h5>';
-				echo '	<img class="favorite-icon" src="../assets/images/favorite-empty.png" >';
-				echo '<div class="product-price">RS.'.$products_arr[$x]['product_price'].'</div>';
-				echo '</div>';
-				echo '</div>';
-			    echo '</div>';
-		}
-		echo '</div>';
-?>
-
-<!-- global search cards -->
 
 
 <?php include '../templates/footer.php'; ?>

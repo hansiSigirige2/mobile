@@ -2,7 +2,7 @@
 $( window ).on( "orientationchange", function( event ) {
 	if(window.innerHeight > window.innerWidth){
 		$.ajax({
-			url     : 'setOrientation.php',
+			url     : '../setOrientation.php',
 			method  : 'POST',
 			data    : {"orientation": "land"},
 			success : function( response ) {
@@ -14,7 +14,7 @@ $( window ).on( "orientationchange", function( event ) {
 	}
 	if(window.innerWidth > window.innerHeight){
 		$.ajax({
-			url     : 'setOrientation.php',
+			url     : '../setOrientation.php',
 			method  : 'POST',
 			data    : {"orientation": "port"},
 			success : function( response ) {
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 	if(window.innerHeight > window.innerWidth){
 		$.ajax({
-			url     : 'setOrientation.php',
+			url     : '../setOrientation.php',
 			method  : 'post',
 			data    : {"orientation": "port"},
 			success : function( response ) {
@@ -46,7 +46,7 @@ $(document).ready(function () {
 
 	if(window.innerWidth > window.innerHeight){
 		$.ajax({
-			url     : 'setOrientation.php',
+			url     : '../setOrientation.php',
 			method  : 'post',
 			data    : {"orientation": "land"},
 			success : function( response ) {
