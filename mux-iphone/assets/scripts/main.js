@@ -78,8 +78,7 @@ $(document).ready(function () {
 });
 
 function navMenu(){
-	var element = document.getElementById("menucon");
-	element.toggleClass("hide-menu");
+	$("#menucon").toggleClass("hide-menu");
 }
   
   
