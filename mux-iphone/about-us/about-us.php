@@ -20,7 +20,27 @@
 
 
     <body>
-        <img src = "about-us.jpg" id = "image" >
+        <img src = "about-us1.jpg" class = "image" width = "100%" >
+
+        <div class = "heading-main"> About Us </div>
+
+        <div class = "text"> We pioneered the short supply chain so you can experience fresh food at its finest. Food 
+                                comes to us straight from the source and is delivered to your door at peak freshness in just 
+                                a few days. That's less handling by middlemen and it puts more money in the bank for local 
+                                farmers, skilled artisans and responsible fishermen.
+        </div>
+
+        <video id = "video" align="right" controls>
+            <source src = "video.mp4" type = "video/mp4">
+        </video>
+
+        <div class = "heading-main"> Convenience Shouldn't Mean Compromise </div>
+
+        <div class = "text"> We make it easy to find nutritional information-calories, Ingredients and allergens-so you 
+                                know exactly what you're getting. Our stores Augmented Reality feature allows you to take a 
+                                picture of your favourite promotion with it's own brand banner and share it with your friends 
+                                to earn loyally points
+
     </body>
 
     
