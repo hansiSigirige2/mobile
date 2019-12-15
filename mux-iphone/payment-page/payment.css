@@ -216,3 +216,25 @@
     margin-right: 53px !important;
     display: inline !important;
 }
+
+
+.btn-primary-charge{
+    background: black !important;
+    color: white !important;
+    border-radius: 35px !important;
+}
+
+.btn-primary-charge2{
+    width: 80% !important;
+    background: black !important;
+    color: white !important;
+    border-radius: 35px !important;
+}
+.btn-home-send{
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
+.pretty-girl{
+    width: 124%;
+    margin-left: -61px;
+}

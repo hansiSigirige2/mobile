@@ -18,18 +18,16 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-	<a href ="../qr-scan/qr.php">
-	  <img class="d-block w-100" src="../assets/images/img1.png" alt="First slide">
-	</a>
+	
+	  <img onclick="window.location.href='../qr-scan/qr.php';"class="d-block w-100" src="../assets/images/img1.png" alt="First slide">
+
     </div>
     <div class="carousel-item">
-		<a href ="../dailydeals-page/dailydeals.php">
-	  <img class="d-block w-100"  src="../assets/images/img2.png" alt="Second slide">
-	</a>
+	  <img onclick="window.location.href='../dailydeals-page/dailydeals.php';" class="d-block w-100"  src="../assets/images/img2.png" alt="Second slide">
+	
     </div>
     <div class="carousel-item">
-	<a href ="../categories/categories.php">
-      <img class="d-block w-100" src="../assets/images/img3.png" alt="Third slide">
+      <img onclick="window.location.href='../categories/categories.php';"class="d-block w-100" src="../assets/images/img3.png" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -213,7 +211,7 @@ if(isset($_POST['search'])){
 				echo '<div class="card-body">';
 				echo '<img src="'.$var['image'].'" class="cat-image">';
 				echo '<div class="line-sep"><div>';
-				echo '<div class="cat-name">' . $var['category_name'] . '</div>';
+				echo '<div class="cat-name text-center">' . $var['category_name'] . '</div>';
 				echo '</div>';
 				echo '</div>';
 				echo '</div>';
@@ -221,6 +219,7 @@ if(isset($_POST['search'])){
 			}
 			?>
 	</div>
+	<div class="ui-grid-solo text-right view-all" onclick="window.location.href='../categories/categories.php';">VIEW ALL</div>
 </div>
 <!-- carousel categories -->
 

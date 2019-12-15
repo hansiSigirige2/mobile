@@ -165,3 +165,6 @@
 .ui-btn,.ui-corner-all{
     float: none;
 }
+.padding-edit{
+    padding-right: 2rem;
+}

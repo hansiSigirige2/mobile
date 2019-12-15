@@ -12,10 +12,10 @@
 <div class="ui-grid-b checkout-container">
     <div class="ui-block-a checkout-title">CHECKOUT</div>
     <!-- cart -->
-    <div class="ui-grid-b card-container">
+    <div class="ui-grid-a card-container">
         <div class="ui-block-a cart-title">CART</div>
-        <div class="ui-block-c">
-            <img class="edit-image" src="../assets/images/edit.png" alt="">
+        <div class="ui-block-b text-right padding-edit">
+            <img onclick="window.location.href='../Cart/cart.php';"class="edit-image" src="../assets/images/edit.png" alt="">
         </div>
 
         <!-- cards -->
@@ -189,7 +189,7 @@
 
         </div>
         <div class="ui-grid-solo text-center">
-        <button type="button"id="paymentproceed" class="btn btn-primary" disabled>Proceed to Payment</button>
+        <button onclick="window.location.href='../payment-page/payment.php';" type="button"id="paymentproceed" class="btn btn-primary" disabled >Proceed to Payment</button>
         </div>
     </div>
     <!-- checkout container ends below -->

@@ -92,7 +92,7 @@
                     <div id="card-errors" role="alert"></div>
                     </div>
                 
-                    <button>Submit Payment</button>
+                    <button class="btn-primary-charge">Submit Payment</button>
                 </form>
             </div>
         </div>

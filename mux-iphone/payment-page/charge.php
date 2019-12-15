@@ -14,4 +14,21 @@ $charge = \Stripe\Charge::create([
     'source' => $token,
 ]);
 ?>
-<button id="home" onclick="window.location.href='../home-page/home.php';">asdasdasd</button>
+
+<?php 
+	session_start();
+	include '../templates/header.php';
+?>
+
+
+<header>
+    <link rel="stylesheet" href="payment.css">
+</header>
+<div class="ui-grid-solo btn-home-send">
+<button id="home" class="btn-primary-charge2" onclick="window.location.href='../home-page/home.php';">Back to Home Page</button>
+<img class="pretty-girl" src="../assets/images/favor.jpg">
+</div>
+
+<div class="footer-padding"></div>
+
+<?php include '../templates/footer.php'; ?>
