@@ -81,6 +81,35 @@ function navMenu(){
 	$("#menucon").toggleClass("hide-menu");
 }
   
+function getRedeem(){	
+  var redeemPrice =$("#redeem").val();
+  $("#redeemVal").html(redeemPrice);
+  getTotal(); 
+}
+function getDelivery(delivery){
+	if(delivery=="express")
+	{
+	$("#deliveryVal").html(300);
+	}else{
+		$("#deliveryVal").html(0);
+	}
+getTotal(); 
+	$('#paymentproceed').removeAttr("disabled");
+}
+
+
+
+function getTotal(){
+var redeemPrice =parseInt($("#redeemVal").text());
+var subtotal = parseInt($("#subtotalVal").text());
+var delivery = parseInt($("#deliveryVal").text());
+var discount = parseInt($("#discountVal").text());
+var total= subtotal-(discount+redeemPrice)+delivery;
+$("#totalVal").html(total);
+}
+function search(){
+
+}
   
 function loginNavigation() {
 	console.log("in");

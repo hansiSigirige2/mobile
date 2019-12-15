@@ -53,5 +53,6 @@
  
     </div>  
 
+	<?php $loggedinuser = "1" ?>
 
 
