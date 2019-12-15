@@ -19,8 +19,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <script>
+    function openPopup(){
+      $("#myModal").modal();
+    }
+
+  </script>
+
 </head>
 <body>
+  <div class="container">
 <h2 class="c2">Contact Us</h2>
 
 <img src="../assets/images/location pin.svg" class="contactus-image">
@@ -44,48 +53,26 @@
 <br>
 <textarea rows ="1" cols="25" class= "emailextarea"> Email </textarea>
 
-<button id="sendBtn" class="categories-viewbutton">SEND MESSAGE</button>
+<button id="sendBtn" class="categories-viewbutton" onclick="openPopup()">SEND MESSAGE</button>
 
-<script>
-<!-- The Modal -->
-<div id="sendModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>This Message has been successfully submitted</p>
+<div class="modal"  id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="submit-mesage">YOUR MESAGE HAS BEEN SUBMITTED!</p>
+        <div class="button-center">
+          <button class="contact-viewbutton" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+      
+      </div> -->
+    </div>
   </div>
-
 </div>
 
 
-// Get the modal
-var modal = document.getElementById("sendModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("sendBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
+  </div>
 
 </body>
 </html>

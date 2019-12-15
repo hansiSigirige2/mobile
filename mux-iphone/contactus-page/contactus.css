@@ -71,3 +71,31 @@
                margin-top: 12px;
                font-weight: bold;
            }
+           
+           .submit-mesage {
+               text-align: center;
+               font-size: 20px;
+           }
+           
+           .contact-viewbutton {
+               border-radius: 10px;
+               background: black;
+               color: white;
+               border: none;
+               /* font-weight: bold; */
+               text-align: center;
+               margin-top: 12px;
+               font-weight: bold;
+           }
+           
+           .button-center {
+               text-align: center;
+           }
+           
+           .modal-dialog {
+               margin-top: 327px !important;
+           }
+           
+           .container {
+               margin-left: -23px !important;
+           }
