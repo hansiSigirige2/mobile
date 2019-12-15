@@ -1,0 +1,73 @@
+           .c2 {
+               margin-top: 144px;
+               margin-left: 33px;
+               font-weight: bold;
+               margin-bottom: 26px;
+           }
+           
+           .contactus-image {
+               width: 45px;
+               margin-left: 33px;
+           }
+           
+           .contactus2-image {
+               width: 45px;
+               margin-left: 33px;
+               margin-top: 20px;
+           }
+           
+           .address {
+               margin-left: 87px;
+               font-size: 13px;
+               margin-top: -27px
+           }
+           
+           .contactus-googlemap {
+               margin-left: 321px;
+               margin-right: 6px;
+               margin-top: -40px;
+               height: 45px;
+               width: 45px;
+           }
+           
+           .telephone {
+               margin-left: 87px;
+               font-size: 13px;
+               margin-top: -27px;
+           }
+           
+           .email {
+               margin-left: 87px;
+               font-size: 13px;
+               margin-top: -27px;
+           }
+           
+           .message {
+               margin-left: 87px;
+               font-size: 13px;
+               margin-top: -27px;
+           }
+           
+           .contactustextarea {
+               margin-left: 86px;
+               margin-top: -45px;
+               border-radius: 10px;
+           }
+           
+           .emailextarea {
+               margin-left: 86px;
+               margin-top: 11px;
+               border-radius: 10px;
+           }
+           
+           .categories-viewbutton {
+               margin-left: 219px;
+               border-radius: 10px;
+               background: black;
+               color: white;
+               border: none;
+               /* font-weight: bold; */
+               text-align: center;
+               margin-top: 12px;
+               font-weight: bold;
+           }
