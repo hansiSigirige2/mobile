@@ -30,6 +30,7 @@ form.addEventListener('submit', function (event) {
             errorElement.textContent = result.error.message;
         } else {
             // Send the token to your server.
+            $('#paymentMade').modal('show');
             stripeTokenHandler(result.token);
         }
     });
@@ -44,8 +45,7 @@ function stripeTokenHandler(token) {
     hiddenInput.setAttribute('value', token.id);
     form.appendChild(hiddenInput);
 
-    alert(form.childElementCount);
-
+    
     // Submit the form
     form.submit();
 }

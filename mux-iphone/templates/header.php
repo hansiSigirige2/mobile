@@ -15,6 +15,7 @@
 			  integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
 
 		<link rel="stylesheet" href="../assets/styles/header.css">
+		<script src="https://js.stripe.com/v3/"></script>
 		
 
 

@@ -23,6 +23,6 @@
 </body>
 
 
-<script src="../assets/scripts/stripe.js"></script>
+
 
 </html>

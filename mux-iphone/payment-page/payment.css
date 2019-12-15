@@ -189,7 +189,6 @@
     height: 149px !important;
 }
 .stripepay-container{
-    height: 149px !important;
 }
 
 .message-header-s{
@@ -198,4 +197,22 @@
 
 .model-box{
     margin-top: 17rem;
+}
+
+.stripe-payment{
+    margin: 1.3rem;
+}
+
+.width{
+    margin-top: 1rem;
+    width: 100% !important;
+}
+
+.no-border{
+    border: none !important;
+}
+
+.btn-primary-modal{
+    margin-right: 53px !important;
+    display: inline !important;
 }

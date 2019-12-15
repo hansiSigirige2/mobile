@@ -13,10 +13,5 @@ $charge = \Stripe\Charge::create([
     'description' => 'Example charge',
     'source' => $token,
 ]);
-
-echo '<script>window.location.replace("../home-page/home.php");</script>';
-
 ?>
-
-
-
+<button id="home" onclick="window.location.href='../home-page/home.php';">asdasdasd</button>
