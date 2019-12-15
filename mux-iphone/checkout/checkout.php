@@ -62,7 +62,13 @@
 
     </div>
       <!-- cart -->
-   
+<!-- delivery address -->
+<div class="delivery-address-container">
+    <div class="deliver-title">Delivery ADDRESS</div>
+    <div class="address-box">
+    <textarea class ="address-input"></textarea>
+    </div>
+</div>
    
 
 

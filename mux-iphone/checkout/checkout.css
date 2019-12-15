@@ -18,7 +18,22 @@
     height: 50vh;
     margin-top: 4rem;
 }
+.delivery-address-container{
+    background-color: white;
+    width: 100% !important;
+    height: 104vh;
+    margin-top: 1rem;
+    margin-bottom: 13rem;
+}
 .checkout-title{
+    width: 100%;
+    height: 2vh;
+    font-family: Ovsyanka;
+    font-size: 25px;    
+    padding-left: 1rem;
+    padding: 1rem;
+}
+.deliver-title{
     width: 100%;
     height: 2vh;
     font-family: Ovsyanka;
@@ -46,6 +61,7 @@
     margin-right: 2.8rem !important;
     margin-top: 2rem;
     border-radius: 10px;
+    border: 1px solid black;
     box-shadow: -5px 5px 15px #aaaaaa;
 }
 
@@ -56,5 +72,13 @@
     padding-bottom: 1rem;
 }
 .card-image-border{
-    height: 90px;
+    height: 84px;
+    width: 107px;
+    margin-top: 3px;
+    margin-left: 1px;
+}
+
+.address-input{
+    margin-top: 2rem;
+    width: 80%;
 }
