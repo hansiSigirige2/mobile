@@ -4,6 +4,7 @@
 		session_start();
 	?>
 	<?php include '../templates/header.php'; ?>
+ 
 	<header>
 	<link rel="stylesheet" href="../Login/login.css">
 		<link rel="stylesheet" href="../assets/styles/header.css">
@@ -44,18 +45,20 @@
 
     <label for="password">Password</label>
     <input type="password" id="password" />
-
+    <a href="../home-page/home.php" input-type="submit" data-role="button">Link button</a>
     <input type="submit" value="Login" />
   </form>
   <hr>
                 <br>
                 <div align=center>
-                    <img src="../assets/images/google.svg" alt="google" width="20%" hspace="5">                      
-                    <img src="../assets/images/facebook.svg" alt="facebook" width="20%" hspace="5">
+                    <a href="https://www.google.com/"><img src="../assets/images/google.svg" alt="google" width="20%" hspace="5"></a>
+                    <a href="https://www.facebook.com/"><img src="../assets/images/facebook.svg" alt="facebook" width="20%" hspace="5"></a>                       
+                    
                     <br>
                     <br>
                     <a href="#forgotpassword">Forgot your password?</a>
-                    <p>Dont have an account? <a href="../signup/signup.php">Sign up</a> </p>  
+                    <p>Dont have an account? <a href="../signup/signup.php">Sign up</a> </p>
+                      
                 </div>
 
   <!-- the JavaScript code should go as contents of this tag -->
