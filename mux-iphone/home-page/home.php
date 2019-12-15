@@ -46,14 +46,12 @@
 <!-- search -->
 <form name="search" action="../search-page/searchpage.php" method="post" data-ajax="false" enctype="multipart/form-data">
 	<div class="row">
-		<div class= "col-9 search-input-margin">
+		<div class= "col-12 padding-col">
 			<input id="search" type="text" placeholder="Search" name="search" class="search ">
-		</div>
-		<div class="col-2">
 			<button name="submit" type="submit" class="btn-search">
 				<img class="search-img"src="../assets/images/search.png">
-			</button>		
-		</div>
+			</button>	
+		</div>		
 	</div> 
 </form>
 
@@ -67,9 +65,10 @@ if(isset($_POST['search'])){
 <!-- carousel promo -->
 
 <!-- carousel pics -->
-<div id="promoCarousel" class="carousel slide" data-ride="carousel">
- 
-  <div class="carousel-inner">
+<div id="promoCarousel" class="carousel slide carousel-slide " data-ride="carousel">
+
+  <div class="carousel-inner carousel-inner2">
+  <div class="hottest-deals">HOTTEST DEALS</div>
     <div class="carousel-item active">
 
 	<div class="promo-card-container">
@@ -185,7 +184,8 @@ if(isset($_POST['search'])){
 			</div>
 		</div>
 	</div>
-    </div>
+	</div> 
+
   </div>
   <a class="carousel-control-prev" href="#promoCarousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -195,7 +195,36 @@ if(isset($_POST['search'])){
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  <div class="ui-grid-solo text-right view-all" onclick="window.location.href='../dailydeals-page/dailydeals.php';">VIEW ALL</div>
 </div>
+<!-- carousel promo done -->
+
+<!-- carousel categories -->
+<div class="ui-grid-solo category-container">
+<div class="category-header">CATEGORIES</div>
+		
+		<?php
+		
+		$categories_json = file_get_contents('../data/categories.json');
+		$category_arr = json_decode($categories_json, true);	
+			
+		
+			foreach ($category_arr as $var) {
+				
+				echo '<div class="card cat-card">';
+				echo '<div class="card-body">';
+				echo '<img src="'.$var['image'].'" class="cat-image">';
+				echo '<div class="line-sep"><div>';
+				echo '<div class="cat-name">' . $var['category_name'] . '</div>';
+				echo '</div>';
+				echo '</div>';
+				echo '</div>';
+				echo '</div>';
+			}
+			?>
+</div>
+<!-- carousel categories -->
+
 <div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>
