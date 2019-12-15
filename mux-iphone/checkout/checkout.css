@@ -15,8 +15,8 @@
 .card-container{
     background-color: white;
     width: 100% !important;
-    height: 43vh;
-    margin-top: 2rem;
+    height: 50vh;
+    margin-top: 4rem;
 }
 .checkout-title{
     width: 100%;
@@ -37,4 +37,24 @@
 .edit-image{
     width: 27px;
     margin-top: 1rem;
+}
+
+.cart-card{
+    width: 7rem;
+    height: 95px;
+    margin-left: 2.7rem;
+    margin-right: 2.8rem !important;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px #aaaaaa;
+}
+
+.cards-small-container{
+    width:100% !important;
+}
+.product-padding{
+    padding-bottom: 1rem;
+}
+.card-image-border{
+    height: 90px;
 }
