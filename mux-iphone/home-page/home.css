@@ -160,3 +160,17 @@ input:focus {
 .no-padding-all{
     padding: 0;
 }
+.search-input-margin{
+    margin-left: 2rem;
+}
+.ui-input-text{
+    border-radius: 47px !important;
+}
+
+.btn-search{
+    background: none !important;
+    margin-left: -83px !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: 3px !important;
+}

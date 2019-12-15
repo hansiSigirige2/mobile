@@ -41,7 +41,7 @@
 <!-- search -->
 <form name="search" action="../search-page/searchpage.php" method="post" data-ajax="false" enctype="multipart/form-data">
 	<div class="row">
-		<div class= "col-10">
+		<div class= "col-9 search-input-margin">
 			<input id="search" type="text" placeholder="Search" name="search" class="search ">
 		</div>
 		<div class="col-2">
