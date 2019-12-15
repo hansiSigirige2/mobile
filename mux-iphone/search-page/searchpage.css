@@ -147,3 +147,8 @@ input:focus {
 .search-container{
     margin-top: 59px;
 }
+
+.footer-padding{
+    height: 7rem;
+    width: 100%;
+}

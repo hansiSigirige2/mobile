@@ -71,7 +71,7 @@
 			}
 			if(count($searchresult_arr) === 0 ){
 				echo '<div class ="ui-grid-a">Sorry no results found</div>';
-				
+
 			}else{
 				if ($_SESSION['orientation'] == "land") {
 					echo '<div class ="ui-grid-b">';
@@ -109,5 +109,7 @@
 
 <!-- global search cards -->
 
+
+<div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>

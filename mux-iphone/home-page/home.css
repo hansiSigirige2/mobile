@@ -174,3 +174,24 @@ input:focus {
     box-shadow: none !important;
     margin-top: 3px !important;
 }
+
+.search-img{
+       width: 19px !important;
+    margin-left: 0px;
+}
+
+.carousel-control-next-icon{
+    background-image: url("../assets/images/slider-arrows.png") !important;
+    transform: rotate(-90deg) !important;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("../assets/images/slider-arrows.png") !important;
+    transform: rotate(90deg) !important;
+}
+
+
+.footer-padding{
+    height: 7rem;
+    width: 100%;
+}

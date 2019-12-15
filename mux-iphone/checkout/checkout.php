@@ -53,17 +53,58 @@
 		</div>
 		<!-- cards -->
 	</div>
-	<!-- cart -->
-</div>
-
-
-<!-- delivery address -->
-<div class="ui-grid-solo delivery-address-container">
+    <!-- cart -->
+  <!-- delivery address -->  
+    <div class="ui-grid-solo delivery-address-container">
 	<div class="deliver-title">Delivery ADDRESS</div>
 		<div class="address-box">
 		<textarea class="address-input"></textarea>
 	</div>
 </div>
+<!-- delivery address -->
+<!-- delivery options -->
+<div class="ui-grid-solo delivery-options-container">
+	<div class="deliver-options-title">Delivery OPtions</div>
+     <div class="ui-grid-solo">
+         <div class="standard-title">
+         Standard
+         </div>
+         <div class="tiny-text">Delivered in 10 days</div>
+        <div class="radio">
+         <input type="radio" checked="checked" name="standardradio">
+        </div>
+     </div>
+     <div class="ui-grid-solo">
+         <div class="standard-title">
+         Express
+         </div>
+         <div class="tiny-text">Delivered in 1 days</div>
+         <div class="radio">
+         <input type="radio" name="expressradio">
+        </div>
+     </div>
+     </div>
+
+    <div class="ui-grid-solo payment-container">
+        <div class="loyalty-section">
+        <div class="loyalty-title">AVailable Loyalty Points</div>
+        <div class="loyalty-point">127.4</div>
+        </div>
+        <div class="loyalty-section">
+        <div class="loyalty-title">Redeem Amount</div>
+        <input type="text" placeholder="100" class="redeem">
+        </div>
+        <div class="total-section">
+        <div class="loyalty-title">Redeem Amount</div>
+        <input type="text" placeholder="100" class="redeem">
+        </div>
+    </div>
+<!-- checkout container ends below -->
+</div>
+
+
+
+
 
 <div class="footer-padding"></div>
 

@@ -18,12 +18,17 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="../assets/images/img1.png" alt="First slide">
+	<a href ="../qr-scan/qr.php">
+	  <img class="d-block w-100" src="../assets/images/img1.png" alt="First slide">
+	</a>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="../assets/images/img2.png" alt="Second slide">
+		<a href ="../dailydeals-page/dailydeals.php">
+	  <img class="d-block w-100"  src="../assets/images/img2.png" alt="Second slide">
+	</a>
     </div>
     <div class="carousel-item">
+	<a href ="../categories/categories.php">
       <img class="d-block w-100" src="../assets/images/img3.png" alt="Third slide">
     </div>
   </div>
@@ -46,7 +51,7 @@
 		</div>
 		<div class="col-2">
 			<button name="submit" type="submit" class="btn-search">
-				<img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+				<img class="search-img"src="../assets/images/search.png">
 			</button>		
 		</div>
 	</div> 
@@ -63,11 +68,7 @@ if(isset($_POST['search'])){
 
 <!-- carousel pics -->
 <div id="promoCarousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators" >
-    <li data-target="#promoCarousel" style="border-radius: 50% !important; width: 10px !important;height: 10px !important;" data-slide-to="0" class="active"></li>
-    <li data-target="#promoCarousel" style="border-radius: 50% !important; width: 10px !important;height: 10px !important;" data-slide-to="1"></li>
-    <li data-target="#promoCarousel" style="border-radius: 50% !important; width: 10px !important;height: 10px !important;" data-slide-to="2"></li>
-  </ol>
+ 
   <div class="carousel-inner">
     <div class="carousel-item active">
 
@@ -195,5 +196,6 @@ if(isset($_POST['search'])){
     <span class="sr-only">Next</span>
   </a>
 </div>
+<div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>

@@ -36,7 +36,11 @@
 	</div>
 	<!-- hamburger -->
 	<div id="menucon" class="menu-container">
-			<div class="ui-grid-solo menu-item text-center">Home</div>
+			<div class="ui-grid-solo menu-item text-center">
+			
+			Home
+			
+			</div>
 			<div class="ui-grid-solo menu-item text-center">Categories</div>
 			<div class="ui-grid-solo menu-item text-center">Favorites</div>
 			<div class="ui-grid-solo menu-item text-center">Promotions</div>
