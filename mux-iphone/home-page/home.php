@@ -200,17 +200,15 @@ if(isset($_POST['search'])){
 <!-- carousel promo done -->
 
 <!-- carousel categories -->
-<div class="ui-grid-solo category-container">
 <div class="category-header">CATEGORIES</div>
-		
+<div class="ui-grid-solo category-container">
+<div class="scrolable">		
 		<?php
 		
 		$categories_json = file_get_contents('../data/categories.json');
-		$category_arr = json_decode($categories_json, true);	
-			
+		$category_arr = json_decode($categories_json, true);			
 		
-			foreach ($category_arr as $var) {
-				
+			foreach ($category_arr as $var) {				
 				echo '<div class="card cat-card">';
 				echo '<div class="card-body">';
 				echo '<img src="'.$var['image'].'" class="cat-image">';
@@ -222,6 +220,7 @@ if(isset($_POST['search'])){
 				echo '</div>';
 			}
 			?>
+	</div>
 </div>
 <!-- carousel categories -->
 

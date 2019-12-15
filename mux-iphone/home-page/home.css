@@ -217,13 +217,26 @@ input:focus {
 
 .cat-image{
     width: 100px;
+    height: 4rem;
 }
+
+.category-header{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
 .cat-card{
     width: 9rem;
+    height: 8rem;
     margin-right: 1rem;
     float: left;
 }
 .category-container{
-    height: 10rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
     overflow-x: scroll;
+}
+
+.scrolable{
+    width: 40rem;
 }
