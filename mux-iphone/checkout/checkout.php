@@ -69,6 +69,8 @@
     <textarea class ="address-input"></textarea>
     </div>
 </div>
+
+<div class="footer-padding"></div>
    
 
 

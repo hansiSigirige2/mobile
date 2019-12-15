@@ -80,5 +80,9 @@
 
 .address-input{
     margin-top: 2rem;
-    width: 80%;
+    width: 80% !important;
+}
+
+.footer-padding{
+    padding-bottom: 2rem;
 }
