@@ -19,24 +19,20 @@
     text-align: center;
  }
 
- .aboutus{
-     color:black;
-     font-family:Ovsyanka;
-     font-size:25px;
-     margin-right: 47rem;
-     margin-top: 1.5rem;
+ .footer-text{
+  color: black;
+  font-size: 22px;
+  padding-bottom: 7px;
  }
- .contactus{
-    color:black;
-    font-family:Ovsyanka;
-    font-size:25px;
-    margin-right: 47rem;
-    margin-top: 1.5rem;
-}
-.terms{
-    color: black;
-    font-family: Ovsyanka;
-    font-size: 25px;
-    margin-right: -35rem;
-    margin-top: -4.5rem;
-}
+
+ .about{
+  margin-left: -53rem;
+  margin-top: 2rem;
+ }
+ .contact{
+  margin-left: -51.5rem;
+ }
+ .terms{
+  margin-right: -42rem;
+  margin-top: -2rem;
+ }
