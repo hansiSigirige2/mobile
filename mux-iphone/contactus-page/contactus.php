@@ -7,28 +7,20 @@
 	<header>
 	<link rel="stylesheet" href="../contactus-page/contactus.css">
 		<link rel="stylesheet" href="../assets/styles/header.css">
-		<!-- <script src="../assets/scripts/main.js"></script> -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+  function openPopup(){
+    $("#myModal").modal();
+  }
+
+</script>
+
 	</header>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-  <script>
-    function openPopup(){
-      $("#myModal").modal();
-    }
 
-  </script>
 
-</head>
-<body>
   <div class="container">
 <h2 class="c2">Contact Us</h2>
 
@@ -59,7 +51,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <p class="submit-mesage">YOUR MESAGE HAS BEEN SUBMITTED!</p>
+        <p class="submit-mesage">YOUR MESSAGE HAS BEEN SUBMITTED!</p>
         <div class="button-center">
           <button class="contact-viewbutton" data-dismiss="modal">OK</button>
         </div>
@@ -74,6 +66,8 @@
 
   </div>
 
-</body>
-</html>
 
+
+  <div class="footer-padding"></div>
+
+<?php include '../templates/footer.php'; ?>

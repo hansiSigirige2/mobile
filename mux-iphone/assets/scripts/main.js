@@ -70,3 +70,33 @@ function lengthObj(obj) {
 	return Object.keys(obj).length;
 }
 
+$(document).ready(function () {
+
+	if (window.innerHeight > window.innerWidth) {
+		$.ajax({
+			url: '../setOrientation.php',
+			method: 'post',
+			data: {"orientation": "port"},
+			success: function (response) {
+				console.log("port");
+
+			}
+		});
+
+		
+	}
+
+	if (window.innerWidth > window.innerHeight) {
+		$.ajax({
+			url: '../setOrientation.php',
+			method: 'post',
+			data: {"orientation": "land"},
+			success: function (response) {
+				console.log("land");
+
+			}
+		});
+
+		
+	}
+});
