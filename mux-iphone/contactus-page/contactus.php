@@ -32,16 +32,16 @@
   <div class="container">
 <h2 class="c2">Contact Us</h2>
 
-<img src="../assets/images/location pin.svg" class="contactus-image">
+<img src="../assets/images/location.png" class="contactus-image">
 
 <h5 class = "address">No 08, Serpentine Road, Colombo</h5>
 <img src="../assets/images/google map.jpg" class="contactus-googlemap">
 
 <br>
-<img src="../assets/images/location pin.svg" class="contactus2-image">
+<img src="../assets/images/phone.png" class="contactus2-image">
 <h5 class = "telephone">07861166325</h5>
 <br>
-<img src="../assets/images/location pin.svg" class="contactus-image">
+<img src="../assets/images/address.png" class="contactus-image">
 <h5 class = "email">ZUPERMART.CUSTOMER.@MAIL.COM</h5>
 <br>
 <img src="../assets/images/location pin.svg" class="contactus-image">
