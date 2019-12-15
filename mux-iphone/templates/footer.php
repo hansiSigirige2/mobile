@@ -16,16 +16,16 @@
 
 <link rel="stylesheet" href="../assets/styles/footer.css">
 
-<div class ="ui-grid-b footer">
-		<div class ="ui-block-a">
+<div class ="ui-grid-a footer">
+	<div class ="ui-block-a text-left">
 		<div class="footer-text about">About Us</div>
-		</div>
-		<div class ="ui-block-a text-center">
+	</div>	
+	<div class ="ui-block-a text-left">
 		<div class="footer-text contact">Contact Us</div>
-		</div>
-		<div class ="ui-block-c text-right">
-		<div class="footer-text terms">Terms and Conditions</div>
-		</div>
 	</div>
+	<div class ="ui-block-b text-right">
+		<div class="footer-text terms">Terms and Conditions</div>
+	</div>
+</div>
 
 

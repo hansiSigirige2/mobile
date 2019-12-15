@@ -7,32 +7,20 @@
     font-family: Ovsyanka;
   }
 
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 120px;
-    background-color: white;
-    border-top: 2px solid black;
-    color: white;
-    text-align: center;
- }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 2px solid black;
+  color: white;
+  padding:0.825rem;
+  text-align: center;
+}
 
- .footer-text{
+.footer-text{
   color: black;
-  font-size: 22px;
+  font-size: 0.8rem;
   padding-bottom: 7px;
- }
-
- .about{
-  margin-left: -53rem;
-  margin-top: 2rem;
- }
- .contact{
-  margin-left: -51.5rem;
- }
- .terms{
-  margin-right: -42rem;
-  margin-top: -2rem;
- }
+}
