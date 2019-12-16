@@ -1,4 +1,4 @@
-<div data-role="page" id="home" class="page-full">
+<div data-role="page" id="home" class="page-full" style="background-color: white;">
 
 	<?php 
 		session_start();
@@ -6,7 +6,7 @@
 	<?php include '../templates/header.php'; ?>
 	<?php include '../templates/footer.php'; ?>
 	<header>
-	    <link rel="stylesheet" href="../account-details/detailscss.css">
+	    <link rel="stylesheet" href="../account-details/details.css">
 	    <link rel="stylesheet" href="../assets/styles/header.css">
 	    <script src="../assets/scripts/main.js"></script>
 	</header>

@@ -10,16 +10,7 @@
 		<!-- <script src="../assets/scripts/main.js"></script> -->
 	</header>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+
 
 <p class="categories-heading" style="margin-top:40px" >HOTTEST DEALS</p>
 
@@ -67,13 +58,16 @@
 
   <div class="ui-grid-b category-section">
     <div class="ui-block-a">
+    <form name="catalog" action="../catalog/catalog.php" method="post" data-ajax="false" enctype="multipart/form-data">
       <div class="card category-card">
       <div class="card-body">
       <img src="../assets/images/potatoes.png" class="category-image">
       <hr class="divider">
-      <p class="categories-name">VEGETABLES</p>
+      <p id="categoryname" onclick="getcategory()" class="categories-name">VEGETABLES</p>
       </div>
       </div>
+      </form>
+      
       </div>
     <div class="ui-block-b"><div class="card category-card"><div class="card-body">
       <img src="../assets/images/potatoes.png" class="category-image">
@@ -132,8 +126,6 @@
   
 </div><!-- /grid-b -->
 
-</body>
-</html>
+<div class="footer-padding"></div>
 
-
-</body>
+<?php include '../templates/footer.php'; ?>

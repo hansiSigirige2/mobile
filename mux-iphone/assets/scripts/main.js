@@ -59,7 +59,27 @@ $("#totalVal").html(total);
 function search(){
 
 }
-  
+
+function getcategory(){
+	var categoryname=$("#categoryname").text();
+	alert(categoryname);
+	$.ajax({
+		url     : '../setCategory.php',
+		method  : 'POST',
+		data    : {"categoryname": categoryname},
+		success : function( response ) {
+			window.location.replace('../catalog/catalog.php');
+			console.log("cat");
+
+		}
+	});
+
+}
+
+function getProductName(categoryname){
+	alert(categoryname);
+	$("#productcat").html(categoryname);
+}
 function loginNavigation() {
 	console.log("in");
 	window.location.replace("login.php");
