@@ -23,11 +23,10 @@
            }
            
            .contactus-googlemap {
-               margin-left: 321px;
-               margin-right: 6px;
-               margin-top: -40px;
-               height: 45px;
-               width: 45px;
+               margin-left: 324px;
+               margin-top: -32px;
+               height: 25px;
+               width: 25px;
            }
            
            .telephone {
@@ -70,4 +69,32 @@
                text-align: center;
                margin-top: 12px;
                font-weight: bold;
+           }
+           
+           .submit-mesage {
+               text-align: center;
+               font-size: 20px;
+           }
+           
+           .contact-viewbutton {
+               border-radius: 10px;
+               background: black;
+               color: white;
+               border: none;
+               /* font-weight: bold; */
+               text-align: center;
+               margin-top: 12px;
+               font-weight: bold;
+           }
+           
+           .button-center {
+               text-align: center;
+           }
+           
+           .modal-dialog {
+               margin-top: 327px !important;
+           }
+           
+           .container {
+               margin-left: -23px !important;
            }

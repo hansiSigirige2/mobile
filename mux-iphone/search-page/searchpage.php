@@ -35,19 +35,15 @@
   </a>
 </div>
 <!-- search -->
-<form action="searchpage.php" method="post" data-ajax="false" class="form-margin">
+<form action="searchpage.php" method="post" data-ajax="false" >
 <div class="row">
-	<div class="searchbox">
-		<div class= "col-10">
+		<div class= "col-12 padding-col">
 			<input id="search" type="text" placeholder="Search" name="search" class="search ">
-	</div>
-	<div class="col-2">
-		<button type="submit" class="btn-search">
-				<img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
-			</button>
-	</div>
-	</div>
-</div> 
+			<button name="submit" type="submit" class="btn-search">
+				<img class="search-img"src="../assets/images/search.png">
+			</button>	
+		</div>		
+	</div> 
 </form>
 
 <!-- search -->
@@ -70,7 +66,10 @@
 				}
 			}
 			if(count($searchresult_arr) === 0 ){
-				echo '<div class ="ui-grid-a">Sorry no results found</div>';
+				echo '<div class ="ui-grid-a text-center">Sorry, no results found</div>';
+				echo '<div class ="ui-grid-a text-center">
+				<img src="../assets/images/no-search.png"></div>';
+
 
 			}else{
 				if ($_SESSION['orientation'] == "land") {

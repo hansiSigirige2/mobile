@@ -4,6 +4,7 @@
 		session_start();
 	?>
 	<?php include '../templates/header.php'; ?>
+    
 	<header>
 	 <link rel="stylesheet" href="../signup/signup.css">
 		<link rel="stylesheet" href="../assets/styles/header.css">
@@ -38,9 +39,9 @@
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" value="" placeholder="" />
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password" value="" placeholder="" />
+                    <input type="password" name="password" id="password" value="" placeholder="" />
                     <label for="conpassword">Confirm Password</label>
-                    <input type="text" name="conpassword" id="conpassword" value="" placeholder="" />
+                    <input type="password" name="conpassword" id="conpassword" value="" placeholder="" />
                 </form>
                 
                 
@@ -49,8 +50,9 @@
                 <hr>
                 <br>
                 <div align=center>
-                    <img src="../assets/images/google.svg" alt="google" width="20%" hspace="5">                      
-                    <img src="../assets/images/facebook.svg" alt="facebook" width="20%" hspace="5">
+                    <a href="https://www.google.com/"><img src="../assets/images/google.svg" alt="google" width="20%" hspace="5"></a>
+                    <a href="https://www.facebook.com/"><img src="../assets/images/facebook.svg" alt="facebook" width="20%" hspace="5"></a>                       
+                    
                     <br>
                     <br>
                     <p>Already have an account? <a href="../Login/login.php">Login</a> </p>  
