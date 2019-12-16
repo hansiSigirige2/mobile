@@ -1,7 +1,3 @@
-#image{
-    width:1px;
-    height:1px;
-}
 
 .heading-main{
     margin-top: 25px;
@@ -22,5 +18,29 @@
 .aboutus-video{
     text-align: center;
 }
+
+@media only screen 
+    and (device-width : 812px)
+    and (device-height : 375px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : landscape)
+    {
+        
+        .heading-main{
+             margin-top: 25px;
+             text-align: center;
+             font-size: 35px;
+        }
+
+        .text{
+            font-size: 20px;
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            text-align: justify;
+            font-family:'Lexend Deca';
+        }
+    }
 
 

@@ -161,6 +161,8 @@
     background: black !important;
     display: inline !important;
     color: white !important;
+    margin:0 auto;
+    margin-right:10px;
 }
 .ui-btn,.ui-corner-all{
     float: none;
