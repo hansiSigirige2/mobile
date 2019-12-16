@@ -41,10 +41,10 @@
 <img src="../assets/images/phone.png" class="contactus2-image">
 <h5 class = "telephone">07861166325</h5>
 <br>
-<img src="../assets/images/address.png" class="contactus-image">
+<img src="../assets/images/email.png" class="contactus-image">
 <h5 class = "email">ZUPERMART.CUSTOMER.@MAIL.COM</h5>
 <br>
-<img src="../assets/images/location pin.svg" class="contactus-image">
+<img src="../assets/images/message.png" class="contactus-image">
 
 
 <br>

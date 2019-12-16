@@ -22,8 +22,9 @@
 </head>
 <body>
 <h2 class = "product-details">AMBEWELA FRESH MILK(1L)</h2>
-<h4>Bevarages, Milk</h4>
+<h4 class ="product-details-sub">Bevarages, Milk</h4>
 
+<img src="../assets/images/email.png" class="productoffer-image" >
 <img src="../assets/images/ambewela.jpg" class="productdetail-image" >
 
 <br>
@@ -42,24 +43,31 @@
 
   <span onclick="changeImage3()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
 
+  <div class = "product-name" >AMBEWELA IS PRODUCED USING PREMIUM QUALITY PURE COW'S MILK FROM AMBEWELA FARM </div>
+
   <div class="ui-grid-a" style="padding: 10px 20px"    >
-                        <div class="ui-block-a"> 
-                            <div class = "product-name">Ambewela Fresh Milk </div>
-                            <span class = "pprice">Rs 110</span>
-                            <span class = "pprice"><strike> Rs 220</strike></span>
-                            <div class = "productquantity">Quantity</div>
+                    
+                            <div class = "pprice">Rs 110</div>
+                            <div class = "sprice"><strike> Rs 220</strike></div>
+
+                            <div class="ui-grid-a">
+                              <div class="ui-block-a" style="margin-top: 10px; width: 30% !important"> 
+                                <span class = "quantity">QUANTITY:</span>
+                              </div>
+                              <div class="ui-block-b"> 
                                             <fieldset class="ui-grid-b">
                                                 <div class="ui-block-a">
-                                                    <span onclick="openNav()"><img id="productminus" src="minus.svg"></span>
+                                                    <span onclick="openNav()"><img id="minus" src="minus.svg"></span>
                                                 </div>
                                                 <div class="ui-block-b">
-                                                    <input type="number" name="quantity" id="productquantity" value="1" />
+                                                    <input type="number" name="quantity" id="quantity" value="1" />
                                                 </div>
                                                 <div class="ui-block-c">
-                                                <span onclick="openNav()"><img id="productplus" src="plus.svg"></span>
+                                                <span onclick="openNav()"><img id="plus" src="plus.svg"></span>
                                                 </div>
                                             </fieldset>
-                                        
+                              </div>  
+                             
                         </div>
 
   <script>
