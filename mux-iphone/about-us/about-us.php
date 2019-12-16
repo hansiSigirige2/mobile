@@ -29,11 +29,11 @@
                                 a few days. That's less handling by middlemen and it puts more money in the bank for local 
                                 farmers, skilled artisans and responsible fishermen.
         </div>
-
-        <video id = "video" align="right" controls>
+        <div class="aboutus-video" controls>
+        <video id = "video" controls>
             <source src = "video.mp4" type = "video/mp4">
         </video>
-
+        </div>
         <div class = "heading-main"> Convenience Shouldn't Mean Compromise </div>
 
         <div class = "text"> We make it easy to find nutritional information-calories, Ingredients and allergens-so you 

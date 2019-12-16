@@ -1,0 +1,15 @@
+.cart-title{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 2px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.item-title{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: right;
+}

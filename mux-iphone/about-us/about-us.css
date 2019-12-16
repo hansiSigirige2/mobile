@@ -15,7 +15,12 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 30px;
+    text-align: justify;
     font-family:'Lexend Deca';
+}
+
+.aboutus-video{
+    text-align: center;
 }
 
 
