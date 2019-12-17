@@ -2,6 +2,7 @@
 	"product_id": "1",
     "product_name": "Carrots",
 	"product_price": "110",
+	"reduce_price": "150",
 	"category_name":"Vegetables",
 	"image": "../assets/images/carrot.png",
 	"link": ""
@@ -10,6 +11,7 @@
 	"product_id": "2",
     "product_name": "Avocado",
 	"product_price": "120",
+	"reduce_price": "",
 	"category_name":"Vegetables",
 	"image": "../assets/images/avocado.jpg",
 	"link": ""
@@ -18,6 +20,7 @@
 	"product_id": "3",
     "product_name": "Chillies",
 	"product_price": "70",
+	"reduce_price": "120",
 	"category_name":"Vegetables",
 	"image": "../assets/images/chillies.jpg",
 	"link": ""

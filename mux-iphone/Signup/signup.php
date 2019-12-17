@@ -1,13 +1,15 @@
-<div data-role="page" id="home" class="page-full">
+<div data-role="page" id="home" class="page-full" style="background-color: white;">
 
 <?php 
 		session_start();
 	?>
 	<?php include '../templates/header.php'; ?>
+
     
 	<header>
 	 <link rel="stylesheet" href="../signup/signup.css">
-		<link rel="stylesheet" href="../assets/styles/header.css">
+        <link rel="stylesheet" href="../assets/styles/header.css">
+        <link rel="stylesheet" href="../assets/styles/footer.css">
 		<script src="../assets/scripts/main.js"></script>
 	</header>
 
@@ -61,5 +63,10 @@
         </div>
     </div>           
     </body>
+    <div class="footer-padding"></div>
+
+<?php include '../templates/footer.php'; ?>
+
 </html>        
+
      

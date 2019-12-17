@@ -1,4 +1,4 @@
-<div data-role="page" id="home" class="page-full">
+<div data-role="page" id="home" class="page-full" style="background-color: white;">
     
 <?php 
 		session_start();
