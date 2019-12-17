@@ -73,37 +73,6 @@ if(isset($_POST['search'])){
 		</div>
 	</div>
 	  
-<div data-role="page" id="home" class="page-full">
-
-	<?php 
-    session_start();
-    $_SESSION['page-type']= 'discount';
-	?>
-	<?php include '../templates/header.php'; ?>
-	<header>
-	<link rel="stylesheet" href="../dailydeals-page/dailydeals.css">
-		<link rel="stylesheet" href="../assets/styles/header.css">
-		<!-- <script src="../assets/scripts/main.js"></script> -->
-	</header>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-
- <!-- Another variation with a button -->
- <div class="input-group">
-    <input type="text" class="dailydealsform-control" placeholder="Search">
-    <div class="input-group-append">
-      <button class="btn btn-secondary" type="button">
-        <i class="fa fa-search"></i>
-      </button>
     </div>
     <div class="carousel-item">
 	<div class="promo-card-container">

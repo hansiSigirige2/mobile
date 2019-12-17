@@ -73,45 +73,6 @@ if(isset($_POST['search'])){
 		</div>
 	</div>
 	  
-<div data-role="page" id="home" class="page-full">
-
-	<?php 
-    session_start();
-    $_SESSION['page-type']= 'category';
-	?>
-	<?php include '../templates/header.php'; ?>
-	<header>
-	<link rel="stylesheet" href="../categories/categories.css">
-		<link rel="stylesheet" href="../assets/styles/header.css">
-		<!-- <script src="../assets/scripts/main.js"></script> -->
-	</header>
-
-
-
-<p class="categories-heading" style="margin-top:40px" >HOTTEST DEALS</p>
-
-<div class="container" style= "height:120px; margin-top:10px;">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style= "border-radius:20px">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="ny.jpg" alt="New york" style="width:100%;">
-      </div>
     </div>
     <div class="carousel-item">
 	<div class="promo-card-container">
@@ -260,7 +221,6 @@ if(isset($_POST['search'])){
 
   
 </div><!-- /grid-b -->
-
 
 
 

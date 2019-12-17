@@ -1,8 +1,7 @@
 <div data-role="page" id="home" class="page-full">
 
 	<?php 
-    session_start();
-    $_SESSION['page-type']= 'contactus';
+		session_start();
 	?>
 	<?php include '../templates/header.php'; ?>
 	<header>
@@ -77,7 +76,6 @@
 
 
   </div>
-
 
 
   <div class="footer-padding"></div>
