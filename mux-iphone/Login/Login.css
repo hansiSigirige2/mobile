@@ -65,3 +65,45 @@
     background-color: black !important;
     color: white !important;
 }
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 20%;
+    hspace:5;
+}
+
+/* Landscape  Iphone */
+
+@media only screen 
+and (device-width : 812px)
+and (device-height : 375px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape)
+{
+
+    .ui-grid-solo>.ui-block-a {
+        margin-left: 2.5rem !important;
+    }
+}
+
+/* Potrait Ipad */
+
+@media only screen 
+and (device-width : 768px)
+{.ui-grid-solo>.ui-block-a {
+
+    margin-left: 2.5rem !important;
+
+}
+}
+
+/* Landscape Ipad */
+@media only screen 
+and (device-width : 1024px)
+{.ui-grid-solo>.ui-block-a {
+
+    margin-left: 2.5rem !important;
+
+}
+}

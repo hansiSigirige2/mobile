@@ -5,7 +5,7 @@
         $_SESSION['page-type']= 'account-details';
 	?>
 	<?php include '../templates/header.php'; ?>
-	<?php include '../templates/footer.php'; ?>
+	
 	<header>
 	    <link rel="stylesheet" href="../account-details/details.css">
 	    <link rel="stylesheet" href="../assets/styles/header.css">
@@ -115,5 +115,7 @@
 
     </script>
 </body>
+<div class="footer-padding"></div>
+<?php include '../templates/footer.php'; ?>
 </html>
 </div>

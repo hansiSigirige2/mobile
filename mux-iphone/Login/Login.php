@@ -1,4 +1,4 @@
-<div data-role="page" id="home" class="page-full" style="background-color: white;">
+<div data-role="page" id="login" class="page-full" style="background-color: white;">
     
 <?php 
 		session_start();
@@ -45,7 +45,7 @@
                 <hr>
                 <br>
                 <div align=center>
-                <a href="https://www.google.com/"><img src="../assets/images/google.svg" alt="google" width="20%" hspace="5"></a>                      
+                <a href="https://www.google.com/"><img src="../assets/images/google.svg" alt="google" id="linkimg" width="20%" hspace="5"></a>                      
                 <a href="https://www.facebook.com/"><img src="../assets/images/facebook.svg" alt="facebook" width="20%" hspace="5"></a> 
                     <br>
                     <br>
@@ -57,7 +57,7 @@
     </div>           
     </body>
     
-    <div class="footer-padding"></div>
+    <!-- <div class="footer-padding"></div> -->
 <?php include '../templates/footer.php'; ?>
 </html>        
      

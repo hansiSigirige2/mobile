@@ -35,7 +35,12 @@
       color: white;
   } */
 
-  
+  h2, h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
   #button1{
     border-radius: 2em;
     

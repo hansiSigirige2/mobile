@@ -46,9 +46,21 @@
                     <label for="conpassword">Confirm Password</label>
                     <input type="password" name="conpassword" id="conpassword" value="" placeholder="" />
                 </form>
-                
-                <a href="../home-page/home.php" class="button-signup" data-role="button" data-inline="true">Sign Up</a>
-                <!-- <button class="button">Sign Up</button>-->
+                <button class="sendBtn" id="categories-viewbutton" onclick="openPopup()">Sign Up</button>
+
+                <div class="modal"  id="myModal" tabindex="-1" role="dialog" style="vertical-align:center;">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p class="submit-mesage">You have successfully Signed Up!</p>
+                                <button class="button-signup" data-dismiss="modal" onclick="window.location.href='../home-page/home.php'">Continue</button>
+                                <div class="button-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 
                 <hr>
                 <br>
@@ -64,7 +76,14 @@
         </div>
     </div>           
     </body>
-    <div class="footer-padding"></div>
+
+      <script>
+    function openPopup(){
+      $("#myModal").modal();
+    }
+
+  </script>
+    <!-- <div class="footer-padding"></div> -->
 
 <?php include '../templates/footer.php'; ?>
 

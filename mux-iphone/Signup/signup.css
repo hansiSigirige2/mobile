@@ -32,6 +32,7 @@ div {
     border-radius: 2rem !important;
     margin: 2rem;
     width: 11rem;
+    height: 3rem;
     font-family: Ovsyanka !important;
     background-color: black !important;
     color: white !important;
@@ -65,4 +66,39 @@ div {
     
     border-width: 0 !important;
     
+}
+
+ /* Landscape  Iphone */
+
+ @media only screen 
+    and (device-width : 812px)
+    and (device-height : 375px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : landscape)
+    {
+
+        .ui-grid-solo>.ui-block-a {
+            margin-left: 2.5rem !important;
+        }
+    }
+    
+    /* Potrait Ipad */
+
+    @media only screen 
+    and (device-width : 768px)
+    {.ui-grid-solo>.ui-block-a {
+
+        margin-left: 2.5rem !important;
+ 
+    }
+}
+
+    /* Landscape Ipad */
+    @media only screen 
+    and (device-width : 1024px)
+    {.ui-grid-solo>.ui-block-a {
+
+        margin-left: 2.5rem !important;
+ 
+    }
 }
