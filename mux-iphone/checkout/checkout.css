@@ -8,7 +8,7 @@
   }
 
 .checkout-container{
-    background-color: #ECECEC;
+    background-color: white;
     width: 100%;
 }
 .card-container{
@@ -113,10 +113,18 @@
 
 .radio{
     padding-left: 20rem;
+    padding-bottom: 32px;
+    margin-top: -43px;
+}
+
+.ui-radio{
+    margin-top: 13px !important;
+}
+.radio-land{
+    padding-left: 38rem;
     padding-bottom: 29px;
     margin-top: -27px;
 }
-
 .payment-container{
     margin-top: 2rem;
 }
@@ -129,4 +137,34 @@
     border-width: 1px;
     border-style: solid;
     width: 16%;
+}
+.green{
+    color: green;
+}
+.padding-money{
+    padding-right: 23px;
+}
+.middle-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-left: 1rem;
+}
+.price-label{
+    position: relative;
+    left: -9px;
+}
+
+.btn-primary{
+    border-radius: 35px !important;
+    font-family: Ovsyanka;
+    width: 63% !important;
+    background: black !important;
+    display: inline !important;
+    color: white !important;
+}
+.ui-btn,.ui-corner-all{
+    float: none;
+}
+.padding-edit{
+    padding-right: 2rem;
 }

@@ -1,4 +1,4 @@
-<div data-role="page" id="home" class="page-full">
+<div data-role="page" id="home" class="page-full" style="background-color: white;">
 
 	<?php 
 		session_start();
@@ -18,10 +18,10 @@
 </head>
 <body>
     <h2>Account Details</h2>
-    
-    <button type="image" class="collapsible">
+    <div id="collapsible-btn">
+    <button type="button" id="collapsible-btn-content" class="collapsible" onclick="changeImage();">
         My Details 
-        <img src="../assets/images/expandbtn.svg" alt="expand" width="5%" align="right">
+        <img src="../assets/images/expandbtn.svg" id="collapse-icon" alt="expand" width="5%" align="right">
     </button>
         <div class="content">
         <form align=left action="handler.php" method="post" >
@@ -30,26 +30,53 @@
             <label for="mobile">Mobile Number</label>
             <input type="text" name="mobile" id="mobile" value="" placeholder="" />
                 <div align=center>
-                    <button id="change" data-inline="true" class="button2">Change Password</button> 
-                    <button id="submit" data-inline="true" class="button1">Submit</button> 
+                    <button id="button2" data-inline="true" class="button2" onclick="openPopup()">Change Password</button>      
+                    <button id="button1" data-inline="true" class="button1">Submit</button> 
                 </div>
+
         </form>
     </div>
-        <button type="button" class="collapsible">
+    </div>
+    
+
+    <div id="collapsible-btn">
+        <button type="button" id="collapsible-btn-content" class="collapsible" onclick="changeImage();">
             Loyalty Points
-            <img src="../assets/images/expandbtn.svg" alt="expand" width="5%" align="right">
+            <img src="../assets/images/expandbtn.svg" id="collapse-icon" alt="expand" width="5%" align="right">
         </button>
         <div class="content">
             <div align=center >
                     <br>
-                    <img src="../assets/images/gold tier.svg" alt="expand" width="15%" align=left >
-                    <img src="../assets/images/silver tier.svg" alt="expand" width="15%" align=right><br>
+                    <img src="../assets/images/gold tier.svg" alt="expand" width="15%" align=right >
+                    <img src="../assets/images/silver tier.svg" alt="expand" width="15%" align=left><br>
                     <img src="../assets/images/bar50.svg" alt="expand" width="60%" align=center >
                     <br><br><br><p>Total Loyalty Points: 2500 <br>
                         Redeemable Points: 1500
                     </p>
             </div>        
-        </div>     
+        </div>   
+    </div>
+
+<div class="modal"  id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <label for="oldpassword">Old Password</label>
+        <input type="password" name="oldpassword" id="oldpassword" value="" placeholder="" />
+        <label for="newpassword">New Password</label>
+        <input type="password" name="newpassword" id="newpassword" value="" placeholder="" />
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" name="confirmpassword" id="confirmpassword" value="" placeholder="" />
+        <div class="ui-grid-a" style="text-align: center">          
+        </div>
+      </div>
+      <div class="modal-footer">
+            <button id="button3"  data-dismiss="modal">CHANGE PASSWORD</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
@@ -64,6 +91,27 @@
                     }
                     });
                 }
+
+        function openPopup(){
+            $("#myModal").modal();
+        }
+
+        // function changeImage(){
+        //     var img = document.getElementById("collapse-icon");
+        //     img.src="../assets/images/collapsebtn.svg";
+        //     return false;
+        // }
+
+        function changeImage() {
+            var image = document.getElementById('collapse-icon');
+            if (image.src.match("../assets/images/expandbtn.svg")) {
+                image.src = "../assets/images/collapsebtn.svg";
+            }
+            else {
+                image.src = "../assets/images/expandbtn.svg";
+            }
+        }
+
     </script>
 </body>
 </html>

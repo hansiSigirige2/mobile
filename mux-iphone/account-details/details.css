@@ -1,55 +1,126 @@
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #eee;
-  font-family: Ovsyanka !important;
-  color:white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: black;
-  text-align: left;
-  outline: black;
-  font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color:white;
-  color: black
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: white;
-}
-
-/* button.ui-btn, .ui-controlgroup-controls button1.ui-btn-icon-notext {
-    border-radius: 2rem;
-    margin: 2rem;
-    width: 11rem;
+    background-color: #eee;
     font-family: Ovsyanka !important;
-    background-color: black;
-    color: white;
-} */
-.button1{
-    border-radius: 2rem;
+    color:white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: black;
+    text-align: left;
+    outline: black;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color:white;
+    color: black
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  /* button.ui-btn, .ui-controlgroup-controls button1.ui-btn-icon-notext {
+      border-radius: 2rem;
+      margin: 2rem;
+      width: 11rem;
+      font-family: Ovsyanka !important;
+      background-color: black;
+      color: white;
+  } */
+
+  
+  #button1{
+    border-radius: 2em;
     
     font-family: Ovsyanka !important;
     background-color: black;
     color: white;
 }
 
-.button2{
-    border-radius: 2rem;
+#button2{
+    border-radius: 2em;
         font-family: Ovsyanka !important;
     background-color: white;
     border-color: black;
     color: black;
+
 }
 
-.change{
-    color:white !important;
+#button3{
+    margin: auto;
+    border-radius: 2em;
+    margin-top: 20px;
+    width:60%;
+    font-family: Ovsyanka !important;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
+
+
+
+
+  .change{
+      color:white !important;
+  }
+  
+  .emailextarea {
+      margin-top: 11px;
+      border-radius: 10px;
+  }
+  
+  .categories-viewbutton {
+      margin-left: 219px;
+      border-radius: 10px;
+      background: black;
+      color: white;
+      border: none;
+      /* font-weight: bold; */
+      text-align: center;
+      margin-top: 12px;
+      font-weight: bold;
+  }
+  
+  .submit-mesage {
+      font-size: 20px;
+  }
+  
+  .contact-viewbutton {
+      border-radius: 10px;
+      background: black;
+      color: white;
+      border: none;
+      /* font-weight: bold; */
+      text-align: center;
+      margin-top: 12px;
+      font-weight: bold;
+  }
+  
+  .button-center {
+      text-align: center;
+  }
+  
+  .modal-dialog {
+      margin-top: 100px !important;
+  }
+  
+  #collapsible-btn{
+      background-color: white !important;
+      border: 1px solid #000000 !important;
+      margin-bottom: 20px;
+  }
+
+  #collapsible-btn-content{
+    background-color: white !important;
+    border: none !important;
+    outline: 0;
+    border-radius: unset;
+    box-shadow: none;
+  }

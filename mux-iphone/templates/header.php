@@ -15,6 +15,7 @@
 			  integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
 
 		<link rel="stylesheet" href="../assets/styles/header.css">
+		<script src="https://js.stripe.com/v3/"></script>
 		
 
 
@@ -27,31 +28,30 @@
 		<img src="../assets/images/ham-menu.png" class ="ham-iphone" onclick="navMenu()">
 		</div>
 		<div class ="ui-block-b text-center">
-		<img src="../assets/images/logo.png" class ="logo-iphone">
+		<img onclick="window.location.href='../home-page/home.php';"src="../assets/images/logo.png" class ="logo-iphone">
 		</div>
 		<div class ="ui-block-c text-right">
-		<img src="../assets/images/avatar.png" class ="avatar-iphone">
-		<img src="../assets/images/cart.png" class ="cart-iphone">
+		<img onclick="window.location.href='../account-details/details.php';"src="../assets/images/avatar.png" class ="avatar-iphone">
+		<img onclick="window.location.href='../Cart/cart.php';"src="../assets/images/cart.png" class ="cart-iphone">
 		</div>
 	</div>
 	<!-- hamburger -->
 	<div id="menucon" class="menu-container">
-			<div class="ui-grid-solo menu-item text-center">
-			
+			<div onclick="window.location.href='../home-page/home.php';" class="ui-grid-solo menu-item text-center">
 			Home
-			
 			</div>
-			<div class="ui-grid-solo menu-item text-center">Categories</div>
+			<div onclick="window.location.href='../categories/categories.php';"class="ui-grid-solo menu-item text-center">Categories</div>
 			<div class="ui-grid-solo menu-item text-center">Favorites</div>
-			<div class="ui-grid-solo menu-item text-center">Promotions</div>
-			<div class="ui-grid-solo menu-item text-center">My Account</div>
-			<div class="ui-grid-solo menu-item text-center">Cart</div>
-			<div class="ui-grid-solo menu-item text-center">About us</div>
-			<div class="ui-grid-solo menu-item text-center">Contact Us</div>
+			<div onclick="window.location.href='../dailydeals-page/dailydeals.php';"class="ui-grid-solo menu-item text-center">Promotions</div>
+			<div onclick="window.location.href='../account-details/details.php';"class="ui-grid-solo menu-item text-center">My Account</div>
+			<div onclick="window.location.href='../Cart/cart.php';"class="ui-grid-solo menu-item text-center">Cart</div>
+			<div onclick="window.location.href='../about-us/about-us.php';"class="ui-grid-solo menu-item text-center">About us</div>
+			<div onclick="window.location.href='../contactus-page/contactus.php';"class="ui-grid-solo menu-item text-center">Contact Us</div>
 			<div class="ui-grid-solo menu-item text-center">Previously ordered</div>
 			<div class="ui-grid-solo menu-item text-center">FAQ's</div>		
  
     </div>  
 
+	<?php $loggedinuser = "1" ?>
 
 

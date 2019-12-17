@@ -1,0 +1,125 @@
+
+
+.ui-input-text{
+    border-width: 0 !important; 
+    border-style: none;
+    margin: 0.57em 0;
+}
+
+.ui-input-text input{
+    text-align: center !important;
+}
+
+#quantity{
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+    background-color: white;
+}
+
+.quantity{
+    width: 120px;
+    /* text-align: center; */
+    /* display: inline; */
+    margin: auto;
+}
+
+#minus{
+    width: 33px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#plus{
+    width: 33px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cart-title{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 2px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.item-title{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.product-name{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 2px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.dprice{
+    color:green;
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 2px;
+    font-size: 18px;
+    text-align: left;
+}
+.nprice{
+    color: red;
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 2px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.quantity{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 2px;
+    font-size: 16px;
+    text-align: left;
+}
+
+#product-image{
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-left: 40px;
+    width: 75%;
+}
+
+.bill{
+    font-family:'Lexend Deca';
+    text-align:left;
+}
+
+.amount{
+    font-family:'Lexend Deca';
+    text-align:right;
+}
+
+.submit-button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+
+
+
+.btn {
+        border: none;
+        background-color: inherit;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+}
+
+.add-button{
+    background-color: #000000
+}

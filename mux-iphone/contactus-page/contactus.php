@@ -6,8 +6,15 @@
 	<?php include '../templates/header.php'; ?>
 	<header>
 	<link rel="stylesheet" href="../contactus-page/contactus.css">
-		<link rel="stylesheet" href="../assets/styles/header.css">
-		<!-- <script src="../assets/scripts/main.js"></script> -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+  function openPopup(){
+    $("#myModal").modal();
+  }
+
+</script>
+
 	</header>
 
   <meta charset="utf-8">
@@ -45,17 +52,17 @@
 
 <br>
 
-<textarea rows ="4" cols="25" class= "contactustextarea"> Enter Text Here </textarea>
+<textarea rows ="4" cols="10" id= "contactustextarea"> Enter Text Here </textarea>
 <br>
-<textarea rows ="1" cols="25" class= "emailextarea"> Email </textarea>
+<textarea rows ="1" cols="10" id= "emailextarea"> Email </textarea>
 
-<button id="sendBtn" class="categories-viewbutton" onclick="openPopup()">SEND MESSAGE</button>
+<button class="sendBtn" id="categories-viewbutton" onclick="openPopup()">SEND MESSAGE</button>
 
 <div class="modal"  id="myModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <p class="submit-mesage">YOUR MESAGE HAS BEEN SUBMITTED!</p>
+        <p class="submit-mesage">YOUR MESSAGE HAS BEEN SUBMITTED!</p>
         <div class="button-center">
           <button class="contact-viewbutton" data-dismiss="modal">OK</button>
         </div>
@@ -70,7 +77,8 @@
 
   </div>
 
+
+
   <div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>
-

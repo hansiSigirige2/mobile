@@ -47,25 +47,25 @@
                margin-top: -27px;
            }
            
-           .contactustextarea {
-               margin-left: 46px;
-               margin-top: -45px;
-               border-radius: 10px;
+           #contactustextarea {
+               margin-top: -39px;
+               width: 250px;
+               margin-left: 85px;
            }
            
-           .emailextarea {
-               margin-left: 4S6px;
-               margin-top: 11px;
-               border-radius: 10px;
+           #emailextarea {
+               height: 47px;
+               width: 250px;
+               margin-left: 85px;
            }
            
-           .categories-viewbutton {
-               margin-left: 219px;
-               border-radius: 10px;
+           #categories-viewbutton {
+               border-radius: 21px;
                background: black;
                color: white;
+               width: 162px;
+               margin-left: 174px;
                border: none;
-               /* font-weight: bold; */
                text-align: center;
                margin-top: 12px;
                font-weight: bold;
