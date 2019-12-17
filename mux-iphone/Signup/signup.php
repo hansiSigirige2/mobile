@@ -47,8 +47,8 @@
                     <input type="password" name="conpassword" id="conpassword" value="" placeholder="" />
                 </form>
                 
-                
-                <button class="button">Sign Up</button>           
+                <a href="../home-page/home.php" class="button-signup" data-role="button" data-inline="true">Sign Up</a>
+                <!-- <button class="button">Sign Up</button>-->
                 
                 <hr>
                 <br>

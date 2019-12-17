@@ -61,6 +61,7 @@ function search() {
 
 }
 
+<<<<<<< HEAD
 function getcategory() {
     var categoryname = $("#categoryname").text();
     alert(categoryname);
@@ -71,6 +72,18 @@ function getcategory() {
         success: function(response) {
             window.location.replace('../catalog/catalog.php');
             console.log("cat");
+=======
+function getcategory(){
+	var categoryname=$("#categoryname").text();
+	// alert(categoryname);
+	$.ajax({
+		url     : '../setCategory.php',
+		method  : 'POST',
+		data    : {"categoryname": categoryname},
+		success : function( response ) {
+			window.location.replace('../catalog/catalog.php');
+			console.log("cat");
+>>>>>>> a206a345475035303653cc8ab12b05e9bf2cd806
 
         }
     });

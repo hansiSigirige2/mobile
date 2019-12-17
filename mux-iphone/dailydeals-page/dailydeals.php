@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php 
 	session_start();
 	include '../templates/header.php';
@@ -74,7 +73,6 @@ if(isset($_POST['search'])){
 		</div>
 	</div>
 	  
-=======
 <div data-role="page" id="home" class="page-full">
 
 	<?php 
@@ -106,7 +104,6 @@ if(isset($_POST['search'])){
       <button class="btn btn-secondary" type="button">
         <i class="fa fa-search"></i>
       </button>
->>>>>>> 02e5957a901f6e49d3ab9125d5da4aa61acca4b7
     </div>
     <div class="carousel-item">
 	<div class="promo-card-container">
