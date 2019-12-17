@@ -1,0 +1,134 @@
+
+.ui-input-text{
+    border-width: 0 !important; 
+    border-style: none;
+    margin: 0.57em 0;
+}
+
+.ui-input-text input{
+    text-align: center !important;
+}
+
+#quantity{
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+    background-color: white;
+}
+
+
+
+#minus{
+    width: 33px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#plus{
+    width: 33px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cart-title{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 2px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.cart-bin{
+    width: 18%;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.item-title{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.product-name{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.dprice{
+    color:green;
+    font-family: Ovsyanka;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+.nprice{
+    color: red;
+    font-family: Ovsyanka;
+    margin-top: 25px;
+    margin-left: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.quantity{
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+#product-image{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 40px;
+    width: 75%;
+}
+
+.bill{
+    font-family:'Lexend Deca';
+    text-align:left;
+}
+
+.amount{
+    font-family:'Lexend Deca';
+    text-align:right;
+}
+
+.submit-button {
+        border-radius: 35px !important;
+        font-family: Ovsyanka;
+        margin-left: 20%;
+        width: 63% !important;
+        background:black !important;
+        display: inline !important;
+        color: white !important;
+
+  }
+  
+
+
+#clear-button{
+    border-radius: 35px !important;
+    margin-left:60% !important;
+    font-family: Ovsyanka;
+    width: 40% !important;
+    background: white !important;
+    display: inline !important;
+    color: black !important;
+    padding-right: 20px;
+}
+
+
+
+.footer-padding{
+    height: 7rem;
+    width: 100%;
+}

@@ -19,7 +19,7 @@
 
      <body>
            
-           <div class="ui-grid-a" style="padding: 10px 20px"    >
+           <div class="ui-grid-a" style="padding: 10px 20px">
                    <div class="ui-block-a"> 
                        <div class = "cart-title">Shopping Cart</div>
                     </div>
@@ -29,7 +29,16 @@
                     </div>
             </div>
 
+            <div class = "cart-empty-text"> Looks like your cart is empty .... </div>
+            <img src = "sad-cart.png" id = "sad-cart-image">
+            <button class ="shop-now-button" onclick="window.location.href='../home-page/home.php';" > Shop Now </button>
 
+            
+    </body>
+
+<div class="footer-padding"></div>
+
+<?php include '../templates/footer.php'; ?>
 
                     
                 
