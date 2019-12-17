@@ -1,5 +1,6 @@
 <?php 
-		session_start();
+        session_start();
+        $_SESSION['page-type']= 'cart';
 	?>
 	<?php include '../templates/header.php'; ?>
 
@@ -18,32 +19,20 @@
 
 
 <script>
-$(function() {
-  $('.clear-cart').on('click',function(e){
-    e.preventDefault();
-    $.ajax({
-      type: "POST",
-      url: '/cart/clear.js',
-      success: function(){
-        alert('You cleared the cart!');
-      },
-      dataType: 'json'
-    });
-  })
-});
 
-$(document).ready(function() {
-    $('.submit-button').click(function() {
-        var pos = $(this).parent().find('.inputid').val();
-        $.ajax({
-            url: "cart.php",
-            type: "POST",
-            data: {itemID: pos},
-            success: function(data) {
-            }
-        });
-    });
-});
+var count = 1;
+    var countEl = document.getElementById("quantity");
+    function plus(){
+        count++;
+        countEl.value = count;
+    }
+    function minus(){
+      if (count > 1) {
+        count--;
+        countEl.value = count;
+      }  
+    }
+
 
 
 </script>
@@ -79,7 +68,7 @@ $(document).ready(function() {
                             <div class = "item-title">Items ()</div>
                             <img src = "..\apple.jpg" id = "product-image">
                             <br><br>
-                            <img src = "..\bin.png" height = "25" width = "25" align = "right">
+                            <img src = "..\bin.png" class = "cart-bin">
                         </div>
                 </div>
 
@@ -94,13 +83,13 @@ $(document).ready(function() {
                             <div class = "quantity">Quantity</div>
                                             <fieldset class="ui-grid-b">
                                                 <div class="ui-block-a">
-                                                    <span onclick="openNav()"><img id="minus" src="minus.svg"></span>
+                                                    <span ><img id="minus" src="minus.svg" onclick="minus()"></span>
                                                 </div>
                                                 <div class="ui-block-b">
                                                     <input type="number" name="quantity" id="quantity" value="1" />
                                                 </div>
                                                 <div class="ui-block-c">
-                                                <span onclick="openNav()"><img id="plus" src="plus.svg"></span>
+                                                <span ><img id="plus" src="plus.svg" onclick="plus()"></span>
                                                 </div>
                                             </fieldset>
                                         
@@ -111,23 +100,13 @@ $(document).ready(function() {
                         <div class="ui-block-b">
                             <img src = "..\apple.jpg" id = "product-image">
                             <br><br>
-                            <img src = "..\bin.png" height = "25" width = "25" align = "right">
+                            <img src = "..\bin.png" class = "cart-bin">
                         </div>
                 </div>
                 <hr>
-                <div class="ui-grid-b">
-                        <div class = "ui-block-a">
-                            
-                        </div>
-
-                        <div class = "ui-block-b">
-
-                        </div>
-
-                        <div class = "ui-block-c">
-                            <button class = "clear-button" >Clear Cart</button>
-                        </div>
-                </div>
+               
+                <button id = "clear-button" onclick="window.location.href='../cart/cart-empty.php';"  >Clear Cart</button>
+                        
                 <div class = "ui-grid-a" style="padding: 10px 20px">
                     <div class = "ui-block-a">
                         <div class = "bill"> Subtotal </div>
@@ -145,6 +124,10 @@ $(document).ready(function() {
                 <button class = "submit-button"> Proceed to Checkout </button>
             
 </body>
+
+<div class="footer-padding"></div>
+
+<?php include '../templates/footer.php'; ?>
                     
                        
 

@@ -1,5 +1,6 @@
 <?php 
-	session_start();
+    session_start();
+    $_SESSION['page-type']= 'checkout';
 	include '../templates/header.php';
 ?>
 
@@ -196,9 +197,5 @@
 </div>
 
 
-
-
-
-<div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>

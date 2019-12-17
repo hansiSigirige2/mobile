@@ -1,7 +1,8 @@
 <?php 
 		session_start();
 	?>
-	<?php include '../templates/header.php'; ?>
+    <?php include '../templates/header.php'; 
+    $_SESSION['page-type']= 'favorite';?>
 
 
 
@@ -48,13 +49,13 @@
                             <div class = "quantity">Quantity</div>
                                             <fieldset class="ui-grid-b">
                                                 <div class="ui-block-a">
-                                                    <span onclick="plus()"><img id="minus" src="minus.svg"></span>
+                                                    <span ><img type="button" id="minus" src="minus.svg" onclick="minus()" ></span>
                                                 </div>
                                                 <div class="ui-block-b">
                                                     <input type="number" name="quantity" id="quantity" value="1" />
                                                 </div>
                                                 <div class="ui-block-c">
-                                                <span><input type = "button" img id="plus" src="plus.svg" onclick="minus()"></span>
+                                                <span><input type = "button" img id="plus" src="plus.svg" onclick="plus()"></span>
                                                 </div>
                                             </fieldset>
                                         
@@ -66,27 +67,17 @@
                             <div class = "item-title">Items ()</div>
                             <img src = "..\apple.jpg" id = "product-image">
                             <br><br>
-                            <img src = "..\bin.png" height = "25" width = "25" align = "right">
+                            <img src = "..\bin.png" class = "favourites-bin">
                         </div>
                 </div>
 
 
                 <hr>
 
-                <div class="ui-grid-b">
-                        <div class = "ui-block-a">
-                            
-                        </div>
-
-                        <div class = "ui-block-b">
-
-                        </div>
-
-                        <div class = "ui-block-c">
-                            <button class = "btn" >Share Favourites</button>
-                        </div>
-                </div>
-
+                
+                            <button class = "share-button"  >Share Favourites</button>
+                   
                 
                 <button class = "add-button"> Add to Cart  </button>
-                <button class = "submit-button"> Clear Favourites </button>
+                <br>
+                <button class = "submit-button" onclick="window.location.href='../favourites/favourites-empty.php';"> Clear Favourites </button>

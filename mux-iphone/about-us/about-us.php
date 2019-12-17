@@ -1,5 +1,6 @@
 <?php 
-		session_start();
+        session_start();
+        $_SESSION['page-type']= 'aboutus';
 	?>
 	<?php include '../templates/header.php'; ?>
 
@@ -20,7 +21,7 @@
 
 
     <body>
-        <img src = "about-us1.jpg" class = "image" width = "100%" >
+        <img src = "about-us.jpg" class = "image" width = "100%" >
 
         <div class = "heading-main"> About Us </div>
 
@@ -30,9 +31,8 @@
                                 farmers, skilled artisans and responsible fishermen.
         </div>
         <div class="aboutus-video" controls>
-        <video id = "video" controls>
-            <source src = "video.mp4" type = "video/mp4">
-        </video>
+            <<iframe  src="https://www.youtube.com/watch?v=z5z-nF65-Qccontrols=0">
+            </iframe>
         </div>
         <div class = "heading-main"> Convenience Shouldn't Mean Compromise </div>
 
@@ -42,5 +42,15 @@
                                 to earn loyally points
 
     </body>
+
+
+
+<div class="footer-padding"></div>
+
+<?php include '../templates/footer.php'; ?>
+                    
+                       
+
+        
 
     
