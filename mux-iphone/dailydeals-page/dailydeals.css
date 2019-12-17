@@ -3,7 +3,7 @@
         
         .has-search .dailydealsform-control {
             padding-left: 2.375rem;
-            margin-top: -28px
+            margin-top: -28px;
         }
         
         .has-search .dailydealsform-control-feedback {
@@ -16,6 +16,10 @@
             text-align: center;
             pointer-events: none;
             color: #ffffff;
+        }
+        
+        .card-body {
+            padding: 0.25rem;
         }
         
         .input-group-append {
@@ -121,25 +125,27 @@
         }
         
         #favdeals {
-            margin-left: 14px;
+            margin-left: 34px;
             width: 20px;
-            margin-top: -7px;
+            margin-top: -54px;
         }
         
         #favdeals1 {
-            margin-left: 5px;
+            margin-left: 34px;
             width: 20px;
+            margin-top: -54px;
         }
         
         #favdeals2 {
-            margin-left: 5px;
+            margin-left: 34px;
             width: 20px;
+            margin-top: -54px;
         }
         
         #favdeals3 {
-            margin-left: 14px;
+            margin-left: 34px;
             width: 20px;
-            margin-top: -7px;
+            margin-top: -54px;
         }
         
         .dailydeals-addbutton {
@@ -202,4 +208,9 @@
         .rate>input:checked~label:hover~label,
         .rate>label:hover~input:checked~label {
             color: #c59b08;
+        }
+        
+        .footer-padding {
+            height: 7rem;
+            width: 100%;
         }

@@ -48,13 +48,13 @@
            }
            
            .contactustextarea {
-               margin-left: 86px;
+               margin-left: 46px;
                margin-top: -45px;
                border-radius: 10px;
            }
            
            .emailextarea {
-               margin-left: 86px;
+               margin-left: 4S6px;
                margin-top: 11px;
                border-radius: 10px;
            }
@@ -97,4 +97,9 @@
            
            .container {
                margin-left: -23px !important;
+           }
+           
+           .footer-padding {
+               height: 7rem;
+               width: 100%;
            }

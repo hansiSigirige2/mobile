@@ -169,3 +169,36 @@
     float: right;
     width: 10%;
 }
+
+.product-addtocart {
+    text-align: left;
+}
+
+#product-addtocart {
+    border-radius: 10px;
+    background: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.product-buynow {
+    text-align: right;
+}
+
+#product-buynow {
+    border-radius: 10px;
+    background: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -23px;
+}
+
+.product-details-otherdeals {
+    padding: 1px;
+    margin-top: 20px;
+}

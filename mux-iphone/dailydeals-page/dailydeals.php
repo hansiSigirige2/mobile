@@ -10,16 +10,12 @@
 		<!-- <script src="../assets/scripts/main.js"></script> -->
 	</header>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+
 
  <!-- Another variation with a button -->
  <div class="input-group">
@@ -75,6 +71,71 @@
       </div>
 
 <p class="dailydeals-heading" style="margin-top:10px;">DAILY DEALS</p>
+<?php 
+  $products_json = file_get_contents('../data/products.json');
+  $products_arr = json_decode($products_json, true);
+          if ($_SESSION['orientation'] == "land") {
+            echo '<div class ="ui-grid-b">';
+          } 
+          else {
+            echo '<div class ="ui-grid-a">';						
+          }		
+          
+          for ($x = 0; $x <count($products_arr); $x++) {
+           
+          
+              echo '<div class ="ui-block-b product-padding">';
+            
+
+              echo '
+                <div class="ui-block-a">
+                      <div class="card dailydeals-card">
+                      <div class="card-body">
+                      <img  src="'.$products_arr[$x]['image'].'" class="dailydeals-image" style = "height: 131px;">
+                      <hr class="divider">
+                      <p class="dailydeals-name">'.$products_arr[$x]['product_name'].'</p>
+                      <div class="rate">
+                    <input type="radio" id="star5" name="rate2" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate2" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate2" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate2" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate2" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div>
+                      <span class = "productprice">'.$products_arr[$x]['discounted_price'].'</span>
+                      <span class = "oldprice"><strike>'.$products_arr[$x]['product_price'].'</strike></span>
+                      
+                      <span onclick="changeImage2()"><img class="heart" id="favdeals2" src="heart.svg"></span>
+                    
+                      
+                      </div>
+                      </div>
+                      </div>
+                  </div>              
+                  ';
+          }
+          echo '</div>';
+  ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 
   <div class="ui-grid-a category-section">
     <div class="ui-block-a">
@@ -121,15 +182,15 @@
       <hr class="divider">
       <p class="dailydeals-name">Dairy</p>
       <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
+    <input type="radio" id="star5" name="rate1" value="5" />
     <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
+    <input type="radio" id="star4" name="rate1" value="4" />
     <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
+    <input type="radio" id="star3" name="rate1" value="3" />
     <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
+    <input type="radio" id="star2" name="rate1" value="2" />
     <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
+    <input type="radio" id="star1" name="rate1" value="1" />
     <label for="star1" title="text">1 star</label>
   </div>
       <span class = "productprice">Rs 500</span>
@@ -163,15 +224,15 @@
       <hr class="divider">
       <p class="dailydeals-name">FRUITS</p>
       <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
+    <input type="radio" id="star5" name="rate2" value="5" />
     <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
+    <input type="radio" id="star4" name="rate2" value="4" />
     <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
+    <input type="radio" id="star3" name="rate2" value="3" />
     <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
+    <input type="radio" id="star2" name="rate2" value="2" />
     <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
+    <input type="radio" id="star1" name="rate2" value="1" />
     <label for="star1" title="text">1 star</label>
   </div>
       <span class = "productprice">Rs 500</span>
@@ -203,15 +264,15 @@
       <hr class="divider">
       <p class="dailydeals-name">BEVERAGES</p>
       <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
+    <input type="radio" id="star5" name="rate3" value="5" />
     <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
+    <input type="radio" id="star4" name="rate3" value="4" />
     <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
+    <input type="radio" id="star3" name="rate3" value="3" />
     <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
+    <input type="radio" id="star2" name="rate3" value="2" />
     <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
+    <input type="radio" id="star1" name="rate3" value="1" />
     <label for="star1" title="text">1 star</label>
   </div>
       <span class = "productprice">Rs 500</span>
@@ -263,11 +324,7 @@
         img.src="heart (selected).png";
         }
 </script> 
+
+  
   
 
-
-</body>
-</html>
-
-
-</body>
