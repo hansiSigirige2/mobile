@@ -28,4 +28,54 @@
 	</div>
 </div>
 
+<div class="footer-padding"></div>
+<?php 
+
+
+?>
+<div class="ui-grid-c nav-bar">
+	<div class="ui-block-a text-center">
+<?php
+	if (isset($_SESSION['page-type'])){
+	if($_SESSION['page-type']== 'home'){
+		echo'<img class="nav-icon" src="../assets/images/home-red.png" alt="">';
+	}else{
+		echo '<img class="nav-icon" src="../assets/images/home-black.png" alt="">';
+	}
+}?>
+	</div>
+	<div class="ui-block-b text-center">
+	
+	<?php
+	if (isset($_SESSION['page-type'])){
+	if($_SESSION['page-type']=='discount'){
+		echo'<img class="nav-icon" src="../assets/images/discount-red.png" alt="">';
+	}else{
+		echo '<img class="nav-icon" src="../assets/images/discount-black.png" alt="">';
+	}
+}?>
+	</div>
+	<div class="ui-block-c text-center">
+	<?php
+	if (isset($_SESSION['page-type'])){
+	if($_SESSION['page-type']=='category'){
+		echo'<img class="nav-icon" src="../assets/images/category-red.png" alt="">';
+	}else{
+		echo '<img class="nav-icon" src="../assets/images/category-black.png" alt="">';
+	}
+}?>
+	</div>
+	<div class="ui-block-d text-center">
+	<?php
+	if (isset($_SESSION['page-type'])){
+	if($_SESSION['page-type']=='favorite'){
+		echo'<img class="nav-icon" src="../assets/images/heart-red.png" alt="">';
+	}else{
+		echo '<img class="nav-icon" src="../assets/images/heart-black.png" alt="">';
+	}
+}?>
+	</div>
+</div>
+
+
 
