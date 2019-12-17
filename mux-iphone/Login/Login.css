@@ -44,3 +44,24 @@
         background-color: black;
         color: white;
     }    
+
+/* .ui-input-text, .ui-input-search {
+    margin: .5em 0;
+    border-width: 0px !important;
+    border-style: solid;
+} */
+
+.ui-input-text, .ui-input-search {
+    
+    border-width: 0 !important;
+    
+}
+
+.button-login{
+    border-radius: 2rem !important;
+    margin: 2rem;
+    width: 11rem;
+    font-family: Ovsyanka !important;
+    background-color: black !important;
+    color: white !important;
+}

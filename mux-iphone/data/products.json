@@ -29,6 +29,7 @@
 	"product_id": "4",
     "product_name": "Tomatoes",
 	"product_price": "110",
+	"reduce_price": "",
 	"category_name":"Vegetables",
 	"image": "../assets/images/tomatoes.jpeg",
 	"link": ""

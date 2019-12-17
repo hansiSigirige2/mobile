@@ -62,7 +62,7 @@ function search(){
 
 function getcategory(){
 	var categoryname=$("#categoryname").text();
-	alert(categoryname);
+	// alert(categoryname);
 	$.ajax({
 		url     : '../setCategory.php',
 		method  : 'POST',
