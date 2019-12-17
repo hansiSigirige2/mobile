@@ -1,3 +1,5 @@
+<div data-role="page" id="home" class="page-full" style="background-color: white;">
+
 <?php 
         session_start();
         $_SESSION['page-type']= 'aboutus';
@@ -21,7 +23,7 @@
 
 
     <body>
-        <img src = "about-us.jpg" class = "image" width = "100%" >
+        <img src="../assets/images/about-us.jpg" class = "image" width = "100%" >
 
         <div class = "heading-main"> About Us </div>
 
