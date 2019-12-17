@@ -14,8 +14,8 @@
     border: 1px solid #CCCCCC;
     border-radius: 0;
     background-color: white;
-}
 
+}
 
 
 #minus{
@@ -94,12 +94,12 @@
 }
 
 .bill{
-    font-family:'Lexend Deca';
+    font-family:"Helvetica Neue";
     text-align:left;
 }
 
 .amount{
-    font-family:'Lexend Deca';
+    font-family:"Helvetica Neue";
     text-align:right;
 }
 
@@ -209,18 +209,249 @@
             }
 
             .bill{
-                font-family:'Lexend Deca';
+                font-family:'Helvetica Neue';
                 text-align:left;
                 font-size:25px;
             }
             
             .amount{
-                font-family:'Lexend Deca';
+                font-family:'Helvetica Neue';
                 text-align:right;
                 font-size:25px;
             }
 
        
     }
+
+    @media only screen 
+    and (device-width : 768px)
+    {
+        #product-image{
+            border: 1px solid #000000;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 50px;
+            width: 65%; 
+        }
+
+        .item-title{
+            font-family: Ovsyanka;
+            margin-top: 5px;
+            margin-right: 35px;
+            font-size: 30px;
+            text-align: right;
+        }
+
+        .cart-bin{
+            width: 18%;
+            margin-left: 150px;
+            margin-top: 10px;
+        }
+        .cart-title{
+            font-family: Ovsyanka;
+            margin-left: 20px;
+            text-align: left;
+            font-size: 30px;
+            margin-top: 5px;
+            
+        }
+        .product-name{
+            font-family: Ovsyanka;
+            margin-top: 30px;
+            margin-left: 50px;
+            font-size: 25px;
+            text-align: left;
+        }
+        
+
+        
+        .dprice{
+            color:green;
+            font-family: Ovsyanka;
+            margin-top: 30px;
+            margin-left: 50px;
+            font-size: 25px;
+            text-align: left;
+        }
+        .nprice{
+            color: red;
+            font-family: Ovsyanka;
+            margin-top: 25px;
+            margin-left: 20px;
+            font-size: 20px;
+            text-align: left;
+        }
+        
+        .quantity{
+            font-family: Ovsyanka;
+            margin-left: 200px;
+            margin-top: 50px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        
+        #minus{
+            width: 33px;
+            margin-top: 10px;
+            margin-left: 120px;
+        }
+
+            .bill{
+                font-family:"Helvetica Neue";
+                text-align:left;
+                font-size:30px;
+            }
+            
+            .amount{
+                font-family:'Helvetica Neue';
+                text-align:right;
+                font-size:30px;
+            }
+
+            .detail-block{
+                width:70% !important; 
+            }
+
+            .image-block{
+                width:30% !important;
+            }
+
+            
+            
+
+            
+
+
+    }
     
+    @media only screen 
+    and (device-width : 1024px)
+    {
+
+        #product-image{
+            border: 1px solid #000000 !important;
+            border-radius: 10px !important;
+            margin-top: 20px !important;
+            margin-left: 120px !important;
+            width: 50% !important;
+        }
+
+        .detail-block{
+            width:70% !important; 
+        }
+
+        .image-block{
+            width:30% !important;
+        }
+        
+        .cart-bin{
+            width: 12%;
+            margin-left: 230px;
+            margin-top: 10px;
+        }
+
+        .item-title{
+            font-family: Ovsyanka;
+            margin-top: 5px;
+            margin-right: 35px !important;
+            font-size: 30px !important;
+            text-align: right;
+        }
+        .cart-title{
+            font-family: Ovsyanka;
+            margin-left: 20px !important;
+            text-align: left;
+            font-size: 30px !important;
+            margin-top: 5px !important;
+            
+        }
+        .product-name{
+            font-family: Ovsyanka;
+            margin-top: 66px !important;
+            margin-left: 30px !important;
+            font-size: 25px !important;
+            text-align: left;
+        }
+        
+
+        
+        .dprice{
+            color:green;
+            font-family: Ovsyanka;
+            margin-top: 30px;
+            margin-left: 30px !important;
+            font-size: 25px !important;
+            text-align: left;
+        }
+        .nprice{
+            color: red;
+            font-family: Ovsyanka;
+            margin-top: 25px;
+            margin-left: 20px !important;
+            font-size: 20px!important;
+            text-align: left;
+        }
+        
+        .quantity{
+            font-family: Ovsyanka;
+            margin-left:460px !important;
+            margin-top: -60px;
+            font-size: 20px !important;
+            text-align: left;
+        }
+
+        .quantity-box{
+            margin-bottom: 50px;
+        }
+
+        
+        #minus{
+            width: 33px !important;
+            margin-top: 10px;
+            margin-left: 10px !important;
+
+        }
+
+        #plus{
+            width: 33px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .plus-box{
+            width:50px !important;
+            height:100px !important;
+        }
+
+        .minus-box{
+            width:50px !important;
+            margin-left: 350px;
+            height:100px !important;
+        }
+
+        .bill{
+            font-family:"Helvetica Neue";
+            text-align:left;
+            font-size:30px;
+        }
+        
+        .amount{
+            font-family:'Helvetica Neue';
+            text-align:right;
+            font-size:30px;
+        }
+
+        .amount-block{
+            width: 20%;
+        }
+
+        .bill-block{
+            width: 80%;
+
+        }
+    }
+    
+
+
 

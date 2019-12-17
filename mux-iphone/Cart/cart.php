@@ -20,7 +20,7 @@
 <script>
 
 var count = 1;
-    var countEl = document.getElementById("quantity");
+    var countEl = document.getElementById("count");
     function plus(){
         count++;
         countEl.value = count;
@@ -42,20 +42,20 @@ var count = 1;
     <body>
            
                 <div class="ui-grid-a" style="padding: 10px 20px"    >
-                        <div class="ui-block-a"> 
+                        <div class="ui-block-a detail-block"> 
                             <div class = "cart-title">Shopping Cart</div>
                             <div class = "product-name">Apple Juice </div>
                             <span class = "dprice">Rs 700</span>
                             <div class = "quantity">Quantity</div>
                                             <fieldset class="ui-grid-b">
-                                                <div class="ui-block-a">
-                                                    <span onclick="openNav()"><img id="minus" src="minus.svg"></span>
+                                                <div class="ui-block-a minus-box">
+                                                    <span><input type = "image" id="minus" src="minus.svg" onclick = "minus()"></span>
                                                 </div>
-                                                <div class="ui-block-b">
-                                                    <input type="number" name="quantity" id="quantity" value="1" />
+                                                <div class="ui-block-b quantity-box">
+                                                    <input type="number" name="count" id="count" value="1" />
                                                 </div>
-                                                <div class="ui-block-c">
-                                                <span onclick="openNav()"><img id="plus" src="plus.svg"></span>
+                                                <div class="ui-block-c plus-box">
+                                                <span><input type = "image" id="plus" src="plus.svg" onclick = "plus()"></span>
                                                 </div>
                                             </fieldset>
                                         
@@ -63,7 +63,7 @@ var count = 1;
  
                        
 
-                        <div class="ui-block-b">
+                        <div class="ui-block-b image-block">
                             <div class = "item-title">Items ()</div>
                             <img src = "..\apple.jpg" id = "product-image">
                             <br><br>
@@ -75,20 +75,20 @@ var count = 1;
                 <hr>
 
                 <div class="ui-grid-a" style="padding: 10px 20px"    >
-                        <div class="ui-block-a"> 
+                        <div class="ui-block-a detail-block"> 
                             <div class = "product-name">Ambewela Fresh Milk </div>
                             <span class = "dprice">Rs 110</span>
                             <span class = "nprice"><strike> Rs 220</strike></span>
                             <div class = "quantity">Quantity</div>
                                             <fieldset class="ui-grid-b">
-                                                <div class="ui-block-a">
-                                                    <span ><img id="minus" src="minus.svg" onclick="minus()"></span>
+                                                <div class="ui-block-a minus-box">
+                                                    <span ><input type = "button" img id="minus" src="minus.svg" onclick="minus()"></span>
                                                 </div>
-                                                <div class="ui-block-b">
-                                                    <input type="number" name="quantity" id="quantity" value="1" />
+                                                <div class="ui-block-b quantity-box">
+                                                    <input type="number" name="quantity" id="count" value="1" />
                                                 </div>
-                                                <div class="ui-block-c">
-                                                <span ><img id="plus" src="plus.svg" onclick="plus()"></span>
+                                                <div class="ui-block-c plus-box">
+                                                <span ><input type ="button" img id="plus" src="plus.svg" onclick="plus()"></span>
                                                 </div>
                                             </fieldset>
                                         
@@ -96,7 +96,7 @@ var count = 1;
  
                        
 
-                        <div class="ui-block-b">
+                        <div class="ui-block-b image-block">
                             <img src = "..\apple.jpg" id = "product-image">
                             <br><br>
                             <img src = "..\bin.png" class = "cart-bin">
@@ -107,13 +107,13 @@ var count = 1;
                 <button id = "clear-button" onclick="window.location.href='../cart/cart-empty.php';"  >Clear Cart</button>
                         
                 <div class = "ui-grid-a" style="padding: 10px 20px">
-                    <div class = "ui-block-a">
+                    <div class = "ui-block-a bill-block">
                         <div class = "bill"> Subtotal </div>
                         <div class = "bill"> Discount </div>
                         <div class = "bill"> Total </div>
                     </div>
 
-                    <div class = "ui-block-b">
+                    <div class = "ui-block-b amount-block">
                         <div class = "amount">Rs 1160 </div>
                         <div class = "amount">Rs 460 </div>
                         <div class = "amount">Rs 700 </div>

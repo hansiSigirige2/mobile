@@ -39,7 +39,7 @@
 
     </head> 
     <body>
-           
+           <div data-role = "page" id = "favourites-page">
                 <div class="ui-grid-a" style="padding: 10px 20px"    >
                         <div class="ui-block-a"> 
                             <div class = "cart-title">Favourites</div>
@@ -80,3 +80,4 @@
                 <button class = "add-button"> Add to Cart  </button>
                 <br>
                 <button class = "submit-button" onclick="window.location.href='../favourites/favourites-empty.php';"> Clear Favourites </button>
+</div>
