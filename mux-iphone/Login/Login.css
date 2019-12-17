@@ -18,14 +18,18 @@
         outline: none;
     }
     input {
-        font-family: 'Lexend Deca', sans-serif;
+        font-family:"Helvetica Neue";
     }
     input::placeholder {
-        font-family: 'Lexend Deca', sans-serif;
+        font-family:"Helvetica Neue";
     }
     input:focus {
         outline: none;
-    }    
+    }
+    
+    .text{
+        font-family:"Helvetica Neue";
+    }
 
     .ui-grid-solo>.ui-block-a {
         margin-left: 1.2rem;
@@ -66,11 +70,11 @@
     color: white !important;
 }
 
-img {
+#linkimg {
     vertical-align: middle;
     border-style: none;
-    width: 20%;
-    hspace:5;
+    width: 20% !important;
+    
 }
 
 /* Landscape  Iphone */
@@ -85,6 +89,12 @@ and (orientation : landscape)
     .ui-grid-solo>.ui-block-a {
         margin-left: 2.5rem !important;
     }
+    #linkimg {
+        vertical-align: middle;
+        border-style: none;
+        width: 10% !important;
+        
+    }
 }
 
 /* Potrait Ipad */
@@ -96,6 +106,12 @@ and (device-width : 768px)
     margin-left: 2.5rem !important;
 
 }
+#linkimg {
+    vertical-align: middle;
+    border-style: none;
+    width: 10% !important;
+    
+}
 }
 
 /* Landscape Ipad */
@@ -103,7 +119,13 @@ and (device-width : 768px)
 and (device-width : 1024px)
 {.ui-grid-solo>.ui-block-a {
 
-    margin-left: 2.5rem !important;
+    margin-left: 3.2rem !important;
 
+}
+#linkimg {
+    vertical-align: middle;
+    border-style: none;
+    width: 10% !important;
+    
 }
 }
