@@ -6,7 +6,6 @@
 	<?php include '../templates/header.php'; ?>
 	<header>
 	<link rel="stylesheet" href="../contactus-page/contactus.css">
-		<link rel="stylesheet" href="../assets/styles/header.css">
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 <script>
@@ -18,7 +17,19 @@
 
 	</header>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+  <script>
+    function openPopup(){
+      $("#myModal").modal();
+    }
+
+  </script>
 
 
   <div class="container">
@@ -33,19 +44,19 @@
 <img src="../assets/images/phone.png" class="contactus2-image">
 <h5 class = "telephone">07861166325</h5>
 <br>
-<img src="../assets/images/address.png" class="contactus-image">
+<img src="../assets/images/email.png" class="contactus-image">
 <h5 class = "email">ZUPERMART.CUSTOMER.@MAIL.COM</h5>
 <br>
-<img src="../assets/images/location pin.svg" class="contactus-image">
+<img src="../assets/images/message.png" class="contactus-image">
 
 
 <br>
 
-<textarea rows ="4" cols="25" class= "contactustextarea"> Enter Text Here </textarea>
+<textarea rows ="4" cols="10" id= "contactustextarea"> Enter Text Here </textarea>
 <br>
-<textarea rows ="1" cols="25" class= "emailextarea"> Email </textarea>
+<textarea rows ="1" cols="10" id= "emailextarea"> Email </textarea>
 
-<button id="sendBtn" class="categories-viewbutton" onclick="openPopup()">SEND MESSAGE</button>
+<button class="sendBtn" id="categories-viewbutton" onclick="openPopup()">SEND MESSAGE</button>
 
 <div class="modal"  id="myModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
@@ -65,7 +76,6 @@
 
 
   </div>
-
 
 
   <div class="footer-padding"></div>

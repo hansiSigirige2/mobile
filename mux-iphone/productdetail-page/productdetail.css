@@ -1,8 +1,9 @@
 .productdetail-image {
-    width: 160px;
-    height: 166px;
-    margin-left: 92px;
-    margin-top: 75px;
+    width: 193px;
+    height: 185px;
+    margin-left: 84px;
+    margin-top: 18px;
+    margin-bottom: 28px;
 }
 
 * {
@@ -94,22 +95,110 @@
     margin-top: 15px;
     margin-left: 2px;
     font-size: 18px;
-    text-align: left;
+    text-align: center;
 }
 
-.pprice {
+.sprice {
     color: red;
     font-family: Ovsyanka;
-    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 2px;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
 }
 
 .quantity {
     font-family: Ovsyanka;
-    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 2px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
     text-align: left;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details-sub {
+    margin-left: 20px;
+}
+
+.product-name {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.ui-input-text {
+    border-width: 0 !important;
+    border-style: none;
+    margin: 0.57em 0;
+}
+
+.ui-input-text input {
+    text-align: center !important;
+}
+
+#quantity {
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+    background-color: white;
+    width: 50px;
+    height: 40px;
+    margin-left: -13px;
+    text-align: center;
+}
+
+#minus {
+    width: 35px;
+    margin-top: 2px;
+    margin-left: 0px;
+}
+
+#plus {
+    width: 35px;
+    margin-top: 2px;
+    margin-left: -11px;
+}
+
+.productoffer-image {
+    margin-right: 40px;
+    float: right;
+    width: 10%;
+}
+
+.product-addtocart {
+    text-align: left;
+}
+
+#product-addtocart {
+    border-radius: 10px;
+    background: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.product-buynow {
+    text-align: right;
+}
+
+#product-buynow {
+    border-radius: 10px;
+    background: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -23px;
+}
+
+.product-details-otherdeals {
+    padding: 1px;
+    margin-top: 20px;
 }

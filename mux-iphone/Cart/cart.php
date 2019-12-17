@@ -1,5 +1,6 @@
 <?php 
-		session_start();
+        session_start();
+        $_SESSION['page-type']= 'cart';
 	?>
 	<?php include '../templates/header.php'; ?>
 

@@ -1,244 +1,220 @@
-<div data-role="page" id="home" class="page-full">
+<?php 
+	session_start();
+	include '../templates/header.php';
+?>
+	
 
-	<?php 
-		session_start();
-	?>
-	<?php include '../templates/header.php'; ?>
-	<header>
-	<link rel="stylesheet" href="../dailydeals-page/dailydeals.css">
-		<link rel="stylesheet" href="../assets/styles/header.css">
-		<!-- <script src="../assets/scripts/main.js"></script> -->
-	</header>
+<header>
+<link rel="stylesheet" href="dailydeals.css">
+</header>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+<!-- search -->
+<form name="search" action="../search-page/searchpage.php" method="post" data-ajax="false" enctype="multipart/form-data">
+	<div class="row">
+		<div class= "col-12 padding-col">
+			<input id="search" type="text" placeholder="Search" name="search" class="search ">
+			<button name="submit" type="submit" class="btn-search">
+				<img class="search-img"src="../assets/images/search.png">
+			</button>	
+		</div>		
+	</div> 
+</form>
 
- <!-- Another variation with a button -->
- <div class="input-group">
-    <input type="text" class="dailydealsform-control" placeholder="Search">
-    <div class="input-group-append">
-      <button class="btn btn-secondary" type="button">
-        <i class="fa fa-search"></i>
-      </button>
+
+<?php
+if(isset($_POST['search'])){
+	$search_value = $_POST['search'];
+}
+?>
+<!-- search -->
+<!-- carousel promo -->
+
+<!-- carousel pics -->
+<div id="promoCarousel" class="carousel slide carousel-slide " data-ride="carousel">
+
+  <div class="carousel-inner carousel-inner2">
+  <div class="hottest-deals">HOTTEST DEALS</div>
+    <div class="carousel-item active">
+
+	<div class="promo-card-container">
+		<div class="card promo-card">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-5">
+						<img src="../assets/images/potatoes.png" alt="" class="promo-slider-image">
+					</div>
+					<div class="col-7">
+						<?php
+							if ($_SESSION['orientation'] == "land") {								
+								echo '<div class="promo-sale-land">50% OFF</div>';		
+								echo '<div class="promo-name-land">potatoes 1kg</div>';	
+							} 
+							else {
+								echo '<div class="promo-sale">50% OFF</div>';
+								echo '<div class="promo-name">potatoes 1kg</div>';		
+							}
+						?>
+						<div class="row">
+							<?php
+								if ($_SESSION['orientation'] == "land") {
+									echo '<div class="col-6 no-padding-right"><div class="promo-strike-land">RS.240</div></div>';		
+									echo '<div class="col-6 no-padding-all"><div class="promo-price-land">rs.120</div></div>';
+									
+								} 
+								else {
+									echo '<div class="col-6 no-padding-right"><div class="promo-strike">RS.240</div></div>';
+									echo '<div class="col-6 no-padding-all"><div class="promo-price">rs.120</div></div>';			
+								}
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	  
     </div>
-  </div>
-  
-
-<p class="dailydeals-heading" style="margin-top:40px" >HOTTEST DEALS</p>
-
-<div class="container" style= "height:120px; margin-top:10px;">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style= "border-radius:20px">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="ny.jpg" alt="New york" style="width:100%;">
-      </div>
+    <div class="carousel-item">
+	<div class="promo-card-container">
+		<div class="card promo-card">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-5">
+						<img src="../assets/images/potatoes.png" alt="" class="promo-slider-image">
+					</div>
+					<div class="col-7">
+						<?php
+							if ($_SESSION['orientation'] == "land") {								
+								echo '<div class="promo-sale-land">50% OFF</div>';		
+								echo '<div class="promo-name-land">potatoes 1kg</div>';	
+							} 
+							else {
+								echo '<div class="promo-sale">50% OFF</div>';
+								echo '<div class="promo-name">potatoes 1kg</div>';		
+							}
+						?>
+						<div class="row">
+							<?php
+								if ($_SESSION['orientation'] == "land") {
+									echo '<div class="col-6 no-padding-right"><div class="promo-strike-land">RS.240</div></div>';		
+									echo '<div class="col-6 no-padding-all"><div class="promo-price-land">rs.120</div></div>';
+									
+								} 
+								else {
+									echo '<div class="col-6 no-padding-right"><div class="promo-strike">RS.240</div></div>';
+									echo '<div class="col-6 no-padding-all"><div class="promo-price">rs.120</div></div>';			
+								}
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
     </div>
+    <div class="carousel-item">
+	<div class="promo-card-container">
+		<div class="card promo-card">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-5">
+						<img src="../assets/images/potatoes.png" alt="" class="promo-slider-image">
+					</div>
+					<div class="col-7">
+						<?php
+							if ($_SESSION['orientation'] == "land") {								
+								echo '<div class="promo-sale-land">50% OFF</div>';		
+								echo '<div class="promo-name-land">potatoes 1kg</div>';	
+							} 
+							else {
+								echo '<div class="promo-sale">50% OFF</div>';
+								echo '<div class="promo-name">potatoes 1kg</div>';		
+							}
+						?>
+						<div class="row">
+							<?php
+								if ($_SESSION['orientation'] == "land") {
+									echo '<div class="col-6 no-padding-right"><div class="promo-strike-land">RS.240</div></div>';		
+									echo '<div class="col-6 no-padding-all"><div class="promo-price-land">rs.120</div></div>';
+									
+								} 
+								else {
+									echo '<div class="col-6 no-padding-right"><div class="promo-strike">RS.240</div></div>';
+									echo '<div class="col-6 no-padding-all"><div class="promo-price">rs.120</div></div>';			
+								}
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div> 
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
+  <a class="carousel-control-prev" href="#promoCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#promoCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <div class="ui-grid-solo text-right view-all" onclick="window.location.href='../dailydeals-page/dailydeals.php';">VIEW ALL</div>
 </div>
+<!-- carousel promo done -->
 
-<div class="ui-grid-a category-section">
-      <div class="dailydeals-viewall">VIEW ALL</div>
-      </div>
+<!-- carousel promo done -->
 
 <p class="dailydeals-heading" style="margin-top:10px;">DAILY DEALS</p>
+<?php 
+  $products_json = file_get_contents('../data/products.json');
+  $products_arr = json_decode($products_json, true);
+          if ($_SESSION['orientation'] == "land") {
+            echo '<div class ="ui-grid-b">';
+          } 
+          else {
+            echo '<div class ="ui-grid-a">';						
+          }		
+          
+          for ($x = 0; $x <count($products_arr); $x++) {
+           
+          
+              echo '<div class ="ui-block-b product-padding">';
+            
 
-  <div class="ui-grid-a category-section">
-    <div class="ui-block-a">
-      <div class="card dailydeals-card">
-      <div class="card-body">
-     <img src="../assets/images/ambewela.jpg" class="dailydeals-image" style = 'height: 131px;'>
-      <hr class="divider">
-      <p class="dailydeals-name">DILMAH 500G</p>
-      <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
-      <span class = "productprice">Rs 500</span>
-      <span class = "oldprice"><strike> Rs 750</strike></span>
-      
-      <span onclick="changeImage()"><img class="heart" id="favdeals" src="heart.svg"></span>
-    
-      <fieldset class="ui-grid-b">
-                                                <div class="ui-block-a">
-                                                    <span onclick="openNav()"><img id="dealsminus" src="plus.svg"></span>
-                                                </div>
-                                                <div class="ui-block-b">
-                                                    <input type="number" name="dealsquantity" id="dealsquantity" value="1" style = "align:center;" />
-                                                </div>
-                                                <div class="ui-block-c">
-                                                <span onclick="openNav()"><img id="dealsplus" src="minus.svg"></span>
-                                                </div>
-                                                <button class="dailydeals-addbutton" style="">ADD</button>
-                                            </fieldset>
-      
-      </div>
-      </div>
-      </div>
-    <div class="ui-block-b"><div class="card dailydeals-card"><div class="card-body">
-    <img src="../assets/images/ambewela.jpg" class="dailydeals-image" style = 'height: 131px;'>
-      <hr class="divider">
-      <p class="dailydeals-name">Dairy</p>
-      <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
-      <span class = "productprice">Rs 500</span>
-      <span class = "oldprice"><strike> Rs 750</strike></span>
-      
-      <span onclick="changeImage1()"><img class="heart" id="favdeals1" src="heart.svg"></span>
-    
-      <fieldset class="ui-grid-b">
-                                                <div class="ui-block-a">
-                                                    <span onclick="openNav()"><img id="dealsminus" src="plus.svg"></span>
-                                                </div>
-                                                <div class="ui-block-b">
-                                                    <input type="number" name="dealsquantity" id="dealsquantity" value="1" style = "align:center;" />
-                                                </div>
-                                                <div class="ui-block-c">
-                                                <span onclick="openNav()"><img id="dealsplus" src="minus.svg"></span>
-                                                </div>
-                                                <button class="dailydeals-addbutton" style="">ADD</button>
-                                            </fieldset>
-      
+              echo '
+                <div class="ui-block-a">
+                      <div class="card dailydeals-card">
+                      <div class="card-body-data" style="width: 170px;">
+                      <img  src="'.$products_arr[$x]['image'].'" class="dailydeals-image" style = "height: 131px;">
+                      <hr class="divider">
+                      <span>
+                      <p class="dailydeals-name">'.$products_arr[$x]['product_name'].'</p>
+                      </span>
+                      <span onclick="changeImage2()"><img class="heart" id="favdeals2" src="heart.svg"></span>
+                      <div>
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      </div>
+                      <div class = "productprice">'.$products_arr[$x]['discounted_price'].'</div>
+                      <div class = "oldprice"><strike>'.$products_arr[$x]['product_price'].'</strike></div>                   
+                      
+                    
+                      
+                      </div>
+                      </div>
+                      </div>
+                  </div>              
+                  ';
+          }
+          echo '</div>';
+  ?>
 
-      </div>
-    </div>
-</div>
-    
-
-      <div class="ui-block-a">
-      <div class="card dailydeals-card">
-      <div class="card-body">
-      <img src="../assets/images/ambewela.jpg" class="dailydeals-image" style = 'height: 131px;'>
-      <hr class="divider">
-      <p class="dailydeals-name">FRUITS</p>
-      <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
-      <span class = "productprice">Rs 500</span>
-      <span class = "oldprice"><strike> Rs 750</strike></span>
-      
-      <span onclick="changeImage2()"><img class="heart" id="favdeals2" src="heart.svg"></span>
-    
-      <fieldset class="ui-grid-b">
-                                                <div class="ui-block-a">
-                                                    <span onclick="openNav()"><img id="dealsminus" src="plus.svg"></span>
-                                                </div>
-                                                <div class="ui-block-b">
-                                                    <input type="number" name="dealsquantity" id="dealsquantity" value="1" style = "align:center;" />
-                                                </div>
-                                                <div class="ui-block-c">
-                                                <span onclick="openNav()"><img id="dealsplus" src="minus.svg"></span>
-                                                </div>
-                                                <button class="dailydeals-addbutton" style="">ADD</button>
-                                            </fieldset>
-      
-      </div>
-      </div>
-      </div>
-
-      <div class="ui-block-b">
-      <div class="card dailydeals-card">
-      <div class="card-body">
-      <img src="../assets/images/ambewela.jpg" class="dailydeals-image" style = 'height: 131px;'>
-      <hr class="divider">
-      <p class="dailydeals-name">BEVERAGES</p>
-      <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
-      <span class = "productprice">Rs 500</span>
-      <span class = "oldprice"><strike> Rs 750</strike></span>
-      
-          <span onclick="changeImage3()"><img class="heart" id="favdeals3" src="heart.svg"></span>
-    
-      <fieldset class="ui-grid-b">
-                                                <div class="ui-block-a">
-                                                    <span onclick="openNav()"><img id="dealsminus" src="plus.svg"></span>
-                                                </div>
-                                                <div class="ui-block-b">
-                                                    <input type="number" name="dealsquantity" id="dealsquantity" value="1" style = "align:center;" />
-                                                </div>
-                                                <div class="ui-block-c">
-                                                <span onclick="openNav()"><img id="dealsplus" src="minus.svg"></span>
-                                                </div>
-                                                <button class="dailydeals-addbutton" style="">ADD</button>
-                                            </fieldset>
-      
-      </div>
-      </div>
-      </div>
-
-      </div><!-- /grid-b -->
-
-      <button class="dailydeals-viewbutton" style="margin-left:137px;">View More</button>
+      <button id="dailydeals-viewbutton" style="margin-left:137px;">View More</button>
       
       <script>
     function changeImage()
@@ -263,11 +239,7 @@
         img.src="heart (selected).png";
         }
 </script> 
-  
 
+<div class="footer-padding"></div>
 
-</body>
-</html>
-
-
-</body>
+<?php include '../templates/footer.php'; ?>

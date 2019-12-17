@@ -1,13 +1,14 @@
-
+<div data-role="page" id="home" class="page-full" style="background-color: white;">
 
 <?php 
 	session_start();
+	$_SESSION['page-type']= 'catalog';
 	include '../templates/header.php';
 ?>
 	
 
 <header>
-<link rel="stylesheet" href="catalog.css">
+<link rel="stylesheet" href="../catalog/catalog.css">
 </header>
 
 
@@ -169,7 +170,7 @@ if(isset($_POST['search'])){
 </div>
 <!-- carousel promo done -->
 
-<!-- carousel categories -->
+<!-- Product Cards -->
 <div id="productcat" class="category-header">
     <?php 
     if(isset($_SESSION['categoryname'])){
@@ -179,7 +180,7 @@ if(isset($_POST['search'])){
     ?>
   
 <div class="ui-grid-solo category-container">
-<div class="scrolable">		
+	
 		<?php
 		
 		$products_json = file_get_contents('../data/products.json');
@@ -190,16 +191,29 @@ if(isset($_POST['search'])){
                     echo '<div class="card cat-card">';
                     echo '<div class="card-body">';
                     echo '<img src="'.$var['image'].'" class="cat-image">';
-                    echo '<div class="line-sep"><div>';
-                    echo '<div class="cat-name text-center">' . $var['product_name'] . '</div>';
+					echo '<div class="line-sep"><div>';
+					echo '<hr class="divider">';			
+					echo '<div class="cat-name text-left">' . $var['product_name'] . '</div>';
+					echo '<table>';
+					echo '<tr>';
+					echo '<td style="color:green;text-align:center;">'. $var['product_price'] . '</td>';
+					echo '<td style="color:red;text-align:center;"><strike>'. $var['reduce_price'] . '</strike></td>';
+					// echo '<td class="cat-name style=color:#AFA; text-left">' . $var['product_price'] . '</td>';
+					// echo '<td></td>';
+					// echo '<td class="cat-name text-right">' . $var['reduce_price'] . '</td>';
+					echo '</tr>';
+					echo '</table>';		
+    				/* echo '<div class="cat-name text-left">' . $var['product_price'] .'</div>';
+					echo '<div class="cat-name text-right">' . $var['reduce_price'].'</div>'; */
                     echo '</div>';
                     echo '</div>';
                     echo '</div>';
-                    echo '</div>';
+					echo '</div>';
+					
                 }
             }			
 			?>
-	</div>
+
 	<div class="ui-grid-solo text-right view-all" onclick="window.location.href='../categories/categories.php';">VIEW ALL</div>
 </div>
 <!-- carousel categories -->

@@ -3,9 +3,8 @@
 <?php 
 	session_start();
 	include '../templates/header.php';
+	$_SESSION['page-type']= 'home';
 ?>
-	
-
 <header>
 <link rel="stylesheet" href="home.css">
 </header>

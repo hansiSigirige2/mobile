@@ -1,13 +1,16 @@
-<div data-role="page" id="home" class="page-full">
+<div data-role="page" id="home" class="page-full" style="background-color: white;">
 
 <?php 
-		session_start();
+        session_start();
+        $_SESSION['page-type']= 'signup';
 	?>
 	<?php include '../templates/header.php'; ?>
+
     
 	<header>
 	 <link rel="stylesheet" href="../signup/signup.css">
-		<link rel="stylesheet" href="../assets/styles/header.css">
+        <link rel="stylesheet" href="../assets/styles/header.css">
+        <link rel="stylesheet" href="../assets/styles/footer.css">
 		<script src="../assets/scripts/main.js"></script>
 	</header>
 
@@ -44,8 +47,8 @@
                     <input type="password" name="conpassword" id="conpassword" value="" placeholder="" />
                 </form>
                 
-                
-                <button class="button">Sign Up</button>           
+                <a href="../home-page/home.php" class="button-signup" data-role="button" data-inline="true">Sign Up</a>
+                <!-- <button class="button">Sign Up</button>-->
                 
                 <hr>
                 <br>
@@ -61,5 +64,10 @@
         </div>
     </div>           
     </body>
+    <div class="footer-padding"></div>
+
+<?php include '../templates/footer.php'; ?>
+
 </html>        
+
      

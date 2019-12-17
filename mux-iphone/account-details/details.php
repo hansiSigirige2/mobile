@@ -1,7 +1,8 @@
 <div data-role="page" id="home" class="page-full" style="background-color: white;">
 
 	<?php 
-		session_start();
+        session_start();
+        $_SESSION['page-type']= 'account-details';
 	?>
 	<?php include '../templates/header.php'; ?>
 	<?php include '../templates/footer.php'; ?>

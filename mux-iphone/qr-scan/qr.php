@@ -1,6 +1,7 @@
 <?php
 include '../templates/header.php';
 session_start();
+$_SESSION['page-type']= 'qr';
 ?>
 
 <div role="main" class="ui-grid-solo main-section" style="background: #000000 !important;">

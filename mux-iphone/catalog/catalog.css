@@ -227,9 +227,10 @@ input:focus {
 
 .cat-card{
     width: 9rem;
-    height: 8rem;
+    height: 12rem !important;
     margin-right: 1rem;
     float: left;
+    margin-bottom: 1rem;
 }
 .category-container{
     padding-left: 2rem;

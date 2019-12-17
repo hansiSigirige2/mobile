@@ -27,6 +27,16 @@ div {
       outline: none;
   }    
 
+  
+.button-signup{
+    border-radius: 2rem !important;
+    margin: 2rem;
+    width: 11rem;
+    font-family: Ovsyanka !important;
+    background-color: black !important;
+    color: white !important;
+}
+
   .ui-grid-solo>.ui-block-a {
       width: 90% !important;
       margin-left: 1.2rem;
@@ -46,3 +56,13 @@ div {
       background-color: black;
       color: white;
   }
+
+  /* .ui-input-text{
+      border-color: white !important;
+  } */
+
+  .ui-input-text, .ui-input-search {
+    
+    border-width: 0 !important;
+    
+}
