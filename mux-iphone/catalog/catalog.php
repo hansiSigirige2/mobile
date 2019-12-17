@@ -2,6 +2,7 @@
 
 <?php 
 	session_start();
+	$_SESSION['page-type']= 'catalog';
 	include '../templates/header.php';
 ?>
 	

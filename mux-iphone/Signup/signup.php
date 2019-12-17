@@ -1,7 +1,8 @@
 <div data-role="page" id="home" class="page-full" style="background-color: white;">
 
 <?php 
-		session_start();
+        session_start();
+        $_SESSION['page-type']= 'signup';
 	?>
 	<?php include '../templates/header.php'; ?>
 

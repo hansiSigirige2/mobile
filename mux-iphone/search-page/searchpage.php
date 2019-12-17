@@ -1,5 +1,6 @@
 <?php 
 		session_start();
+		$_SESSION['page-type']= 'search';
 	?>
 	<?php include '../templates/header.php';?>
 	
@@ -70,7 +71,7 @@
 				echo '<div class ="ui-grid-a text-center">
 				<img src="../assets/images/no-search.png"></div>';
 
-
+s
 			}else{
 				if ($_SESSION['orientation'] == "land") {
 					echo '<div class ="ui-grid-b">';
