@@ -51,9 +51,12 @@
                     <img src="../assets/images/gold tier.svg" alt="expand" width="15%" align=right >
                     <img src="../assets/images/silver tier.svg" alt="expand" width="15%" align=left><br>
                     <img src="../assets/images/bar50.svg" alt="expand" width="60%" align=center >
-                    <br><br><br><p>Total Loyalty Points: 2500 <br>
-                        Redeemable Points: 1500
-                    </p>
+                    <?php 
+                    $user_file = file_get_contents('../data/users.json');
+                    $user_array = json_decode($user_file, true);
+                    echo '<br><br><br><p>Total Loyalty Points:'.$user_array[0]['loyalty_points'].'<br></p>';
+                    ?>
+                    
             </div>        
         </div>   
     </div>

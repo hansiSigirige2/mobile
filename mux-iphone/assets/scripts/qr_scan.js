@@ -50,10 +50,15 @@ function scanQr() {
 function interpretQr(data) {
 	qr.callback = function (err, val) {
 		if (err) {
+			addLoyalty();
 			$('#fail').modal('show');
+			
 		}
 		if (val) {
+			
 			$('#success').modal('show');
+			
+			
 		}
 	};
 	qr.decode(data);
@@ -70,3 +75,13 @@ function navigateToGamePage() {
 $(function () {
 	initializeViewport();
 });
+
+function addLoyalty(){
+    $.ajax({
+        url: '../setLoyalty.php',
+        method: 'POST',
+        data: { "loyalty_points": true },
+        success: function(response) {
+        }
+    });
+}

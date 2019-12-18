@@ -57,9 +57,7 @@ function getTotal() {
     $("#totalVal").html(total);
 }
 
-function search() {
 
-}
 
 
 function getcategory(){
