@@ -50,12 +50,12 @@ function scanQr() {
 function interpretQr(data) {
 	qr.callback = function (err, val) {
 		if (err) {
-			addLoyalty();
+			
 			$('#fail').modal('show');
 			
 		}
 		if (val) {
-			
+			addLoyalty();
 			$('#success').modal('show');
 			
 			
