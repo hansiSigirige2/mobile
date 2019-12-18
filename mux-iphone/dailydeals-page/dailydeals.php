@@ -1,5 +1,6 @@
 <?php 
 	session_start();
+	$_SESSION['page-type']= 'discount';
 	include '../templates/header.php';
 ?>
 	
