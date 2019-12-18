@@ -196,15 +196,15 @@ if(isset($_POST['search'])){
 					echo '<div class="cat-name text-left">' . $var['product_name'] . '</div>';
 					echo '<table>';
 					echo '<tr>';
-					echo '<td style="color:green;text-align:center;">'. $var['product_price'] . '</td>';
-					echo '<td style="color:red;text-align:center;"><strike>'. $var['reduce_price'] . '</strike></td>';
+					echo '<td style="color:green;text-align:center;">'. $var['discounted_price'] . '</td>';
+					echo '<td style="color:red;text-align:center;"><strike>'. $var['product_price'] . '</strike></td>';
 					echo '</tr><span>';
 					echo '</table>';
-					echo '<div id="input_count"><span>
-					<input type="text" size="25" value="1" id="count">
+					echo '<div id="input_count" >
 					<input type="image" src="../assets/images/minus.svg" id="moins" onclick="minus()" >
+					<input type="text" size="25" value="1" class="counter" id="count" data-role="none">
 					<input type="image" src="../assets/images/add.svg" id="plus" onclick="plus()">
-					</span></div>';		
+					</div>';		
     				/* echo '<div class="cat-name text-left">' . $var['product_price'] .'</div>';
 					echo '<div class="cat-name text-right">' . $var['reduce_price'].'</div>'; */
                     echo '</div>';

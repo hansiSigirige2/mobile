@@ -186,33 +186,36 @@ if(isset($_POST['search'])){
 		$products_json = file_get_contents('../data/products.json');
 		$prod_arr = json_decode($products_json, true);		
         
-		foreach($prod_arr as $var){
-			if (strcasecmp($var['category_name'],$category_name)==0){
-				echo '<div class="card cat-card">';
-				echo '<div class="card-body">';
-				echo '<img src="'.$var['image'].'" class="cat-image">';
-				echo '<div class="line-sep"><div>';
-				echo '<hr class="divider">';			
-				echo '<div class="cat-name text-left">' . $var['product_name'] . '</div>';
-				echo '<table>';
-				echo '<tr>';
-				echo '<td style="color:green;text-align:center;">'. $var['product_price'] . '</td>';
-				echo '<td style="color:red;text-align:center;"><strike>'. $var['reduce_price'] . '</strike></td>';
-				echo '</tr><span>';
-				echo '</table>';
-				echo '<div id="input_count"><span>
-				<input type="text" size="25" value="1" id="count">
-				<input type="image" src="../assets/images/minus.svg" id="moins" onclick="minus()" >
-				<input type="image" src="../assets/images/add.svg" id="plus" onclick="plus()">
-				</span></div>';	
-				echo '</div>';
-				echo '</div>';
-				echo '</div>';
-				echo '</div>';
-				
-			}
-		}			
-		?>
+            foreach($prod_arr as $var){
+                if (strcasecmp($var['category_name'],$category_name)==0){
+                    echo '<div class="card cat-card">';
+                    echo '<div class="card-body">';
+                    echo '<img src="'.$var['image'].'" class="cat-image">';
+					echo '<div class="line-sep"><div>';
+					echo '<hr class="divider">';			
+					echo '<div class="cat-name text-left">' . $var['product_name'] . '</div>';
+					echo '<table>';
+					echo '<tr>';
+					echo '<td style="color:green;text-align:center;">'. $var['discounted_price'] . '</td>';
+					echo '<td style="color:red;text-align:center;"><strike>'. $var['product_price'] . '</strike></td>';
+					echo '</tr><span>';
+					echo '</table>';
+					echo '<div id="input_count" >
+					<input type="image" src="../assets/images/minus.svg" id="moins" onclick="minus()" >
+					<input type="text" size="25" value="1" class="counter" id="count" data-role="none">
+					<input type="image" src="../assets/images/add.svg" id="plus" onclick="plus()">
+					</div>';	
+					echo '<a class="button-login" data-role="none" data-inline="true">Add</a>';
+    				/* echo '<div class="cat-name text-left">' . $var['product_price'] .'</div>';
+					echo '<div class="cat-name text-right">' . $var['reduce_price'].'</div>'; */
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+					echo '</div>';
+					
+                }
+            }			
+			?>
 
 	<div class="ui-grid-solo text-right view-all" onclick="window.location.href='../categories/categories.php';">VIEW ALL</div>
 </div>
@@ -221,3 +224,18 @@ if(isset($_POST['search'])){
 <div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>
+
+<script>
+	var count = 1;
+    var countEl = document.getElementById("count");
+    function plus(){
+        count++;
+        countEl.value = count;
+    }
+    function minus(){
+      if (count > 1) {
+        count--;
+        countEl.value = count;
+      }  
+	}
+</script>	

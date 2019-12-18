@@ -251,20 +251,24 @@ input:focus {
 }
 
 #count{
-    width:20px !important;
+    width: 40px !important;
+    height: 25px;
+    border-radius: 5px !important;
+    border-width: 1.5px;
+    border-color: black;
+    vertical-align: top;
+    text-align: center;
 }
-
 
 #input_count {
    
-    border-radius: 0px !important;
-    height: 30 !important;
+    margin-top: 10px;
     
 }
 
-.ui-input-text {
+/* .ui-input-text {
     border-radius: 0px !important;
     height: 30px;
     width: 30px !important;
     text-align: center !important;
-}
+} */
