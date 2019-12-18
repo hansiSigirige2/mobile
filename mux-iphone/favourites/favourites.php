@@ -1,4 +1,4 @@
-<div data-role="page" id="home" class="page-full" style="background-color: white;">
+
 
 <?php 
 		session_start();
@@ -51,13 +51,13 @@
                             <div class = "quantity">Quantity</div>
                                             <fieldset class="ui-grid-b">
                                                 <div class="ui-block-a">
-                                                    <span ><img type="button" id="minus" src="minus.svg" onclick="minus()" ></span>
+                                                    <span ><img type="button" id="minus" src="../assets/images/minus.svg" onclick="minus()" ></span>
                                                 </div>
                                                 <div class="ui-block-b">
                                                     <input type="number" name="quantity" id="quantity" value="1" />
                                                 </div>
                                                 <div class="ui-block-c">
-                                                <span><input type = "button" img id="plus" src="plus.svg" onclick="plus()"></span>
+                                                <span><input type = "button" img id="plus" src="../assets/images/plus.svg" onclick="plus()"></span>
                                                 </div>
                                             </fieldset>
                                         
@@ -67,9 +67,9 @@
 
                         <div class="ui-block-b">
                             <div class = "item-title">Items ()</div>
-                            <img src = "..\apple.jpg" id = "product-image">
+                            <img src = "../assets/images/apple.jpg" id = "product-image">
                             <br><br>
-                            <img src = "..\bin.png" class = "favourites-bin">
+                            <img src = "../assets/images/bin.png" class = "favourites-bin">
                         </div>
                 </div>
 

@@ -58,11 +58,21 @@
     color: #c59b08;
 }
 
-.productdetail-heart {
+.productdetail-heart input[type="checkbox"] {
+    margin-left: 135px;
+    width: 20px;
+    margin-top: 10px;
+    background-image: url(heart.svg);
+}
+
+.productdetail-heart input[type="checkbox"]:checked{
+    background-image: url(heart-selected.svg);
     margin-left: 135px;
     width: 20px;
     margin-top: 10px;
 }
+
+
 
 #productquantity {
     border: 1px solid #CCCCCC;

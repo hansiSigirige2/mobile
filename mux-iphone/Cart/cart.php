@@ -52,13 +52,13 @@ var count = 1;
                             <div class = "quantity">Quantity</div>
                                             <fieldset class="ui-grid-b">
                                                 <div class="ui-block-a minus-box">
-                                                    <span><input type = "image" id="minus" src="minus.svg" onclick = "minus()"></span>
+                                                    <span><input type = "image" id="minus" src="../assets/images/minus.svg" onclick = "minus()"></span>
                                                 </div>
                                                 <div class="ui-block-b quantity-box">
                                                     <input type="number" name="count" id="count" value="1" />
                                                 </div>
                                                 <div class="ui-block-c plus-box">
-                                                <span><input type = "image" id="plus" src="plus.svg" onclick = "plus()"></span>
+                                                <span><input type = "image" id="plus" src="../assets/images/plus.svg" onclick = "plus()"></span>
                                                 </div>
                                             </fieldset>
                                         
@@ -100,9 +100,9 @@ var count = 1;
                        
 
                         <div class="ui-block-b image-block">
-                            <img src = "..\apple.jpg" id = "product-image">
+                            <img src = "../assets/images/apple.jpg" id = "product-image">
                             <br><br>
-                            <img src = "..\bin.png" class = "cart-bin">
+                            <img src = "..../assets/images/bin.png" class = "cart-bin">
                         </div>
                 </div>
                 <hr>

@@ -30,7 +30,7 @@
             </div>
 
             <div class = "cart-empty-text"> Looks like your cart is empty .... </div>
-            <img src = "sad-cart.png" id = "sad-cart-image">
+            <img src = "../assets/images/sad-cart.png" id = "sad-cart-image">
             <button class ="shop-now-button" onclick="window.location.href='../home-page/home.php';" > Shop Now </button>
 
             

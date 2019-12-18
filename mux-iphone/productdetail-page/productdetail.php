@@ -48,7 +48,7 @@
     <label for="star1" title="text">1 star</label>
   </div>
 
-  <span onclick="changeImage3()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
+  <span ><input type ="checkbox" class="productdetail-heart" id="heart" ></span>
 
   <div class = "product-name" >AMBEWELA IS PRODUCED USING PREMIUM QUALITY PURE COW'S MILK FROM AMBEWELA FARM </div>
 
