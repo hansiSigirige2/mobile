@@ -227,10 +227,12 @@ input:focus {
 
 .cat-card{
     width: 9rem;
-    height: 18rem !important;
+    height: 16rem !important;
+    border-radius: 10px;
     margin-right: 1rem;
     float: left;
     margin-bottom: 1rem;
+    box-shadow: -6px 6px 8px -5px #b8b8b8;
 }
 .category-container{
     padding-left: 2rem;
@@ -263,7 +265,7 @@ input:focus {
 #input_count {
    
     margin-top: 10px;
-    
+    margin-bottom: 10px;
 }
 
 /* .ui-input-text {
@@ -272,3 +274,22 @@ input:focus {
     width: 30px !important;
     text-align: center !important;
 } */
+
+.button-login{
+    margin-top: 5px !important;
+    margin:2rem !important;
+    padding: 3 !important;
+    /* display: inline !important; */
+    border-radius: 2rem !important;
+    /* margin: 2rem; */
+    /* width: 11rem; */
+    font-family: Ovsyanka !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+.divider {
+    margin-top: 1.5rem;
+    width: 143px;
+    margin-inline-start: -21px;
+}

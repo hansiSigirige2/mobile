@@ -177,7 +177,9 @@ if(isset($_POST['search'])){
         $category_name=$_SESSION['categoryname'];
       echo '<div id="productcat" class="category-header">'.$category_name.'</div>';
     }
-    ?>
+	?>
+
+	<!-- <button onclick="sortFunction()">Try it</button> -->
   
 <div class="ui-grid-solo category-container">
 	
@@ -188,6 +190,7 @@ if(isset($_POST['search'])){
         
             foreach($prod_arr as $var){
                 if (strcasecmp($var['category_name'],$category_name)==0){
+
                     echo '<div class="card cat-card">';
                     echo '<div class="card-body">';
                     echo '<img src="'.$var['image'].'" class="cat-image">';
@@ -204,7 +207,8 @@ if(isset($_POST['search'])){
 					<input type="image" src="../assets/images/minus.svg" id="moins" onclick="minus()" >
 					<input type="text" size="25" value="1" class="counter" id="count" data-role="none">
 					<input type="image" src="../assets/images/add.svg" id="plus" onclick="plus()">
-					</div>';		
+					</div>';	
+					echo '<a class="button-login" data-role="none" data-inline="true">Add</a>';
     				/* echo '<div class="cat-name text-left">' . $var['product_price'] .'</div>';
 					echo '<div class="cat-name text-right">' . $var['reduce_price'].'</div>'; */
                     echo '</div>';
@@ -237,4 +241,6 @@ if(isset($_POST['search'])){
         countEl.value = count;
       }  
 	}
+
+	
 </script>	

@@ -177,7 +177,9 @@ if(isset($_POST['search'])){
         $category_name=$_SESSION['categoryname'];
       echo '<div id="productcat" class="category-header">'.$category_name.'</div>';
     }
-    ?>
+	?>
+
+	<!-- <button onclick="sortFunction()">Try it</button> -->
   
 <div class="ui-grid-solo category-container">
 	
@@ -188,12 +190,15 @@ if(isset($_POST['search'])){
         
             foreach($prod_arr as $var){
                 if (strcasecmp($var['category_name'],$category_name)==0){
+
                     echo '<div class="card cat-card">';
                     echo '<div class="card-body">';
                     echo '<img src="'.$var['image'].'" class="cat-image">';
 					echo '<div class="line-sep"><div>';
 					echo '<hr class="divider">';			
-					echo '<div class="cat-name text-left">' . $var['product_name'] . '</div>';
+					echo '<span><div class="cat-name text-left">' . $var['product_name'] . 
+					'<img class="favorite-icon" src="../assets/images/favorite-empty.png" ></div>';
+					echo '	</span>';
 					echo '<table>';
 					echo '<tr>';
 					echo '<td style="color:green;text-align:center;">'. $var['discounted_price'] . '</td>';
@@ -238,4 +243,5 @@ if(isset($_POST['search'])){
         countEl.value = count;
       }  
 	}
+
 </script>	
