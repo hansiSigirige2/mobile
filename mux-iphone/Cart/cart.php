@@ -123,7 +123,7 @@ var count = 1;
                     </div>
                 </div>
 
-                <button class = "submit-button"> Proceed to Checkout </button>
+                <button class = "submit-button" onclick="window.location.href='../checkout/checkout.php';"> Proceed to Checkout </button>
             
 </body>
 

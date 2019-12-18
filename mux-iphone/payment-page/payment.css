@@ -106,12 +106,6 @@
     padding-right: 1rem;
 }
 
-
-.footer-padding{
-    height: 7rem;
-    width: 100%;
-}
-
 .radio{
     padding-left: 20rem;
     margin-top: -21px;
@@ -237,4 +231,8 @@
 .pretty-girl{
     width: 124%;
     margin-left: -61px;
+}
+
+.ui-btn:focus{
+    box-shadow:0 0 12px black !important;
 }
