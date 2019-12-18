@@ -35,18 +35,7 @@
 <img src="../assets/images/ambewela.jpg" class="productdetail-image" >
 
 <br>
-<div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
+
 
   <span onclick="changeImage3()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
 
@@ -86,6 +75,57 @@
 
 <h4 class ="product-details-otherdeals">OTHER DEALS</h4>
 
+<?php 
+  $products_json = file_get_contents('../data/products.json');
+  $products_arr = json_decode($products_json, true);
+          if ($_SESSION['orientation'] == "land") {
+            echo '<div class ="ui-grid-b">';
+          } 
+          else {
+            echo '<div class ="ui-grid-a">';						
+          }		
+          
+          for ($x = 0; $x <count($products_arr); $x++) {
+           
+          
+              echo '<div class ="ui-block-b product-padding">';
+            
+
+              echo '
+                <div class="ui-block-a">
+                      <div class="card dailydeals-card">
+					  <div class="card-body-data" style="width: 170px;">
+					  <div class="image-data">
+					  <img  src="'.$products_arr[$x]['image'].'" class="dailydeals-image" style = "height: 131px;">
+					  </div>
+                      <hr class="divider">
+                      <span>
+                      <p class="dailydeals-name">'.$products_arr[$x]['product_name'].'</p>
+                      </span>
+                      <span onclick="changeImage2()"><img class="heart" id="favdeals2" src="heart.svg"></span>
+                      <div>
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      <img class="star" id="star" src="../assets/images/Star.png">
+                      </div>
+                      <div class = "productprice">'.$products_arr[$x]['discounted_price'].'</div>
+                      <div class = "oldprice"><strike>'.$products_arr[$x]['product_price'].'</strike></div>                   
+                      
+                    
+                      
+                      </div>
+                      </div>
+                      </div>
+                  </div>              
+                  ';
+          }
+          echo '</div>';
+  ?>
+
+  <br>
+  <br>
 
 
       

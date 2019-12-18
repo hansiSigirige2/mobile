@@ -51,8 +51,8 @@
                         .category-card {
                             margin-bottom: 2rem;
                             width: 91%;
-                            border-radius: 14px;
-                            box-shadow: grey 2px 2px 7px 2px;
+                            border-radius: 10px;
+                            box-shadow: -6px 6px 8px -5px #b8b8b8;
                         }
                         
                         .category-section {
@@ -60,9 +60,10 @@
                         }
                         
                         .divider {
-                            border-top: 2px solid grey;
-                            margin-top: 7px;
-                            margin-bottom: 7px;
+                            border-top: 1px solid grey;
+                            margin-top: 0.5rem;
+                            width: 106px;
+                            margin-inline-start: -4px;
                         }
                         
                         .categories-name {
@@ -375,6 +376,18 @@
                                 text-align: center;
                                 font-weight: bold;
                             }
+                            .divider {
+                                border-top: 1px solid grey;
+                                margin-top: 0.5rem;
+                                width: 225px;
+                                margin-inline-start: -4px;
+                            }
+                            .category-card {
+                                margin-bottom: 2rem;
+                                width: 91%;
+                                border-radius: 10px;
+                                box-shadow: -6px 6px 8px -5px #b8b8b8;
+                            }
                             .card-body {
                                 padding: 0.25rem;
                                 height: 187px !important;
@@ -443,6 +456,18 @@
                                     margin-top: 20px;
                                     text-align: center;
                                     font-weight: bold;
+                                }
+                                .divider {
+                                    border-top: 1px solid grey;
+                                    margin-top: 0.5rem;
+                                    width: 302px;
+                                    margin-inline-start: -4px;
+                                }
+                                .category-card {
+                                    margin-bottom: 2rem;
+                                    width: 91%;
+                                    border-radius: 10px;
+                                    box-shadow: -6px 6px 8px -5px #b8b8b8;
                                 }
                                 .card-body {
                                     padding: 0.25rem;
