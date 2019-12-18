@@ -71,7 +71,7 @@
 				echo '<div class ="ui-grid-a text-center">
 				<img src="../assets/images/no-search.png"></div>';
 
-s
+
 			}else{
 				if ($_SESSION['orientation'] == "land") {
 					echo '<div class ="ui-grid-b">';
@@ -92,7 +92,7 @@ s
 						echo '<div class="card-body product-body">';
 						echo '	<h5 class="product-title">'.$searchresult_arr[$x]['product_name'].'</h5>';
 						echo '	<img class="favorite-icon" src="../assets/images/favorite-empty.png" >';
-						echo '<div class="product-price">RS.'.$searchresult_arr[$x]['product_price'].'</div>';
+						echo '<div class="product-price">'.$searchresult_arr[$x]['product_price'].'</div>';
 						echo '</div>';
 						echo '</div>';
 						echo '</div>';

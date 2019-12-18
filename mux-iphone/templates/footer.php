@@ -14,7 +14,7 @@
 <!-- Custom Scripts -->
 <script src="../assets/scripts/main.js"></script>
 
-<link rel="stylesheet" href="../assets/styles/footer.css">
+<link rel="stylesheet" href="../assets/styles/footer.css" >
 
 <div class ="ui-grid-a footer">
 	<div class ="ui-block-a text-left">

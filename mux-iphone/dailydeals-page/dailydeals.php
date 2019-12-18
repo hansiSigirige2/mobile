@@ -186,8 +186,10 @@ if(isset($_POST['search'])){
               echo '
                 <div class="ui-block-a">
                       <div class="card dailydeals-card">
-                      <div class="card-body-data" style="width: 170px;">
-                      <img  src="'.$products_arr[$x]['image'].'" class="dailydeals-image" style = "height: 131px;">
+					  <div class="card-body-data" style="width: 170px;">
+					  <div class="image-data">
+					  <img  src="'.$products_arr[$x]['image'].'" class="dailydeals-image" style = "height: 131px;">
+					  </div>
                       <hr class="divider">
                       <span>
                       <p class="dailydeals-name">'.$products_arr[$x]['product_name'].'</p>

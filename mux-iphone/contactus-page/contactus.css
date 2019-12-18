@@ -103,3 +103,107 @@
     height: 7rem;
     width: 100%;
 }
+
+
+/* @media only screen and(device-width:1024px) {
+    .address {
+        font-size: 160px !important;
+        margin-left: 120px !important;
+    }
+} */
+
+
+/* I phone media query*/
+
+@media(min-width:812px) {
+    .address {
+        font-size: 25px !important;
+        margin-left: 126px !important;
+    }
+    .contactus-googlemap {
+        margin-left: 600px;
+        margin-top: -52px;
+        height: 40px;
+        width: 40px;
+    }
+    .telephone {
+        margin-left: 123px;
+        font-size: 25px;
+        margin-top: -38px;
+    }
+    .email {
+        margin-left: 123;
+        font-size: 25px;
+        margin-top: -34px;
+    }
+    #contactustextarea {
+        margin-top: -39px;
+        width: 511px;
+        margin-left: 123;
+    }
+    #emailextarea {
+        height: 47px;
+        width: 512px;
+        margin-left: 123px;
+    }
+    #categories-viewbutton {
+        border-radius: 21px;
+        background: black;
+        color: white;
+        width: 162px;
+        margin-left: 473px;
+        border: none;
+        text-align: center;
+        margin-top: 22px;
+        font-weight: bold;
+    }
+}
+
+
+/* I pad media query */
+
+@media(min-width:760px) {
+    .address {
+        font-size: 25px !important;
+        margin-left: 126px !important;
+    }
+    .contactus-googlemap {
+        margin-left: 600px;
+        margin-top: -52px;
+        height: 40px;
+        width: 40px;
+    }
+    .telephone {
+        margin-left: 123px;
+        font-size: 25px;
+        margin-top: -38px;
+    }
+    .email {
+        margin-left: 123;
+        font-size: 25px;
+        margin-top: -34px;
+    }
+    #contactustextarea {
+        margin-top: -39px;
+        width: 511px;
+        margin-left: 123;
+    }
+    #emailextarea {
+        height: 47px;
+        width: 512px;
+        margin-left: 123px;
+    }
+    #categories-viewbutton {
+        border-radius: 21px;
+        background: black;
+        color: white;
+        width: 162px;
+        margin-left: 473px;
+        border: none;
+        text-align: center;
+        margin-top: 22px;
+        font-weight: bold;
+    }
+}
+
+@media screen and(orientation:landscape) {}
