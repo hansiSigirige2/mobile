@@ -36,11 +36,15 @@
 <div class="ui-grid-c nav-bar">
 	<div class="ui-block-a text-center">
 <?php
+	$home_link="'../home-page/home.php'";
+	$category_link="'../categories/categories.php'";
+	$discount_link="'../dailydeals-page/dailydeals.php'";
+	$favorites_link="'../favourites/favourites.php'";
 	if (isset($_SESSION['page-type'])){
 	if($_SESSION['page-type']== 'home'){
-		echo'<img class="nav-icon" src="../assets/images/home-red.png" alt="">';
+		echo'<img onclick="window.location.href='.$home_link.';"class="nav-icon" src="../assets/images/home-red.png" alt="">';
 	}else{
-		echo '<img class="nav-icon" src="../assets/images/home-black.png" alt="">';
+		echo '<img onclick="window.location.href='.$home_link.';"class="nav-icon" src="../assets/images/home-black.png" alt="">';
 	}
 }?>
 	</div>
@@ -49,9 +53,9 @@
 	<?php
 	if (isset($_SESSION['page-type'])){
 	if($_SESSION['page-type']=='discount'){
-		echo'<img class="nav-icon" src="../assets/images/discount-red.png" alt="">';
+		echo'<img onclick="window.location.href='.$discount_link.';"class="nav-icon" src="../assets/images/discount-red.png" alt="">';
 	}else{
-		echo '<img class="nav-icon" src="../assets/images/discount-black.png" alt="">';
+		echo '<img onclick="window.location.href='.$discount_link.';"class="nav-icon" src="../assets/images/discount-black.png" alt="">';
 	}
 }?>
 	</div>
@@ -59,9 +63,9 @@
 	<?php
 	if (isset($_SESSION['page-type'])){
 	if($_SESSION['page-type']=='category'){
-		echo'<img class="nav-icon" src="../assets/images/category-red.png" alt="">';
+		echo'<img onclick="window.location.href='.$category_link.';"class="nav-icon" src="../assets/images/category-red.png" alt="">';
 	}else{
-		echo '<img class="nav-icon" src="../assets/images/category-black.png" alt="">';
+		echo '<img onclick="window.location.href='.$category_link.';"class="nav-icon" src="../assets/images/category-black.png" alt="">';
 	}
 }?>
 	</div>
@@ -69,9 +73,9 @@
 	<?php
 	if (isset($_SESSION['page-type'])){
 	if($_SESSION['page-type']=='favorite'){
-		echo'<img class="nav-icon" src="../assets/images/heart-red.png" alt="">';
+		echo'<img onclick="window.location.href='.$favorites_link.';" class="nav-icon" src="../assets/images/heart-red.png" alt="">';
 	}else{
-		echo '<img class="nav-icon" src="../assets/images/heart-black.png" alt="">';
+		echo '<img onclick="window.location.href='.$favorites_link.';" class="nav-icon" src="../assets/images/heart-black.png" alt="">';
 	}
 }?>
 	</div>
