@@ -18,10 +18,10 @@
 
 <div class ="ui-grid-a footer">
 	<div class ="ui-block-a text-left">
-		<div class="footer-text about">About Us</div>
+		<div onclick="window.location.href='../about-us/about-us.php';" class="footer-text about">About Us</div>
 	</div>	
 	<div class ="ui-block-a text-left">
-		<div class="footer-text contact">Contact Us</div>
+		<div onclick="window.location.href='../contactus-page/contactus.php';" class="footer-text contact">Contact Us</div>
 	</div>
 	<div class ="ui-block-b text-right">
 		<div class="footer-text terms">Terms and Conditions</div>

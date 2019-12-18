@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Ovsyanka;
+    src: url(../assets/fonts/WOFF/Ovsyanka.woff);
+}
+
 .productdetail-image {
     width: 193px;
     height: 185px;
@@ -37,6 +42,7 @@
     color: #ccc;
 }
 
+<<<<<<< HEAD
 .rate:not(:checked)>label:before {
     content: '★ ';
 }
@@ -59,6 +65,9 @@
 }
 
 .productdetail-heart input[type="checkbox"] {
+=======
+.productdetail-heart {
+>>>>>>> 94e8bf3b33933c3e706aa94118b1199f3c52c16d
     margin-left: 135px;
     width: 20px;
     margin-top: 10px;
@@ -191,7 +200,8 @@
     border: none;
     font-weight: bold;
     text-align: center;
-    margin-top: 23px;
+    width: 142px;
+    margin-top: 29px;
 }
 
 .product-buynow {
@@ -205,10 +215,93 @@
     border: none;
     font-weight: bold;
     text-align: center;
-    margin-top: -23px;
+    margin-top: -52px;
+    width: 142px;
+    margin-left: 197px;
 }
 
 .product-details-otherdeals {
     padding: 1px;
     margin-top: 20px;
+}
+
+.card-body-data {
+    padding: 0.25rem;
+    height: 245px;
+}
+
+.dailydeals-card {
+    margin-bottom: 2rem;
+    margin-left: 10px;
+    width: 91%;
+    border-radius: 10px;
+    box-shadow: -1px 1px 9px #aaaaaa;
+}
+
+.dailydeals-section {
+    padding: 10px;
+}
+
+.divider {
+    border-top: 2px solid grey;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.dailydeals-name {
+    display: inline;
+    font-family: Ovsyanka;
+    font-size: 15px;
+    text-align: centerleft;
+    font-weight: bold;
+    margin-top: -2px;
+    margin-bottom: 13px;
+}
+
+.dailydeals-image {
+    width: 145px;
+    height: 113px !important;
+}
+
+.dailydeals-heading {
+    font-family: Ovsyanka;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#favdeals2 {
+    margin-left: 60px;
+    width: 20px;
+}
+
+#star {
+    margin-bottom: 20px !important;
+    margin-left: 5px !important;
+    width: 20px !important;
+    margin-top: 20px !important;
+}
+
+.scrolable {
+    width: 40rem;
+}
+
+.productprice {
+    color: green;
+    font-family: Ovsyanka;
+    margin-top: -9px;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.oldprice {
+    color: red;
+    font-family: Ovsyanka;
+    font-size: 14px;
+    margin-right: 21px;
+    text-align: right;
+    margin-top: -21px;
 }

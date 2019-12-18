@@ -33,7 +33,7 @@
                                 farmers, skilled artisans and responsible fishermen.
         </div>
         <div class="aboutus-video" controls>
-            <<iframe  src="https://www.youtube.com/watch?v=z5z-nF65-Qccontrols=0">
+            <iframe src="https://www.youtube.com/watch?v=z5z-nF65-Qc">
             </iframe>
         </div>
         <div class = "heading-main"> Convenience Shouldn't Mean Compromise </div>
@@ -47,7 +47,7 @@
 
 
 
-<div class="footer-padding"></div>
+
 
 <?php include '../templates/footer.php'; ?>
                     

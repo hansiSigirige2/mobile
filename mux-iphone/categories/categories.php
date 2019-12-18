@@ -1,5 +1,6 @@
 <?php 
 	session_start();
+	$_SESSION['page-type']= 'category';
 	include '../templates/header.php';
 ?>
 	
@@ -227,6 +228,5 @@ if(isset($_POST['search'])){
 
 
 
-<div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>

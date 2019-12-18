@@ -84,3 +84,7 @@
                 <br>
                 <button class = "submit-button" onclick="window.location.href='../favourites/favourites-empty.php';"> Clear Favourites </button>
 </div>
+<<<<<<< HEAD
+=======
+<?php include '../templates/footer.php'; ?>
+>>>>>>> 94e8bf3b33933c3e706aa94118b1199f3c52c16d

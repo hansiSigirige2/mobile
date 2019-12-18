@@ -37,17 +37,15 @@
 	</div>
 	<!-- hamburger -->
 	<div id="menucon" class="menu-container">
-			<div onclick="window.location.href='../home-page/home.php';" class="ui-grid-solo menu-item text-center">
-			Home
-			</div>
+			<div onclick="window.location.href='../home-page/home.php';" class="ui-grid-solo menu-item text-center">Home</div>
+			<div onclick="window.location.href='../qr-scan/qr.php';" class="ui-grid-solo menu-item text-center">QR Promotion</div>
 			<div onclick="window.location.href='../categories/categories.php';"class="ui-grid-solo menu-item text-center">Categories</div>
-			<div class="ui-grid-solo menu-item text-center">Favorites</div>
+			<div onclick="window.location.href='../favourites/favourites.php';"class="ui-grid-solo menu-item text-center">Favorites</div>
 			<div onclick="window.location.href='../dailydeals-page/dailydeals.php';"class="ui-grid-solo menu-item text-center">Promotions</div>
 			<div onclick="window.location.href='../account-details/details.php';"class="ui-grid-solo menu-item text-center">My Account</div>
 			<div onclick="window.location.href='../Cart/cart.php';"class="ui-grid-solo menu-item text-center">Cart</div>
 			<div onclick="window.location.href='../about-us/about-us.php';"class="ui-grid-solo menu-item text-center">About us</div>
 			<div onclick="window.location.href='../contactus-page/contactus.php';"class="ui-grid-solo menu-item text-center">Contact Us</div>
-			<div class="ui-grid-solo menu-item text-center">Previously ordered</div>
 			<div class="ui-grid-solo menu-item text-center">FAQ's</div>		
  
     </div>  

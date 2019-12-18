@@ -300,3 +300,11 @@ input:focus {
     margin-left: 85px;
 }
 
+select{
+    width: 70px;
+    font-family: Ovsyanka !important;
+    background-color: white !important;
+    color: black !important;
+    border: 0px; 
+}
+

@@ -1,5 +1,6 @@
 <?php 
 	session_start();
+	$_SESSION['page-type']= 'discount';
 	include '../templates/header.php';
 ?>
 	
@@ -242,6 +243,5 @@ if(isset($_POST['search'])){
         }
 </script> 
 
-<div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>

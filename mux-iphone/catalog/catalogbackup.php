@@ -224,7 +224,7 @@ if(isset($_POST['search'])){
 </div>
 <!-- carousel categories -->
 
-<div class="footer-padding"></div>
+
 
 <?php include '../templates/footer.php'; ?>
 

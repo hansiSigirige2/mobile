@@ -204,13 +204,12 @@ if(isset($_POST['search'])){
 		
 		$categories_json = file_get_contents('../data/categories.json');
 		$category_arr = json_decode($categories_json, true);			
-		
-			foreach ($category_arr as $var) {				
+			for($x = 0; $x<4; $x++){				
 				echo '<div class="card cat-card">';
 				echo '<div class="card-body">';
-				echo '<img src="'.$var['image'].'" class="cat-image">';
+				echo '<img src="'.$category_arr[$x]['image'].'" class="cat-image">';
 				echo '<div class="line-sep"><div>';
-				echo '<div class="cat-name text-center">' . $var['category_name'] . '</div>';
+				echo '<div id="categoryname" onclick="getcategory()" class="cat-name text-center">' . $category_arr[$x]['category_name'] . '</div>';
 				echo '</div>';
 				echo '</div>';
 				echo '</div>';
@@ -218,10 +217,11 @@ if(isset($_POST['search'])){
 			}
 			?>
 	</div>
-	<div class="ui-grid-solo text-right view-all" onclick="window.location.href='../categories/categories.php';">VIEW ALL</div>
+	
 </div>
+<div class="ui-grid-solo text-right view-all" onclick="window.location.href='../categories/categories.php';">VIEW ALL</div>
 <!-- carousel categories -->
 
-<div class="footer-padding"></div>
+
 
 <?php include '../templates/footer.php'; ?>
