@@ -127,7 +127,7 @@ var count = 1;
             
 </body>
 
-<div class="footer-padding"></div>
+
 
 <?php include '../templates/footer.php'; ?>
                     

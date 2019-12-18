@@ -29,6 +29,6 @@ $charge = \Stripe\Charge::create([
 <img class="pretty-girl" src="../assets/images/favor.jpg">
 </div>
 
-<div class="footer-padding"></div>
+
 
 <?php include '../templates/footer.php'; ?>

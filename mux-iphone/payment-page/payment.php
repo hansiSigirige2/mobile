@@ -116,7 +116,6 @@
 
 
 
-<div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>
 <script src="../assets/scripts/stripe.js"></script>

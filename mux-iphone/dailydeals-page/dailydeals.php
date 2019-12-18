@@ -242,6 +242,5 @@ if(isset($_POST['search'])){
         }
 </script> 
 
-<div class="footer-padding"></div>
 
 <?php include '../templates/footer.php'; ?>

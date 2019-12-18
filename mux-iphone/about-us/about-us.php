@@ -47,7 +47,7 @@
 
 
 
-<div class="footer-padding"></div>
+
 
 <?php include '../templates/footer.php'; ?>
                     

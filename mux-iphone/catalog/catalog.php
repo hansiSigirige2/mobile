@@ -163,7 +163,7 @@
 
 		<!-- Product Cards -->
 		<span>
-		<div id="productcat" class="category-header">
+		
     		<?php 
 				if(isset($_SESSION['categoryname'])){
 					$category_name=$_SESSION['categoryname'];
@@ -181,7 +181,7 @@
 				<?php
 				}
 				?>
-		</div>
+		
 		</span>
 		<!-- <button onclick="sortFunction()">Try it</button> -->
   
@@ -247,7 +247,7 @@
 		?>
 </div>
 	<!-- carousel categories -->
-	<div class="footer-padding"></div>
+
 		<?php include '../templates/footer.php'; ?>
 	
 	<script>
