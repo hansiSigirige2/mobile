@@ -10,27 +10,27 @@
     {
         "product_id": "2",
         "product_name": "Avocado",
-        "product_price": "Rs.120",
+        "product_price": "Rs.180",
         "category_name": "Vegetables",
-        "discounted_price": "Rs.100",
+        "discounted_price": "Rs.140",
         "image": "../assets/images/avocado.jpg",
         "link": ""
     },
     {
         "product_id": "3",
         "product_name": "Chillies",
-        "product_price": "Rs.120",
+        "product_price": "Rs.110",
         "category_name": "Vegetables",
-        "discounted_price": "Rs.110",
+        "discounted_price": "Rs.105",
         "image": "../assets/images/chillies.jpg",
         "link": ""
     },
     {
         "product_id": "4",
         "product_name": "Tomatoes",
-        "product_price": "Rs.110",
+        "product_price": "Rs.155",
         "category_name": "Vegetables",
-        "discounted_price": "Rs.100",
+        "discounted_price": "Rs.130",
         "image": "../assets/images/tomatoes.jpeg",
         "link": ""
     }

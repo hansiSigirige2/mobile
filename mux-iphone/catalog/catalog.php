@@ -175,7 +175,21 @@ if(isset($_POST['search'])){
     <?php 
     if(isset($_SESSION['categoryname'])){
         $category_name=$_SESSION['categoryname'];
-      echo '<div id="productcat" class="category-header">'.$category_name.'</div>';
+	  echo '<div id="productcat" class="category-header">'.$category_name.'</div>';
+	  ?>
+
+	<form>
+		
+	<!-- Sorting Widget -->
+	<select  data-role="none" name="sort" id="" onchange="this.form.submit()">
+		<option value="random"> Random </option>	
+		<option value="price"> Price </option>
+		<option value="alphabetically"> Sort Alphabetically </option>	
+	</select>
+	<input data-role="none" style="visibility:hidden" type="submit" value="Submit">
+	</form>
+
+	<?php
     }
 	?>
 
@@ -184,13 +198,45 @@ if(isset($_POST['search'])){
 <div class="ui-grid-solo category-container">
 	
 		<?php
-		
+		function sortByOrder($a, $b) {
+			return strcmp($a["product_name"], $b["product_name"]);
+		}
+
+		function replaceString($old,$new,$string){
+			return str_replace($old,$new,$string);
+		}
+		function sortByPrice($a, $b) {
+
+			return replaceString("Rs.","",$a['discounted_price']) - replaceString("Rs.","",$b['discounted_price']);
+		}	
 		$products_json = file_get_contents('../data/products.json');
 		$prod_arr = json_decode($products_json, true);		
-        
+		// $acc_sortarr=sort($prod_arr);
+		
+		$sortType = isset($_GET['sort']) ? $_GET["sort"] : "";
+
+
+		switch($sortType){
+
+
+			case ("alphabetically"):  {
+				usort($prod_arr, 'sortByOrder');
+				break;
+			
+			}
+
+			case("price"):{
+				//methods
+				usort($prod_arr, 'sortByPrice');
+				break;
+			}
+		}
+
+		// print_r($_GET);
+		// die();
             foreach($prod_arr as $var){
                 if (strcasecmp($var['category_name'],$category_name)==0){
-
+					
                     echo '<div class="card cat-card">';
                     echo '<div class="card-body">';
                     echo '<img src="'.$var['image'].'" class="cat-image">';
