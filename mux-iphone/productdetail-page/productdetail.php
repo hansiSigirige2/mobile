@@ -87,81 +87,13 @@
 <h4 class ="product-details-otherdeals">OTHER DEALS</h4>
 
 
-<div class="ui-grid-a category-section">
-    <div class="ui-block-a">
-      <div class="card dailydeals-card">
-      <div class="card-body">
-     <img src="../assets/images/ambewela.jpg" class="dailydeals-image" style = 'height: 131px;'>
-      <hr class="divider">
-      <p class="dailydeals-name">DILMAH 500G</p>
-      <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
-      <span class = "productprice">Rs 500</span>
-      <span class = "oldprice"><strike> Rs 750</strike></span>
-      
-      <span onclick="changeImage()"><img class="heart" id="favdeals" src="heart.svg"></span>
-    
-      <fieldset class="ui-grid-b">
-                                                <div class="ui-block-a">
-                                                    <span onclick="openNav()"><img id="dealsminus" src="plus.svg"></span>
-                                                </div>
-                                                <div class="ui-block-b">
-                                                    <input type="number" name="dealsquantity" id="dealsquantity" value="1" style = "align:center;" />
-                                                </div>
-                                                <div class="ui-block-c">
-                                                <span onclick="openNav()"><img id="dealsplus" src="minus.svg"></span>
-                                                </div>
-                                                <button class="dailydeals-addbutton" style="">ADD</button>
-                                            </fieldset>
-      
-      </div>
-      </div>
-      </div>
-    <div class="ui-block-b"><div class="card dailydeals-card"><div class="card-body">
-    <img src="../assets/images/ambewela.jpg" class="dailydeals-image" style = 'height: 131px;'>
-      <hr class="divider">
-      <p class="dailydeals-name">Dairy</p>
-      <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
-      <span class = "productprice">Rs 500</span>
-      <span class = "oldprice"><strike> Rs 750</strike></span>
-      
-      <span onclick="changeImage1()"><img class="heart" id="favdeals1" src="heart.svg"></span>
-    
-      <fieldset class="ui-grid-b">
-                                                <div class="ui-block-a">
-                                                    <span onclick="openNav()"><img id="dealsminus" src="plus.svg"></span>
-                                                </div>
-                                                <div class="ui-block-b">
-                                                    <input type="number" name="dealsquantity" id="dealsquantity" value="1" style = "align:center;" />
-                                                </div>
-                                                <div class="ui-block-c">
-                                                <span onclick="openNav()"><img id="dealsplus" src="minus.svg"></span>
-                                                </div>
-                                                <button class="dailydeals-addbutton" style="">ADD</button>
-                                            </fieldset>
+
       
 
       </div>
     </div>
 </div>
+
+<div class="footer-padding"></div>
+
+<?php include '../templates/footer.php'; ?>
