@@ -209,7 +209,7 @@ if(isset($_POST['search'])){
 				echo '<div class="card-body">';
 				echo '<img src="'.$category_arr[$x]['image'].'" class="cat-image">';
 				echo '<div class="line-sep"><div>';
-				echo '<div id="categoryname" onclick="getcategory()" class="cat-name text-center">' . $category_arr[$x]['category_name'] . '</div>';
+				echo '<div id="'.$category_arr[$x]['category_name'].'" onclick="getcategory(this)" class="cat-name text-center">' . $category_arr[$x]['category_name'] . '</div>';
 				echo '</div>';
 				echo '</div>';
 				echo '</div>';

@@ -60,13 +60,13 @@ function getTotal() {
 
 
 
-function getcategory(){
-	var categoryname=$("#categoryname").text();
-	alert(categoryname);
+function getcategory(elem){
+    var id = $(elem).attr("id");
+    alert(id);
 	$.ajax({
 		url     : '../setCategory.php',
 		method  : 'POST',
-		data    : {"categoryname": categoryname},
+		data    : {"categoryname": id},
 		success : function( response ) {
 			window.location.replace('../catalog/catalog.php');
 			console.log("cat");

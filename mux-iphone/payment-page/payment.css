@@ -236,3 +236,7 @@
 .ui-btn:focus{
     box-shadow:0 0 12px black !important;
 }
+
+.girl-cont{
+    height: 22.5rem !important;
+}
