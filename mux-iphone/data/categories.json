@@ -25,49 +25,49 @@
     {
         "category_id": "5",
         "category_name": "Fruits",
-        "image": "../assets/images/grains.jpg",
+        "image": "../assets/images/fruits.png",
         "link": ""
     },
     {
         "category_id": "6",
         "category_name": "Beverages",
-        "image": "../assets/images/grains.jpg",
+        "image": "../assets/images/beverages.jpg",
         "link": ""
     },
     {
         "category_id": "7",
         "category_name": "Seafood",
-        "image": "../assets/images/grains.jpg",
+        "image": "../assets/images/seafood.jpg",
         "link": ""
     },
     {
         "category_id": "8",
         "category_name": "Frozen Foods",
-        "image": "../assets/images/grains.jpg",
+        "image": "../assets/images/frozenfoods.jpg",
         "link": ""
     },
     {
         "category_id": "9",
         "category_name": "Health & Beauty",
-        "image": "../assets/images/grains.jpg",
+        "image": "../assets/images/handb.jpg",
         "link": ""
     },
     {
         "category_id": "10",
         "category_name": "Paper Products",
-        "image": "../assets/images/grains.jpg",
+        "image": "../assets/images/paperproducts.jpg",
         "link": ""
     },
     {
         "category_id": "11",
         "category_name": "Pet Care",
-        "image": "../assets/images/grains.jpg",
+        "image": "../assets/images/petproducts.jpg",
         "link": ""
     },
     {
         "category_id": "12",
         "category_name": "Snacks",
-        "image": "../assets/images/grains.jpg",
+        "image": "../assets/images/snacks.jpg",
         "link": ""
     }
 ]
