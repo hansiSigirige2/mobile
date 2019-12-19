@@ -6,9 +6,9 @@
 .productdetail-image {
     width: 193px;
     height: 185px;
-    margin-left: 84px;
-    margin-top: 18px;
-    margin-bottom: 28px;
+    margin-left: 66px;
+    margin-top: 0px;
+    margin-bottom: 22px;
 }
 
 * {
@@ -149,9 +149,10 @@
 }
 
 .productoffer-image {
-    margin-right: 40px;
+    margin-right: 24px;
     float: right;
-    width: 10%;
+    width: 17%;
+    margin-top: -37px;
 }
 
 .product-addtocart {
@@ -271,6 +272,41 @@
     margin-top: -21px;
 }
 
-.footer {
-    margin-top: 500px;
+#contactustextarea {
+    margin-top: -15px;
+    width: 290px;
+    margin-left: 9px;
+}
+
+#categories-viewbutton {
+    border-radius: 21px;
+    background: black;
+    color: white;
+    width: 162px;
+    margin-left: 70px;
+    border: none;
+    text-align: center;
+    margin-top: -1px;
+    font-weight: bold;
+}
+
+.submit-mesage {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact-viewbutton {
+    border-radius: 10px;
+    background: black;
+    color: white;
+    border: none;
+    /* font-weight: bold; */
+    text-align: center;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.footer-padding {
+    height: 7rem;
+    width: 100%;
 }

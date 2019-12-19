@@ -107,7 +107,7 @@
                 <h2 class="product-details" id="product-name">'.$obj['product_name'].'</h2>
                 <h4 class="product-details-sub"'.$obj['product_detail'].'</h4>
     
-                <img src="../assets/images/email.png" class="productoffer-image">
+                <img src="../assets/images/50off.svg" class="productoffer-image">
                 <img src="'.$obj['image'].'" class="productdetail-image">
     
                 <br> favouriteList
@@ -146,7 +146,9 @@
     ?>
 
         <form method="post"> 
-            <input type="submit" name="addToCard" value="ADD TO CART"/> 
+        <div class="product-addtocart">
+            <input id="product-addtocart" type="submit" name="addToCard" value="ADD TO CART"/> 
+        </div>
         </form> 
 
         <div class="product-buynow">
@@ -206,9 +208,14 @@
 
   <div style="margin-bottom: 100px;">
     <h4> Review and Comments</h4>
+          <br>
 
-    
-  </div>
+          <textarea rows ="4" cols="10" id= "contactustextarea"> Type Comment </textarea>
+<br>
+
+<button class="sendBtn" id="categories-viewbutton">Add Comment</button>
+
+
 
 
 
