@@ -80,6 +80,8 @@ var count = 1;
             }
             ?>
 
+            <button id="clear-button" onclick="window.location.href='../cart/cart-empty.php';" >Clear Cart</button>
+
                 <!-- <div class="ui-grid-a" style="padding: 10px 20px"    >
                         <div class="ui-block-a detail-block"> 
                             <div class = "product-name">Ambewela Fresh Milk </div>

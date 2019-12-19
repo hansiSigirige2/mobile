@@ -18,6 +18,12 @@
     </head>
 
      <body>
+
+
+
+        <?php
+                file_put_contents('../data/cart.json', json_encode([]));
+        ?>
            
            <div class="ui-grid-a" style="padding: 10px 20px">
                    <div class="ui-block-a"> 
