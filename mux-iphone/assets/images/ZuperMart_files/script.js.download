@@ -89,5 +89,3 @@ function minus() {
         document.getElementById("hiddenCount").value = countEl.value;
     }
 }
-
-// ========================================

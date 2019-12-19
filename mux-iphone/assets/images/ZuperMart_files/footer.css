@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Ovsyanka;
+    src: url(../assets/fonts/WOFF/Ovsyanka.woff);
+  }
+  
+  div {
+    font-family: Ovsyanka;
+  }
+
+.footer {
+  width: 100%;
+  background-color: white;
+  border-top: 2px solid black;
+  color: white;
+  padding:0.825rem;
+  text-align: center;
+}
+
+.footer-padding{
+  height: 3rem;
+  width: 100%;
+}
+.footer-text{
+  color: black;
+  font-size: 0.8rem;
+  padding-bottom: 7px;
+}
+
+.nav-bar{
+  position: fixed;
+  z-index:6;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 2px solid black;
+  color: white;
+  text-align: center;
+}
+
+.nav-icon{
+  margin: 8px;
+  width: 40px;
+}
+.promo-nav-icon{
+  margin: 10px;
+  width: 36px;
+}
