@@ -222,7 +222,7 @@
                     echo '<img src="'.$var['image'].'" class="cat-image">';
 					echo '<div class="line-sep"><div>';
 					echo '<hr class="divider">';			
-					echo '<span><div class="cat-name text-left">' . $var['product_name'] . 
+					echo '<span onclick="setProduct('.$var["product_id"].')"><div class="cat-name text-left" >' . $var['product_name'] . 
 					'<img class="favorite-icon" src="../assets/images/favorite-empty.png" ></div>';
 					echo '	</span>';
 					echo '<table>';
@@ -263,4 +263,15 @@
         countEl.value = count;
       }  
 	}
+
+	function setProduct(prod) {
+      	$.ajax({
+           url: './setProduct.php?currentProduct',
+		   method: 'POST',
+		   data: {"currentProduct": prod},
+           success:function(html) {
+				window.location.replace('../productdetail-page/productdetail.php');
+           }
+     	});
+ 	}
 	</script>	

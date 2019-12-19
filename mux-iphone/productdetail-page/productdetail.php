@@ -39,20 +39,18 @@
 
             $("#favouriteList").html(outputHtml);
 
-
+            
         }
 
 
 
         function changeImage3() {
-
             let favouriteList = localStorage.getItem("favouriteList");
             favouriteList = (favouriteList) ? JSON.parse(favouriteList) : []
             var img = document.getElementById("favdeals3");
             const imageURL = img.src;
             const productName = $("#product-name").text();
             const productPrice = $("#product-price").text();
-
 
             if (imageURL.includes("heart.svg")) {
                 img.src = "heart (selected).png";
@@ -77,53 +75,79 @@
             localStorage.setItem("favouriteList", favouriteList)
 
             loadFavouriteList();
-
+            
             console.log(imageURL)
-
         }
     </script>
 
-    <h2 class="product-details" id="product-name">AMBEWELA FRESH MILK(1L)</h2>
-    <h4 class="product-details-sub">Bevarages, Milk</h4>
+    <?php
+        if(isset($_POST['addToCard'])) { 
+            echo "TEST";
+            $cart_json = file_get_contents('../data/cart.json');
+            $cart_arr = json_decode($cart_json, true);		
 
-    <img src="../assets/images/50off.svg" class="productoffer-image">
-    <img src="../assets/images/ambewela.jpg" class="productdetail-image">
+            array_push($cart_arr, "TEST");
 
-    <br> favouriteList
-    <ul id="favouriteList"></ul>
+            $newCart = json_encode($cart_arr);
+            file_put_contents('../data/cart.json', $newCart);
+        } 
+    ?>
 
 
-    <span onclick="changeImage3()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
-
-    <div class="product-name">AMBEWELA IS PRODUCED USING PREMIUM QUALITY PURE COW'S MILK FROM AMBEWELA FARM </div>
-
-    <div class="ui-grid-a" style="padding: 10px 20px">
-
-        <div class="pprice" id="product-price">Rs 110</div>
-        <div class="sprice"><strike> Rs 220</strike></div>
-
-        <div class="ui-grid-a">
-            <div class="ui-block-a" style="margin-top: 10px; width: 30% !important">
-                <span class="quantity">QUANTITY:</span>
-            </div>
-            <div class="ui-block-b">
-                <fieldset class="ui-grid-b">
-                    <div class="ui-block-a">
-                        <span onclick="openNav()"><img id="minus" src="minus.svg"></span>
+    <?php 
+        $products_json = file_get_contents('../data/products.json');
+        $products_arr = json_decode($products_json, true);
+        $output = array_filter($products_arr, function($value) {
+            return $value["product_id"] == $_SESSION['currentProduct']; 
+        });
+        
+        foreach ( $output as $obj ){
+            if ( $obj["product_id"] == $_SESSION['currentProduct'] ) {
+                echo '
+                <h2 class="product-details" id="product-name">'.$obj['product_name'].'</h2>
+                <h4 class="product-details-sub"'.$obj['product_detail'].'</h4>
+    
+                <img src="../assets/images/email.png" class="productoffer-image">
+                <img src="'.$obj['image'].'" class="productdetail-image">
+    
+                <br> favouriteList
+                <ul id="favouriteList"></ul>
+    
+                <span onclick="changeImage3()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
+    
+                <div class="product-name">'.$obj['product_detail'].'</div>
+    
+                <div class="ui-grid-a" style="padding: 10px 20px">
+    
+                    <div class="pprice" id="product-price">'.$obj['discounted_price'].'</div>
+                    <div class="sprice"><strike>'.$obj['product_price'].'</strike></div>
+    
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a" style="margin-top: 10px; width: 30% !important">
+                            <span class="quantity">QUANTITY:</span>
+                        </div>
+                        <div class="ui-block-b">
+                            <fieldset class="ui-grid-b">
+                                <div class="ui-block-a">
+                                    <span onclick="openNav()"><img id="minus" src="minus.svg"></span>
+                                </div>
+                                <div class="ui-block-b">
+                                    <input type="number" name="quantity" id="quantity" value="1" />
+                                </div>
+                                <div class="ui-block-c">
+                                    <span onclick="openNav()"><img id="plus" src="plus.svg"></span>
+                                </div>
+                            </fieldset>
+                        </div>
                     </div>
-                    <div class="ui-block-b">
-                        <input type="number" name="quantity" id="quantity" value="1" />
-                    </div>
-                    <div class="ui-block-c">
-                        <span onclick="openNav()"><img id="plus" src="plus.svg"></span>
-                    </div>
-                </fieldset>
-            </div>
+            ';
+            }
+        }
+    ?>
 
-        </div>
-        <div class="product-addtocart">
-            <button id="product-addtocart" onclick="openPopup()">ADD TO CART</button>
-        </div>
+        <form method="post"> 
+            <input type="submit" name="addToCard" value="ADD TO CART"/> 
+        </form> 
 
         <div class="product-buynow">
             <button id="product-buynow" onclick="openPopup()">BUY NOW</button>
@@ -185,6 +209,7 @@
 
     
   </div>
+
 
 
 
