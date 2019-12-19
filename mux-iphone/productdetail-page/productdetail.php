@@ -67,7 +67,7 @@
                 <img id="product-image" src="'.$obj['image'].'" class="productdetail-image">
 
                 <span onclick="onFavClick()"><img class="productdetail-heart" id="favdeals3" src="../assets/images/heart.svg"></span>
-    
+
                 <div class="product-name">'.$obj['product_detail'].'</div>
     
                 <div class="ui-grid-a" style="padding: 10px 20px">
@@ -98,10 +98,6 @@
         }
     ?>
 
-        <!-- <script>
-            var countEl = document.getElementById("quantity");
-            console.log(countEl)
-        <script/> -->
         <form method="post"> 
             <input type="submit" name="addToCard" value="ADD TO CART"/> 
             <input type="hidden" name="quantity" value='1' id="hiddenCount">
@@ -140,7 +136,7 @@
                       <span>
                       <p class="dailydeals-name">'.$products_arr[$x]['product_name'].'</p>
                       </span>
-                      <span onclick="changeImage2()"><img class="heart" id="favdeals2" src="heart.svg"></span>
+                      <span onclick="changeImage2()"><img class="heart" id="favdeals2" src="../assets/images/heart.svg"></span>
                       <div>
                       <img class="star" id="star" src="../assets/images/Star.png">
                       <img class="star" id="star" src="../assets/images/Star.png">

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189 190" width="189" height="190">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #2ca323 } 
+		.txt1 { font-size: 40px;fill: #ffffff;font-family: "Ovsyanka";font-weight: 400;text-anchor: middle } 
+	</style>
+	<path id="Shape 1" class="shp0" d="M94 186C43.12 186 2 144.88 2 94C2 43.12 43.12 2 94 2C144.88 2 186 43.12 186 94C186 144.88 144.88 186 94 186Z" />
+	<text id="50% Off " style="transform: matrix(1,0,0,1,94,85)" >
+		<tspan x="0" y="0" class="txt1">50%</tspan>
+		<tspan x="0" y="44.8" class="txt1">Off</tspan>
+	</text>
+</svg>
