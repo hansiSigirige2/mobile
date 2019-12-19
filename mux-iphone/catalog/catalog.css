@@ -227,7 +227,7 @@ input:focus {
 
 .cat-card{
     width: 9rem;
-    height: 16rem !important;
+    height: 16.5rem !important;
     border-radius: 10px;
     margin-right: 1rem;
     float: left;
@@ -265,7 +265,7 @@ input:focus {
 #input_count {
    
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* .ui-input-text {
@@ -275,14 +275,11 @@ input:focus {
     text-align: center !important;
 } */
 
-.button-login{
-    margin-top: 5px !important;
-    margin:2rem !important;
-    padding: 3 !important;
-    /* display: inline !important; */
+.button-login {
+    margin-top: 1rem;
+    margin-left: 2rem !important;
+    padding: 8px !important;
     border-radius: 2rem !important;
-    /* margin: 2rem; */
-    /* width: 11rem; */
     font-family: Ovsyanka !important;
     background-color: black !important;
     color: white !important;
@@ -320,7 +317,7 @@ select{
    {
     .cat-card {
         width: 11rem;
-        height: 16rem !important;
+        height: 17rem !important;
     }
 
     .divider {
@@ -345,10 +342,11 @@ select{
 
     #input_count {
         margin-left: 15px;
+        margin-bottom: 15px !important;
     }
 
     .button-login{
-        margin: 3rem !important;
+        margin: 2.5rem !important;
     }
 
     select {
@@ -363,9 +361,20 @@ select{
    @media only screen 
    and (device-width : 768px)
    {
+
+    input#search {
+        height: 3.2rem;
+    }
+
+    img.search-img {
+        width: 30px !important;
+        margin-top: 5px;
+        margin-right: 13px;
+    }
+
     .cat-card {
         width: 190px;
-        height: 18.5rem !important;
+        height: 19rem !important;
         margin-right: 1rem;
         margin-left: 1rem;
         margin-bottom: 2rem;
@@ -405,7 +414,7 @@ select{
     }
 
     .button-login {
-        margin-left: 23px !important;
+        margin-left: 52px !important;
     }
 
 
@@ -416,6 +425,16 @@ select{
    and (device-width : 1024px)
    {
 
+    input#search {
+        height: 3.2rem;
+    }
+
+    img.search-img {
+        width: 30px !important;
+        margin-top: 5px;
+        margin-right: 13px;
+    }
+
     .category-container {
         padding-left: 4rem;
         overflow-x: scroll;
@@ -423,7 +442,7 @@ select{
 
     .cat-card {
         width: 190px;
-        height: 18.5rem !important;
+        height: 19rem !important;
         margin-right: 1rem;
         margin-left: 1rem;
         margin-bottom: 2rem;
@@ -463,7 +482,7 @@ select{
     }
 
     .button-login {
-        margin-left: 23px !important;
+        margin-left: 51px !important;
     }
 
 

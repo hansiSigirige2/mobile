@@ -171,22 +171,58 @@ if(isset($_POST['search'])){
 
 <p class="categories-heading" style="margin-top:10px;">CATEGORIES</p>
 
-
+<form>	
+					<!-- Sorting Widget -->
+					<select placeholder="Sort" align="right" data-role="none" name="sort" id="" onchange="this.form.submit()" data-native-menu="true">
+                        <option value="Sort" disabled selected>Sort</option>	
+                        <option value="asc"> Sort Ascending </option>
+                        <option value="dsc"> Sort Descending </option>	
+					</select>
+					<input data-role="none" style="visibility:hidden" type="submit" value="Submit">
+				</form>
 
   <div class="ui-grid-b category-section">
   <?php 
- 	 $products_json = file_get_contents('../data/categories.json');
-	  $products_arr = json_decode($products_json, true);
-	 
-	  for ($x = 0; $x <count($products_arr); $x++) {
+
+    function sortByAsc($a, $b) {
+        return strcmp($a["category_name"], $b["category_name"]);
+    }
+
+    function sortByDsc($b, $a) {
+        return strcmp($a["category_name"], $b["category_name"]);
+    }
+
+    // function replaceString($old,$new,$string){
+    //     return str_replace($old,$new,$string);
+    // }
+
+                              
+
+ 	 $categories_json = file_get_contents('../data/categories.json');
+	  $prod_arr = json_decode($categories_json, true);
+      $sortType = isset($_GET['sort']) ? $_GET["sort"] : "";
+
+      switch($sortType){
+          case ("asc"):  {
+              usort($prod_arr, 'sortByAsc');
+              break;
+          }
+
+       
+          case ("dsc"):  {
+              usort($prod_arr, 'sortByDsc');
+              break;
+          }   
+      }
+	  for ($x = 0; $x <count($prod_arr); $x++) {
 		if($x == 0){
 			echo '<div class="ui-block-a">
 			<form name="catalog" action="../catalog/catalog.php" method="post" data-ajax="false" enctype="multipart/form-data">
 			  <div class="card category-card">
 			  <div class="card-body">
-			  <img src="'.$products_arr[$x]['image'].'" class="category-image">
+			  <img src="'.$prod_arr[$x]['image'].'" class="category-image">
 			  <hr class="divider">
-			  <p id="'.$products_arr[$x]['category_name'].'" onclick="getcategory(this)" class="categories-name">'.$products_arr[$x]['category_name'].'</p>
+			  <p id="'.$prod_arr[$x]['category_name'].'" onclick="getcategory(this)" class="categories-name">'.$prod_arr[$x]['category_name'].'</p>
 			  </div>
 			  </div>
 			  </form>
@@ -197,9 +233,9 @@ if(isset($_POST['search'])){
 			<form name="catalog" action="../catalog/catalog.php" method="post" data-ajax="false" enctype="multipart/form-data">
 			  <div class="card category-card">
 			  <div class="card-body">
-			  <img src="'.$products_arr[$x]['image'].'" class="category-image">
+			  <img src="'.$prod_arr[$x]['image'].'" class="category-image">
 			  <hr class="divider">
-			  <p id="'.$products_arr[$x]['category_name'].'" onclick="getcategory(this)" class="categories-name">'.$products_arr[$x]['category_name'].'</p>
+			  <p id="'.$prod_arr[$x]['category_name'].'" onclick="getcategory(this)" class="categories-name">'.$prod_arr[$x]['category_name'].'</p>
 			  </div>
 			  </div>
 			  </form>
