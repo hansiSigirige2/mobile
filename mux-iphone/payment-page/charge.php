@@ -15,6 +15,23 @@ $charge = \Stripe\Charge::create([
 ]);
 ?>
 
+
+<?php
+    $user_json = file_get_contents('../data/users.json');
+    $user_arr = json_decode($user_json, true);
+
+    $user_arr_new = [];
+
+    foreach ( $user_arr as $obj ){
+        if ( $obj["user_id"] == 1 ) {
+            $obj["loyalty_points"] = $obj["loyalty_points"] + 10;
+            array_push($user_arr_new, $obj);
+        }
+    }
+
+    file_put_contents('../data/users.json', json_encode($user_arr_new));
+?>
+
 <?php 
 	session_start();
 	include '../templates/header.php';
