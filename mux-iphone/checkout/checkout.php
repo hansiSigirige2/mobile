@@ -136,7 +136,7 @@
             $cart_discount=0;
             foreach($cart_arr as $var){
                 $cart_subtotal += ($var['product_price'] * $var['quantity']);  
-                $cart_discount += ($var['product_discount']* $var['quantity']);         
+                $cart_discount += (($var['product_price'] - $var['discounted_price'])* $var['quantity']);         
             }
            
             ?>
