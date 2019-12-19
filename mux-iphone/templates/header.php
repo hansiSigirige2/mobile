@@ -46,7 +46,7 @@
 			<div onclick="window.location.href='../Cart/cart.php';"class="ui-grid-solo menu-item text-center">Cart</div>
 			<div onclick="window.location.href='../about-us/about-us.php';"class="ui-grid-solo menu-item text-center">About us</div>
 			<div onclick="window.location.href='../contactus-page/contactus.php';"class="ui-grid-solo menu-item text-center">Contact Us</div>
-			<div class="ui-grid-solo menu-item text-center">FAQ's</div>		
+			<div onclick="window.location.href='../faq/faq.php';"class="ui-grid-solo menu-item text-center">FAQ's</div>		
  
     </div>  
 

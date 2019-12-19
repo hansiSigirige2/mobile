@@ -62,7 +62,7 @@ function getTotal() {
 
 function getcategory(elem){
     var id = $(elem).attr("id");
-    alert(id);
+    // alert(id);
 	$.ajax({
 		url     : '../setCategory.php',
 		method  : 'POST',
@@ -77,7 +77,7 @@ function getcategory(elem){
 }
 
 function getProductName(categoryname) {
-    alert(categoryname);
+    // alert(categoryname);
     $("#productcat").html(categoryname);
 }
 

@@ -231,6 +231,8 @@ input:focus {
     margin-right: 1rem;
     margin-bottom: 22px;
     float: left;
+    border-radius: 10px;
+    box-shadow: -6px 6px 8px -5px #b8b8b8;
 }
 .category-container{
     padding-left: 2rem;
