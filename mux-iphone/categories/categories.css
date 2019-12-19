@@ -99,15 +99,17 @@
                         }
                         
                         #categories-viewbutton {
-                            border-radius: 21px;
+                            border-radius: 2rem;
                             background: black;
                             color: white;
-                            width: 119px;
-                            margin-left: 121px !important;
+                            width: 130px;
+                            margin-left: 123px !important;
                             border: none;
                             text-align: center !important;
-                            margin-top: 12px;
+                            /* margin-top: 12px; */
                             font-weight: bold;
+                            height: 3rem !important;
+                            margin-bottom: 5rem !important;
                         }
                         /* search bar */
                         
