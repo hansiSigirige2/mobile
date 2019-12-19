@@ -33,8 +33,9 @@
                                 farmers, skilled artisans and responsible fishermen.
         </div>
         <div class="aboutus-video" controls>
-            <iframe src="https://www.youtube.com/watch?v=z5z-nF65-Qc">
-            </iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/z5z-nF65-Qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
         </div>
         <div class = "heading-main"> Convenience Shouldn't Mean Compromise </div>
 

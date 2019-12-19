@@ -236,7 +236,7 @@ input:focus {
 }
 .category-container{
     padding-left: 2rem;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     overflow-x: scroll;
 }
 
@@ -306,5 +306,7 @@ select{
     background-color: white !important;
     color: black !important;
     border: 0px; 
+    margin-left: 295px;
+    margin-top: -21px;
 }
 

@@ -171,7 +171,7 @@
 				?>
 				<form>	
 					<!-- Sorting Widget -->
-					<select  data-role="none" name="sort" id="" onchange="this.form.submit()">
+					<select align="right" data-role="none" name="sort" id="" onchange="this.form.submit()" data-native-menu="true">
 						<option value="random"> Sort </option>	
 						<option value="price"> Price </option>
 						<option value="alphabetically"> Sort Alphabetically </option>	
@@ -234,7 +234,7 @@
 					echo '<div id="input_count" >
 					<input type="image" src="../assets/images/minus.svg" id="moins" onclick="minus()" >
 					<input type="text" size="25" value="1" class="counter" id="count" data-role="none">
-					<input type="image" src="../assets/images/add.svg" id="plus" onclick="plus()">
+					<input type="image" src="../assets/images/plus.svg" id="plus" onclick="plus()">
 					</div>';	
 					echo '<a class="button-login" data-role="none" data-inline="true">Add</a>';
                     echo '</div>';
