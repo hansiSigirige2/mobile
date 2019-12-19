@@ -137,3 +137,32 @@
     position: absolute;
     bottom: 50px;
    }
+
+      /* Landscape  Iphone */
+
+ @media only screen 
+ and (device-width : 812px)
+ and (device-height : 375px)
+ and (-webkit-device-pixel-ratio : 3)
+ and (orientation : landscape)
+ {
+    .footer {
+        position: unset;
+        margin-top: 100px !important;
+       }
+     
+ }
+ 
+ /* Potrait Ipad */
+
+ @media only screen 
+ and (device-width : 768px)
+ {
+
+}
+
+ /* Landscape Ipad */
+ @media only screen 
+ and (device-width : 1024px)
+ {
+}

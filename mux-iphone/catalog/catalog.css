@@ -310,3 +310,161 @@ select{
     margin-top: -21px;
 }
 
+   /* Landscape  Iphone */
+
+   @media only screen 
+   and (device-width : 812px)
+   and (device-height : 375px)
+   and (-webkit-device-pixel-ratio : 3)
+   and (orientation : landscape)
+   {
+    .cat-card {
+        width: 11rem;
+        height: 16rem !important;
+    }
+
+    .divider {
+        width: 175px;
+    }
+
+    .cat-image {
+        width: 100px;
+        height: 4rem;
+        margin-left: 16px;
+    }
+
+    .favorite-icon {
+        width: 24px;
+        margin-top: -21px;
+        margin-left: 110px;
+    }
+
+    table {
+        margin-top: 5px;
+    }
+
+    #input_count {
+        margin-left: 15px;
+    }
+
+    .button-login{
+        margin: 3rem !important;
+    }
+
+    select {
+       margin-left: 713px;
+        margin-top: -23px;
+    }
+       
+   }
+   
+   /* Potrait Ipad */
+  
+   @media only screen 
+   and (device-width : 768px)
+   {
+    .cat-card {
+        width: 190px;
+        height: 18.5rem !important;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    select {
+        margin-left: 673px;
+        margin-top: -21px;
+    }
+
+    .cat-image {
+        width: 140px;
+        height: 90px;
+        margin-left: 1px;
+    }
+
+    .divider {
+        margin-top: 1.5rem;
+        width: 190px;
+        margin-inline-start: -21px;
+    }
+
+    .favorite-icon {
+        width: 30px;
+        margin-top: -25px;
+        margin-left: 130px;
+    }
+
+    table {
+        margin-top: 6px;
+    }
+
+    #input_count {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 23px;
+    }
+
+    .button-login {
+        margin-left: 23px !important;
+    }
+
+
+   }
+   
+   /* Landscape Ipad */
+   @media only screen 
+   and (device-width : 1024px)
+   {
+
+    .category-container {
+        padding-left: 4rem;
+        overflow-x: scroll;
+    }
+
+    .cat-card {
+        width: 190px;
+        height: 18.5rem !important;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    select {
+        margin-left: 912px;
+        margin-top: -21px;
+    }
+
+    .cat-image {
+        width: 140px;
+        height: 90px;
+        margin-left: 1px;
+    }
+
+    .divider {
+        margin-top: 1.5rem;
+        width: 190px;
+        margin-inline-start: -21px;
+    }
+
+    .favorite-icon {
+        width: 30px;
+        margin-top: -25px;
+        margin-left: 130px;
+    }
+
+    table {
+        margin-top: 6px;
+    }
+
+    #input_count {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 23px;
+    }
+
+    .button-login {
+        margin-left: 23px !important;
+    }
+
+
+  }
