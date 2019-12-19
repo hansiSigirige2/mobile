@@ -5,18 +5,18 @@ function sendEmail() {
 
 	var favContent = '';
 	favouriteList.map(x => {
-		favContent += "Name:" + x.productName + ", " + x.productPrice + ", " + x.discountedPrice + " || "
+		favContent += "Name:" + x.productName + ". Price: " +  x.productPrice + ". Discounted Price: " + x.discountedPrice + "           "
 	})
 
 	console.log(favContent)
 
 	Email.send({
 		Host: "smtp.gmail.com",
-		Username : "<sender’s email address>",
-		Password : "<email password>",
-		To : '<recipient’s email address>',
-		From : "<sender’s email address>",
-		Subject : "<email subject>",
+		Username : "testzupermart@gmail.com",
+		Password : "Test@1234",
+		To : 'namila.2016046@iit.ac.lk',
+		From : "testzupermart@gmail.com",
+		Subject : "Favourites List",
 		Body : favContent,
 	}).then(
 		message => alert("mail sent successfully")
