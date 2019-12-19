@@ -68,6 +68,30 @@
 
                 <span onclick="onFavClick()"><img class="productdetail-heart" id="favdeals3" src="../assets/images/heart.svg"></span>
 
+
+                <div class="rating-stars text-center">
+                    <ul id="stars">
+                    <li class="star" title="2" data-value="1">
+                        <i class="fa fa-star fa-fw"></i>
+                    </li>
+                    <li class="star" title="2" data-value="2">
+                        <i class="fa fa-star fa-fw"></i>
+                    </li>
+                    <li class="star" title="3" data-value="3">
+                        <i class="fa fa-star fa-fw"></i>
+                    </li>
+                    <li class="star" title="4" data-value="4">
+                        <i class="fa fa-star fa-fw"></i>
+                    </li>
+                    <li class="star" title="5" data-value="5">
+                        <i class="fa fa-star fa-fw"></i>
+                    </li>
+                    </ul>
+                </div>
+
+
+
+
                 <div class="product-name">'.$obj['product_detail'].'</div>
     
                 <div class="ui-grid-a" style="padding: 10px 20px">
