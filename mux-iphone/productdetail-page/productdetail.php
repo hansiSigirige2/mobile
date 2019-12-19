@@ -19,50 +19,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        function onFavClick() {
-            let favouriteList = localStorage.getItem("favouriteList");
-            favouriteList = (favouriteList) ? JSON.parse(favouriteList) : []
-
-            var img = document.getElementById("favdeals3");
-            const imageURL = img.src;
-
-            const productName = $("#product-name").text();
-            const productPrice = $("#product-price").text();
-            const discountedPrice = $("#product-discount-price").text();
-
-            var productImage = document.getElementById("product-image");
-            const productImageUrl = productImage.src;
-
-            if (imageURL.includes("heart.svg")) {
-                img.src = "heart (selected).png";
-                const item = {
-                    productName: productName,
-                    productPrice: productPrice,
-                    discountedPrice: discountedPrice,
-                    productImageUrl: productImageUrl
-                }
-                favouriteList.push(item)
-            } else {
-                img.src = "heart.svg";
-                favouriteList = favouriteList.filter(x => x.productName != productName);
-            }
-
-            favouriteList = JSON.stringify(favouriteList);
-            localStorage.setItem("favouriteList", favouriteList)
-        }
-    </script>
 
     <?php
         if(isset($_POST['addToCard'])) { 
-            echo "TEST";
-            $cart_json = file_get_contents('../data/cart.json');
-            $cart_arr = json_decode($cart_json, true);		
 
-            array_push($cart_arr, "TEST");
+            if(isset($_POST['quantity'])) { 
+                $quantity = $_POST['quantity'];
 
-            $newCart = json_encode($cart_arr);
-            file_put_contents('../data/cart.json', $newCart);
+                $cart_json = file_get_contents('../data/cart.json');
+                $cart_arr = json_decode($cart_json, true);
+                
+                $products_json = file_get_contents('../data/products.json');
+                $products_arr = json_decode($products_json, true);
+        
+                $output = array_filter($products_arr, function($value) {
+                    return $value["product_id"] == $_SESSION['currentProduct']; 
+                });
+        
+                foreach ( $output as $obj ){
+                    if ( $obj["product_id"] == $_SESSION['currentProduct'] ) {
+                        $obj["quantity"] = $quantity;
+                        array_push($cart_arr, $obj);
+                    }
+                }
+                
+                $newCart = json_encode($cart_arr);
+                file_put_contents('../data/cart.json', $newCart);
+            }
         } 
     ?>
 
@@ -80,10 +63,10 @@
                 <h2 class="product-details" id="product-name">'.$obj['product_name'].'</h2>
                 <h4 class="product-details-sub"'.$obj['product_detail'].'</h4>
     
-                <img src="../assets/images/email.png" class="productoffer-image">
+                <img src="../assets/images/50off.svg" class="productoffer-image">
                 <img id="product-image" src="'.$obj['image'].'" class="productdetail-image">
 
-                <span onclick="onFavClick()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
+                <span onclick="onFavClick()"><img class="productdetail-heart" id="favdeals3" src="../assets/images/heart.svg"></span>
     
                 <div class="product-name">'.$obj['product_detail'].'</div>
     
@@ -93,19 +76,19 @@
                     <div class="sprice"><strike id="product-price">'.$obj['product_price'].'</strike></div>
     
                     <div class="ui-grid-a">
-                        <div class="ui-block-a" style="margin-top: 10px; width: 30% !important">
-                            <span class="quantity">QUANTITY:</span>
+                        <div class="ui-block-a" style="margin-top: 10px; width: 30% !important" >
+                            <span class="quantity" ">QUANTITY </span>
                         </div>
                         <div class="ui-block-b">
                             <fieldset class="ui-grid-b">
                                 <div class="ui-block-a">
-                                    <span onclick="openNav()"><img id="minus" src="minus.svg"></span>
+                                    <span onclick="minus()"><img id="minus" src="../assets/images/minus.svg"></span>
                                 </div>
                                 <div class="ui-block-b">
-                                    <input type="number" name="quantity" id="quantity" value="1" />
+                                    <input type="text" size="25" value="1" class="counter" id="quantity" data-role="none">
                                 </div>
                                 <div class="ui-block-c">
-                                    <span onclick="openNav()"><img id="plus" src="plus.svg"></span>
+                                    <span onclick="plus()"><img id="plus" src="../assets/images/plus.svg"></span>
                                 </div>
                             </fieldset>
                         </div>
@@ -115,19 +98,24 @@
         }
     ?>
 
+        <!-- <script>
+            var countEl = document.getElementById("quantity");
+            console.log(countEl)
+        <script/> -->
         <form method="post"> 
             <input type="submit" name="addToCard" value="ADD TO CART"/> 
-        </form> 
+            <input type="hidden" name="quantity" value='1' id="hiddenCount">
 
-        <div class="product-buynow">
-            <button id="product-buynow" onclick="openPopup()">BUY NOW</button>
-        </div>
+            <input type="submit" name="addToCard" value="BUY NOW" />
+        </form> 
 
         <h4 class="product-details-otherdeals">OTHER DEALS</h4>
 
         <?php 
-  $products_json = file_get_contents('../data/products.json');
-  $products_arr = json_decode($products_json, true);
+
+        $products_json = file_get_contents('../data/products.json');
+        $products_arr = json_decode($products_json, true);
+
           if ($_SESSION['orientation'] == "land") {
             echo '<div class ="ui-grid-b">';
           } 
@@ -164,7 +152,7 @@
                       <div class = "oldprice"><strike>'.$products_arr[$x]['product_price'].'</strike></div>                   
                       
                     
-                      
+                    
                       </div>
                       </div>
                       </div>
@@ -172,24 +160,21 @@
                   ';
           }
           echo '</div>';
-  ?>
+    ?>
 
-  <div style="margin-bottom: 100px;">
-    <h4> Review and Comments</h4>
+    <div style="margin-bottom: 100px;">
+        <h4>Review and Comments</h4>
+        <br>
+        <textarea rows ="4" cols="10" id="commentTextarea" placeholder="Type Comment"></textarea>
+        <br>
+        <button class="sendBtn" id="categories-viewbutton" onclick="onAddComment()">Add Comment</button>
 
-    
-  </div>
-
-
-
-
-
-
+        <div id="commentList"></div>
     </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+
 </div>
 </div>
         
-
-
-
 <?php include '../templates/footer.php'; ?>

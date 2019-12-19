@@ -1,4 +1,9 @@
-
+.h2, h2 {
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20px;
+}
 
 .ui-input-text{
     border-width: 0 !important; 

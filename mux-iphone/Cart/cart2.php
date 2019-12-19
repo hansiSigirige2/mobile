@@ -43,58 +43,41 @@ var count = 1;
    
     </head> 
     <body>
-    <?php
-		
-		$products_json = file_get_contents('../data/cart.json');
-		$prod_arr = json_decode($products_json, true);		
-        
            
-                
-           
-            
-            foreach($prod_arr as $var){
-            echo '<div class="ui-grid-a">';
-            echo            '<div class="ui-block-a detail-block">'; 
-           
-
-                
-            echo               '<div class = "product-name">'.$var['product_name'].'</div>';
-            echo               '<span class = "dprice">Rs.'.$var['product_discount'].'</span>';
-            echo                '<span class = "nprice"><strike>Rs.'.$var['product_price'].'</strike></span>';
-            echo               '<div class = "quantity">Quantity</div>';
-            echo                               '<fieldset class="ui-grid-b">';
-            echo                                   '<div class="ui-block-a minus-box">';
-            echo                                        '<span><input type = "image" id="minus" src="../assets/images/minus.svg" onclick = "minus()"></span>';
-            echo                                   '</div>';
-            echo                                   '<div class="ui-block-b quantity-box">';
-            echo                                        '<input type="number" name="count" id="count" value="'.$var['quantity'].'" />';
-            echo                                    '</div>';
-            echo                                    '<div class="ui-block-c plus-box">';
-            echo                                    '<span><input type = "image" id="plus" src="../assets/images/plus.svg" onclick = "plus()"></span>';
-            echo                                    '</div>';
-            echo                                '</fieldset>';
-            echo                                     '</div>';
+                <div class="ui-grid-a" style="padding: 10px 20px"    >
+                        <div class="ui-block-a detail-block"> 
+                            <div class = "cart-title">Shopping Cart</div>
+                            <div class = "product-name">Apple Juice </div>
+                            <span class = "dprice">Rs 700</span>
+                            <div class = "quantity">Quantity</div>
+                                            <fieldset class="ui-grid-b">
+                                                <div class="ui-block-a minus-box">
+                                                    <span><input type = "image" id="minus" src="../assets/images/minus.svg" onclick = "minus()"></span>
+                                                </div>
+                                                <div class="ui-block-b quantity-box">
+                                                    <input type="number" name="count" id="count" value="1" />
+                                                </div>
+                                                <div class="ui-block-c plus-box">
+                                                <span><input type = "image" id="plus" src="../assets/images/plus.svg" onclick = "plus()"></span>
+                                                </div>
+                                            </fieldset>
+                                        
+                        </div>
  
                        
 
-            echo            '<div class="ui-block-b image-block">';
-            
-            echo                '<img src = "'.$var['image'].'" id = "product-image">';
-            echo                 '<br>';
+                        <div class="ui-block-b image-block">
+                            <div class = "item-title">Items ()</div>
+                            <img src = "..\apple.jpg" id = "product-image">
+                            <br><br>
+                            <img src = "..\bin.png" class = "cart-bin">
+                        </div>
+                </div>
 
-                
-            echo         '<br><br>';
-            echo                '<img src = "..\bin.png" class = "cart-bin">';
-            echo            '</div>';
-            echo    '</div>';
-            
-                   
 
-            echo    '<hr>';
-            }
-            ?>
+                <hr>
 
-                <!-- <div class="ui-grid-a" style="padding: 10px 20px"    >
+                <div class="ui-grid-a" style="padding: 10px 20px"    >
                         <div class="ui-block-a detail-block"> 
                             <div class = "product-name">Ambewela Fresh Milk </div>
                             <span class = "dprice">Rs 110</span>
@@ -140,14 +123,15 @@ var count = 1;
                     </div>
                 </div>
 
-                <button class = "submit-button"> Proceed to Checkout </button>
+                <button class = "submit-button" onclick="window.location.href='../checkout/checkout.php';"> Proceed to Checkout </button>
             
 </body>
 
-<div class="footer-padding"></div>
 
 
+<?php include '../templates/footer.php'; ?>
                     
                        
 
-         -->
+        
+     

@@ -172,9 +172,10 @@
 				<form>	
 					<!-- Sorting Widget -->
 					<select align="right" data-role="none" name="sort" id="" onchange="this.form.submit()" data-native-menu="true">
-						<option value="random"> Sort </option>	
+						<option value="Sort" disabled selected>Sort</option>
 						<option value="price"> Price </option>
-						<option value="alphabetically"> Sort Alphabetically </option>	
+						<option value="asc"> Sort Ascending </option>
+						<option value="dsc"> Sort Descending </option>	
 					</select>
 					<input data-role="none" style="visibility:hidden" type="submit" value="Submit">
 				</form>
@@ -188,7 +189,11 @@
 	<div class="ui-grid-solo category-container">
 		<?php
 
-		function sortByOrder($a, $b) {
+		function sortByAsc($a, $b) {
+			return strcmp($a["product_name"], $b["product_name"]);
+		}
+		
+		function sortByDsc($b, $a) {
 			return strcmp($a["product_name"], $b["product_name"]);
 		}
 
@@ -205,8 +210,13 @@
 		$sortType = isset($_GET['sort']) ? $_GET["sort"] : "";
 
 		switch($sortType){
-			case ("alphabetically"):  {
-				usort($prod_arr, 'sortByOrder');
+			case ("asc"):  {
+				usort($prod_arr, 'sortByAsc');
+				break;
+			}
+
+			case ("dsc"):  {
+				usort($prod_arr, 'sortByDsc');
 				break;
 			}
 
