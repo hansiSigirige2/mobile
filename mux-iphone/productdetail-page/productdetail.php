@@ -86,7 +86,7 @@
     <h2 class="product-details" id="product-name">AMBEWELA FRESH MILK(1L)</h2>
     <h4 class="product-details-sub">Bevarages, Milk</h4>
 
-    <img src="../assets/images/email.png" class="productoffer-image">
+    <img src="../assets/images/50off.svg" class="productoffer-image">
     <img src="../assets/images/ambewela.jpg" class="productdetail-image">
 
     <br> favouriteList
@@ -180,8 +180,12 @@
           echo '</div>';
   ?>
 
-        <br>
-        <br>
+  <div style="margin-bottom: 100px;">
+    <h4> Review and Comments</h4>
+
+    
+  </div>
+
 
 
 
@@ -189,6 +193,7 @@
     </div>
 </div>
 </div>
+        
 
 
 
