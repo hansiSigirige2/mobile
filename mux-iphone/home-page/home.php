@@ -13,7 +13,8 @@
   <ol class="carousel-indicators" >
     <li data-target="#carouselExampleIndicators" style="border-radius: 50% !important; width: 10px !important;height: 10px !important;" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" style="border-radius: 50% !important; width: 10px !important;height: 10px !important;" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" style="border-radius: 50% !important; width: 10px !important;height: 10px !important;" data-slide-to="2"></li>
+	<li data-target="#carouselExampleIndicators" style="border-radius: 50% !important; width: 10px !important;height: 10px !important;" data-slide-to="2"></li>
+	<li data-target="#carouselExampleIndicators" style="border-radius: 50% !important; width: 10px !important;height: 10px !important;" data-slide-to="3"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -27,6 +28,9 @@
     </div>
     <div class="carousel-item">
       <img onclick="window.location.href='../categories/categories.php';"class="d-block w-100" src="../assets/images/img3.png" alt="Third slide">
+	</div>
+	<div class="carousel-item">
+      <img onclick="window.location.href='../about-us/about-us.php';"class="d-block w-100" src="../assets/images/img4.png" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

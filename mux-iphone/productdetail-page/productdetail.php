@@ -20,63 +20,36 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        function loadFavouriteList() {
-
+        function onFavClick() {
             let favouriteList = localStorage.getItem("favouriteList");
             favouriteList = (favouriteList) ? JSON.parse(favouriteList) : []
 
-            let outputHtml = ``;
-            favouriteList.map(x => {
-
-                outputHtml += `
-                  <li>${x.productName
-                  }</li>
-                  `
-
-
-            })
-
-
-            $("#favouriteList").html(outputHtml);
-
-            
-        }
-
-
-
-        function changeImage3() {
-            let favouriteList = localStorage.getItem("favouriteList");
-            favouriteList = (favouriteList) ? JSON.parse(favouriteList) : []
             var img = document.getElementById("favdeals3");
             const imageURL = img.src;
+
             const productName = $("#product-name").text();
             const productPrice = $("#product-price").text();
+            const discountedPrice = $("#product-discount-price").text();
+
+            var productImage = document.getElementById("product-image");
+            const productImageUrl = productImage.src;
 
             if (imageURL.includes("heart.svg")) {
                 img.src = "heart (selected).png";
-                // remove from json
                 const item = {
                     productName: productName,
-                    productPrice: productPrice
+                    productPrice: productPrice,
+                    discountedPrice: discountedPrice,
+                    productImageUrl: productImageUrl
                 }
-
                 favouriteList.push(item)
-
             } else {
                 img.src = "heart.svg";
-
-
                 favouriteList = favouriteList.filter(x => x.productName != productName);
-
-                //add to json
             }
 
             favouriteList = JSON.stringify(favouriteList);
             localStorage.setItem("favouriteList", favouriteList)
-
-            loadFavouriteList();
-            
-            console.log(imageURL)
         }
     </script>
 
@@ -108,19 +81,16 @@
                 <h4 class="product-details-sub"'.$obj['product_detail'].'</h4>
     
                 <img src="../assets/images/50off.svg" class="productoffer-image">
-                <img src="'.$obj['image'].'" class="productdetail-image">
-    
-                <br> favouriteList
-                <ul id="favouriteList"></ul>
-    
-                <span onclick="changeImage3()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
+                <img id="product-image" src="'.$obj['image'].'" class="productdetail-image">
+
+                <span onclick="onFavClick()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
     
                 <div class="product-name">'.$obj['product_detail'].'</div>
     
                 <div class="ui-grid-a" style="padding: 10px 20px">
     
-                    <div class="pprice" id="product-price">'.$obj['discounted_price'].'</div>
-                    <div class="sprice"><strike>'.$obj['product_price'].'</strike></div>
+                    <div class="pprice" id="product-discount-price">'.$obj['discounted_price'].'</div>
+                    <div class="sprice"><strike id="product-price">'.$obj['product_price'].'</strike></div>
     
                     <div class="ui-grid-a">
                         <div class="ui-block-a" style="margin-top: 10px; width: 30% !important">

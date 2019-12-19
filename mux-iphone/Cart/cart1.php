@@ -1,4 +1,4 @@
-<!-- <div data-role="page" id="home" class="page-full" style="background-color: white;"> -->
+<div data-role="page" id="home" class="page-full" style="background-color: white;">
 
 <?php 
         session_start();
@@ -17,7 +17,7 @@
         <!--<link rel = "stylesheet" href = "sample.css">-->
         <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="cart.css">
+        <link rel="stylesheet" type="text/css" href="cart1.css">
 
 
 <script>
@@ -51,11 +51,12 @@ var count = 1;
            
                 
            
+            
+            foreach($prod_arr as $var){
             echo '<div class="ui-grid-a">';
             echo            '<div class="ui-block-a detail-block">'; 
-            echo               '<div class = "cart-title">Shopping Cart</div>';
+           
 
-            foreach($prod_arr as $var){
                 
             echo               '<div class = "product-name">'.$var['product_name'].'</div>';
             echo               '<span class = "dprice">Rs.'.$var['product_discount'].'</span>';
@@ -77,7 +78,7 @@ var count = 1;
                        
 
             echo            '<div class="ui-block-b image-block">';
-            echo                '<div class = "item-title">Items ()</div>';
+            
             echo                '<img src = "'.$var['image'].'" id = "product-image">';
             echo                 '<br>';
 

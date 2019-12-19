@@ -35,8 +35,9 @@
             
     </body>
 
-
-
+    <script>
+        localStorage.removeItem('favouriteList');
+    </script>
 <?php include '../templates/footer.php'; ?>
 
                     
