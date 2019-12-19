@@ -175,7 +175,7 @@ if(isset($_POST['search'])){
   <?php 
  	 $products_json = file_get_contents('../data/categories.json');
 	  $products_arr = json_decode($products_json, true);
-	  
+	 
 	  for ($x = 0; $x <count($products_arr); $x++) {
 		if($x == 0){
 			echo '<div class="ui-block-a">
@@ -184,7 +184,7 @@ if(isset($_POST['search'])){
 			  <div class="card-body">
 			  <img src="'.$products_arr[$x]['image'].'" class="category-image">
 			  <hr class="divider">
-			  <p id="categoryname" onclick="getcategory()" class="categories-name">'.$products_arr[$x]['category_name'].'</p>
+			  <p id="'.$products_arr[$x]['category_name'].'" onclick="getcategory(this)" class="categories-name">'.$products_arr[$x]['category_name'].'</p>
 			  </div>
 			  </div>
 			  </form>
@@ -197,7 +197,7 @@ if(isset($_POST['search'])){
 			  <div class="card-body">
 			  <img src="'.$products_arr[$x]['image'].'" class="category-image">
 			  <hr class="divider">
-			  <p id="categoryname" onclick="getcategory()" class="categories-name">'.$products_arr[$x]['category_name'].'</p>
+			  <p id="'.$products_arr[$x]['category_name'].'" onclick="getcategory(this)" class="categories-name">'.$products_arr[$x]['category_name'].'</p>
 			  </div>
 			  </div>
 			  </form>
