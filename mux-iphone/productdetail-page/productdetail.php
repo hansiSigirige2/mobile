@@ -1,137 +1,135 @@
-<div data-role="page" id="home" class="page-full">
-
-    <?php 
+<div data-role="page" id="home" class="page-full"></div>
+<?php 
     session_start();
     $_SESSION['page-type']= 'product-detail';
 	?>
-    <?php include '../templates/header.php'; ?>
-    <header>
-        <link rel="stylesheet" href="../productdetail-page/productdetail.css">
+<?php include '../templates/header.php'; ?>
+<header>
+    <link rel="stylesheet" href="../productdetail-page/productdetail.css">
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <!-- <script src="../assets/scripts/main.js"></script> -->
+</header>
 
-        <link rel="stylesheet" href="../assets/styles/header.css">
-        <!-- <script src="../assets/scripts/main.js"></script> -->
-    </header>
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    function loadFavouriteList() {
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        function loadFavouriteList() {
+        let favouriteList = localStorage.getItem("favouriteList");
+        favouriteList = (favouriteList) ? JSON.parse(favouriteList) : []
 
-            let favouriteList = localStorage.getItem("favouriteList");
-            favouriteList = (favouriteList) ? JSON.parse(favouriteList) : []
+        let outputHtml = ``;
+        favouriteList.map(x => {
 
-            let outputHtml = ``;
-            favouriteList.map(x => {
-
-                outputHtml += `
+            outputHtml += `
                   <li>${x.productName
                   }</li>
                   `
 
 
-            })
+        })
 
 
-            $("#favouriteList").html(outputHtml);
+        $("#favouriteList").html(outputHtml);
 
 
-        }
+    }
 
 
 
-        function changeImage3() {
+    function changeImage3() {
 
-            let favouriteList = localStorage.getItem("favouriteList");
-            favouriteList = (favouriteList) ? JSON.parse(favouriteList) : []
-            var img = document.getElementById("favdeals3");
-            const imageURL = img.src;
-            const productName = $("#product-name").text();
-            const productPrice = $("#product-price").text();
-
-
-            if (imageURL.includes("heart.svg")) {
-                img.src = "heart (selected).png";
-                // remove from json
-                const item = {
-                    productName: productName,
-                    productPrice: productPrice
-                }
-
-                favouriteList.push(item)
-
-            } else {
-                img.src = "heart.svg";
+        let favouriteList = localStorage.getItem("favouriteList");
+        favouriteList = (favouriteList) ? JSON.parse(favouriteList) : []
+        var img = document.getElementById("favdeals3");
+        const imageURL = img.src;
+        const productName = $("#product-name").text();
+        const productPrice = $("#product-price").text();
 
 
-                favouriteList = favouriteList.filter(x => x.productName != productName);
-
-                //add to json
+        if (imageURL.includes("heart.svg")) {
+            img.src = "heart (selected).png";
+            // remove from json
+            const item = {
+                productName: productName,
+                productPrice: productPrice
             }
 
-            favouriteList = JSON.stringify(favouriteList);
-            localStorage.setItem("favouriteList", favouriteList)
+            favouriteList.push(item)
 
-            loadFavouriteList();
+        } else {
+            img.src = "heart.svg";
 
-            console.log(imageURL)
 
+            favouriteList = favouriteList.filter(x => x.productName != productName);
+
+            //add to json
         }
-    </script>
 
-    <h2 class="product-details" id="product-name">AMBEWELA FRESH MILK(1L)</h2>
-    <h4 class="product-details-sub">Bevarages, Milk</h4>
+        favouriteList = JSON.stringify(favouriteList);
+        localStorage.setItem("favouriteList", favouriteList)
 
-    <img src="../assets/images/email.png" class="productoffer-image">
-    <img src="../assets/images/ambewela.jpg" class="productdetail-image">
+        loadFavouriteList();
 
-    <br> favouriteList
-    <ul id="favouriteList"></ul>
+        console.log(imageURL)
+
+    }
+</script>
+
+<h2 class="product-details" id="product-name">AMBEWELA FRESH MILK(1L)</h2>
+<h4 class="product-details-sub">Bevarages, Milk</h4>
+
+<img src="../assets/images/email.png" class="productoffer-image">
+<img src="../assets/images/ambewela.jpg" class="productdetail-image">
+
+<br> favouriteList
+<ul id="favouriteList"></ul>
 
 
-    <span onclick="changeImage3()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
+<span onclick="changeImage3()"><img class="productdetail-heart" id="favdeals3" src="heart.svg"></span>
 
-    <div class="product-name">AMBEWELA IS PRODUCED USING PREMIUM QUALITY PURE COW'S MILK FROM AMBEWELA FARM </div>
+<div class="product-name">AMBEWELA IS PRODUCED USING PREMIUM QUALITY PURE COW'S MILK FROM AMBEWELA FARM </div>
 
-    <div class="ui-grid-a" style="padding: 10px 20px">
+<div class="ui-grid-a" style="padding: -2px 7px">
 
-        <div class="pprice" id="product-price">Rs 110</div>
-        <div class="sprice"><strike> Rs 220</strike></div>
+    <div class="pprice" id="product-price">Rs 110</div>
+    <div class="sprice"><strike> Rs 220</strike></div>
 
-        <div class="ui-grid-a">
-            <div class="ui-block-a" style="margin-top: 10px; width: 30% !important">
-                <span class="quantity">QUANTITY:</span>
-            </div>
-            <div class="ui-block-b">
-                <fieldset class="ui-grid-b">
-                    <div class="ui-block-a">
-                        <span onclick="openNav()"><img id="minus" src="minus.svg"></span>
-                    </div>
-                    <div class="ui-block-b">
-                        <input type="number" name="quantity" id="quantity" value="1" />
-                    </div>
-                    <div class="ui-block-c">
-                        <span onclick="openNav()"><img id="plus" src="plus.svg"></span>
-                    </div>
-                </fieldset>
-            </div>
-
+    <div class="ui-grid-a">
+        <div class="ui-block-a" style="margin-top: 10px; width: 30% !important">
+            <span class="quantity">QUANTITY:</span>
         </div>
-        <div class="product-addtocart">
-            <button id="product-addtocart" onclick="openPopup()">ADD TO CART</button>
+        <div class="ui-block-b">
+            <fieldset class="ui-grid-b">
+                <div class="ui-block-a">
+                    <span onclick="openNav()"><img id="minus" src="minus.svg"></span>
+                </div>
+                <div class="ui-block-b">
+                    <input type="number" name="quantity" id="quantity" value="1" />
+                </div>
+                <div class="ui-block-c">
+                    <span onclick="openNav()"><img id="plus" src="plus.svg"></span>
+                </div>
+            </fieldset>
         </div>
 
-        <div class="product-buynow">
-            <button id="product-buynow" onclick="openPopup()">BUY NOW</button>
-        </div>
+    </div>
+    <div class="product-addtocart">
+        <button id="product-addtocart" onclick="openPopup()">ADD TO CART</button>
+    </div>
 
-        <h4 class="product-details-otherdeals">OTHER DEALS</h4>
+    <div class="product-buynow">
+        <button id="product-buynow" onclick="openPopup()">BUY NOW</button>
+    </div>
 
-        <?php 
+    <h4 class="product-details-otherdeals">OTHER DEALS</h4>
+
+    <?php 
   $products_json = file_get_contents('../data/products.json');
   $products_arr = json_decode($products_json, true);
           if ($_SESSION['orientation'] == "land") {
@@ -180,13 +178,13 @@
           echo '</div>';
   ?>
 
-        <br>
-        <br>
+    <br>
+    <br>
 
 
 
 
-    </div>
+</div>
 </div>
 </div>
 
