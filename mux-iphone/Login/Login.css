@@ -104,13 +104,15 @@ and (device-width : 768px)
 {.ui-grid-solo>.ui-block-a {
 
     margin-left: 2.5rem !important;
-
 }
 #linkimg {
     vertical-align: middle;
     border-style: none;
     width: 10% !important;
     
+}
+.footer {
+    margin-top: 200px;
 }
 }
 

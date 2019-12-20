@@ -361,6 +361,25 @@ select{
    @media only screen 
    and (device-width : 768px)
    {
+    .promo-sale {
+        font-family: Ovsyanka;
+        font-size: 3.5rem;
+    }
+    .promo-name {
+        font-family: Ovsyanka;
+        font-size: 2rem;
+    }
+    .promo-strike {
+        font-family: Ovsyanka;
+        font-size: 1.25rem;
+        color: red;
+        text-decoration: line-through;
+    }
+    .promo-price {
+        font-family: Ovsyanka;
+        font-size: 1.75rem;
+        color: black;
+    }
 
     input#search {
         height: 3.2rem;

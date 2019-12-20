@@ -108,8 +108,12 @@
 }
 
 #favourites-page{
-    background-color:white;
+    /* background-color:white; */
+    padding-top: 2rem;
+    padding-bottom: 8rem;
 }
+
+
 
 
 
@@ -261,7 +265,11 @@
                     width: 35% !important;
                     margin-left: 250px !important;
                 }
-                
+                #favourites-page{
+                    /* background-color:white; */
+                    /* padding-top: 2rem; */
+                    padding-bottom: 15rem;
+                }
     
             }
     @media only screen 
@@ -332,6 +340,12 @@
                     .submit-button{
                         width: 35% !important;
                         margin-left: 250px !important;
+                    }
+
+                    #favourites-page{
+                        /* background-color:white; */
+                        /* padding-top: 2rem; */
+                        padding-bottom: unset;
                     }
                     
         }

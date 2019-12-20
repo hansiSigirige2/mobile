@@ -249,3 +249,75 @@ input:focus {
     width: 142px;
     margin-left: -20px;
 }
+
+/* Potrait Ipad */
+  
+@media only screen 
+and (device-width : 768px)
+{
+ .promo-sale {
+     font-family: Ovsyanka;
+     font-size: 3.5rem;
+ }
+ .promo-name {
+     font-family: Ovsyanka;
+     font-size: 2rem;
+ }
+ .promo-strike {
+     font-family: Ovsyanka;
+     font-size: 1.25rem;
+     color: red;
+     text-decoration: line-through;
+ }
+ .promo-price {
+     font-family: Ovsyanka;
+     font-size: 1.75rem;
+     color: black;
+ }
+ input#search {
+    height: 3.2rem;
+}
+
+img.search-img {
+    width: 30px !important;
+    margin-top: 5px;
+    margin-right: 13px;
+}
+
+}
+
+  /* Landscape Ipad */
+  @media only screen 
+  and (device-width : 1024px)
+  {
+
+   input#search {
+       height: 3.2rem;
+   }
+
+   img.search-img {
+       width: 30px !important;
+       margin-top: 5px;
+       margin-right: 13px;
+   }
+   .promo-sale {
+    font-family: Ovsyanka;
+    font-size: 3.5rem;
+}
+.promo-name {
+    font-family: Ovsyanka;
+    font-size: 2rem;
+}
+.promo-strike {
+    font-family: Ovsyanka;
+    font-size: 1.25rem;
+    color: red;
+    text-decoration: line-through;
+}
+.promo-price {
+    font-family: Ovsyanka;
+    font-size: 1.75rem;
+    color: black;
+}
+
+  }

@@ -1,3 +1,8 @@
+
+.cart-title {
+    margin-top: 2rem !important;
+}
+
 .h2, h2 {
     font-size: 20px;
     margin-top: 2rem;
@@ -187,12 +192,14 @@
     padding-right: 20px;
 }
 
-
-
-.footer-padding{
-    height: 7rem;
-    width: 100%;
+.footer {
+   margin-top: 25rem;
 }
+
+/* .footer-padding{
+    height: 25rem !important;
+    width: 100%;
+} */
 
 @media only screen 
     and (device-width : 812px)
@@ -200,11 +207,23 @@
     and (-webkit-device-pixel-ratio : 3)
     and (orientation : landscape)
     {
+
+        .item-title {
+            
+            margin-left: 28rem;
+
+        }
+
+        .footer {
+            margin-top: 5rem;
+         }
+
+
         #product-image{
             border: 1px solid #000000;
             border-radius: 10px;
             margin-top: 20px;
-            margin-left: 180px;
+            margin-left: 29rem;
             width: 45%;
         }
 
@@ -218,8 +237,8 @@
 
         .cart-bin{
             width: 8%;
-            margin-left: 320px;
             margin-top: 10px;
+            margin-left: 33rem !important;
         }
         .cart-title{
             font-family: Ovsyanka;
@@ -231,7 +250,7 @@
         .product-name{
             font-family: Ovsyanka;
             margin-top: 15px;
-            margin-left: 120px;
+            margin-left: 1.5rem;
             font-size: 20px;
             text-align: left;
         }
@@ -240,7 +259,7 @@
             color:green;
             font-family: Ovsyanka;
             margin-top: 25px;
-            margin-left: 120px;
+            margin-left: 1.5rem;
             font-size: 20px;
             text-align: left;
         }
@@ -256,7 +275,7 @@
         .quantity{
             font-family: Ovsyanka;
             margin-top: 15px;
-            margin-left: 120px;
+            margin-left: 3rem;
             font-size: 20px;
             text-align: left;
         }
@@ -280,12 +299,26 @@
                 font-size:25px;
             }
 
+            .footer-padding{
+                height: unset;
+            }
+
        
     }
 
     @media only screen 
     and (device-width : 768px)
     {
+
+        .footer {
+            margin-top: 35rem;
+        }
+
+        .item-title {
+            
+            margin-left: 21rem;
+
+        }
         #product-image{
             border: 1px solid #000000;
             border-radius: 10px;
@@ -344,7 +377,7 @@
         
         .quantity{
             font-family: Ovsyanka;
-            margin-left: 200px;
+            margin-left: 49px;
             margin-top: 50px;
             font-size: 20px;
             text-align: left;
@@ -388,6 +421,12 @@
     @media only screen 
     and (device-width : 1024px)
     {
+        .footer {
+            margin-top: 18rem;
+        }
+        .item-title {
+            margin-left: 38rem;
+        }
 
         #product-image{
             border: 1px solid #000000 !important;

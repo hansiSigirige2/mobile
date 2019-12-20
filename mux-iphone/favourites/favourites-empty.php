@@ -1,3 +1,5 @@
+<div data-role="page" id="favouritesempty" class="page-full" style="background-color: white;">
+
 <?php 
 		session_start();
 	?>

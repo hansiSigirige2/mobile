@@ -1,10 +1,11 @@
 <div data-role="page" id="home" class="page-full" style="background-color: white;">
 
 <?php 
-        session_start();
-        $_SESSION['page-type']= 'cart';
+		session_start();
+		$_SESSION['page-type']= 'catalog';
+		include '../templates/header.php';
 	?>
-	<?php include '../templates/header.php'; ?>
+	
 
 
 
@@ -117,7 +118,8 @@ var count = 1;
                 <button class = "submit-button" onclick="window.location.href='../checkout/checkout.php';"> Proceed to Checkout </button>
             
 </body> 
-<div class="footer-padding"></div>
+
+<?php include '../templates/footer.php'; ?>
 
 
                     

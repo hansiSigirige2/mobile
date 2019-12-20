@@ -23,7 +23,7 @@
         
     </head> 
     <body>
-    <div style="background-image: url('../assets/images/login.jpg'); background-size: 100% 100%;">
+    <div style="background-image: url('../assets/images/login.jpg'); background-size: 100% 100%; ">
         <br><br><br>
         <div class="ui-grid-solo">
            <!-- <div class="ui-block-a">    

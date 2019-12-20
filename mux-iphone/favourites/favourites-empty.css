@@ -37,3 +37,40 @@
         display: inline !important;
         color: white !important;
 }
+
+.footer {
+    margin-top: 15rem;
+}
+
+/* Landscape  Iphone */
+
+@media only screen 
+and (device-width : 812px)
+and (device-height : 375px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape)
+{
+    .footer {
+        margin-top: 5rem;
+    }
+}
+
+/* Landscape Ipad */
+@media only screen 
+and (device-width : 1024px)
+{
+    .footer {
+        margin-top: 6rem;
+    }    
+
+}
+
+/* Potrait Ipad */
+  
+@media only screen 
+and (device-width : 768px)
+{
+    .footer {
+        margin-top: 15rem;
+    } 
+}

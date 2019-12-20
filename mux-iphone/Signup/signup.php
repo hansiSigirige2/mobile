@@ -65,8 +65,8 @@
                 <hr>
                 <br>
                 <div align=center>
-                    <a href="https://www.google.com/"><img src="../assets/images/google.svg" alt="google" width="20%" hspace="5"></a>
-                    <a href="https://www.facebook.com/"><img src="../assets/images/facebook.svg" alt="facebook" width="20%" hspace="5"></a>                       
+                    <a href="https://www.google.com/"><img src="../assets/images/google.svg" alt="google" width="20%"  id="linkimg" hspace="5"></a>
+                    <a href="https://www.facebook.com/"><img src="../assets/images/facebook.svg" alt="facebook" width="20%" id="linkimg" hspace="5"></a>                       
                     
                     <br>
                     <br>
