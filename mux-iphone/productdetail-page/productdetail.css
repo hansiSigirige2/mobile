@@ -243,7 +243,7 @@
 
 #commentTextarea {
     margin-top: -15px;
-    width: 290px;
+    width: 351px;
     margin-left: 9px;
 }
 
@@ -251,8 +251,8 @@
     border-radius: 21px;
     background: black;
     color: white;
-    width: 162px;
-    margin-left: 70px;
+    width: 166px;
+    margin-left: 90px;
     border: none;
     text-align: center;
     margin-top: -1px;
@@ -437,4 +437,241 @@ pre {
 
 .rating-stars ul>li.star.selected>i.fa {
     color: #FF912C;
+}
+
+@media only screen and (device-width:812px) and (device-height: 375px) and (orientation: landscape) {
+    #quantity {
+        border: 1px solid #CCCCCC;
+        border-radius: 0;
+        background-color: white;
+        width: 89px;
+        height: 40px;
+        margin-left: -46px;
+        text-align: center;
+    }
+    #minus {
+        width: 39px;
+        margin-top: 0px;
+        margin-left: 33px;
+    }
+    #plus {
+        width: 38px;
+        margin-top: 1px;
+        margin-left: -76px;
+    }
+    .productoffer-image {
+        margin-right: 74px;
+        float: right;
+        width: 9%;
+        margin-top: -37px;
+    }
+    .productdetail-heart {
+        margin-left: 120px;
+        width: 35px;
+        margin-top: 151px;
+    }
+    .quantity {
+        font-family: Ovsyanka;
+        margin-bottom: 15px;
+        margin-left: 360px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: left;
+    }
+    .productdetail-image {
+        width: 193px;
+        height: 185px;
+        margin-left: 309px;
+        margin-top: 0px;
+        margin-bottom: 22px;
+    }
+    .ui-block-a,
+    .ui-block-b,
+    .ui-block-c,
+    .ui-block-d,
+    .ui-block-e {
+        margin: 0;
+        padding: 21px;
+        border: 0;
+        float: left;
+        min-height: 1px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #commentTextarea {
+        margin-top: -15px;
+        width: 788px;
+        margin-left: 9px;
+    }
+    #categories-viewbutton {
+        border-radius: 21px;
+        background: black;
+        color: white;
+        width: 162px;
+        margin-left: 311px;
+        border: none;
+        text-align: center;
+        margin-top: -1px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (device-width:768px) {
+    .productoffer-image {
+        margin-right: 12px;
+        float: right;
+        width: 11%;
+        margin-top: -37px;
+    }
+    .productdetail-image {
+        width: 195px;
+        height: 199px;
+        margin-left: 271px;
+        margin-top: 0px;
+        margin-bottom: 22px;
+    }
+    .productdetail-heart {
+        margin-left: 642px;
+        width: 43px;
+        margin-top: -47px;
+    }
+    .quantity {
+        font-family: Ovsyanka;
+        margin-bottom: 10px;
+        margin-left: 336px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: left;
+    }
+    #quantity {
+        border: 1px solid #CCCCCC;
+        border-radius: 0;
+        background-color: white;
+        width: 86px;
+        height: 40px;
+        margin-left: -44px;
+        text-align: center;
+    }
+    #minus {
+        width: 35px;
+        margin-top: 2px;
+        margin-left: 29px;
+    }
+    #plus {
+        width: 35px;
+        margin-top: 2px;
+        margin-left: -65px;
+    }
+    .ui-block-a,
+    .ui-block-b,
+    .ui-block-c,
+    .ui-block-d,
+    .ui-block-e {
+        margin: 0;
+        padding: 21px;
+        border: 0;
+        float: left;
+        min-height: 1px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #commentTextarea {
+        margin-top: -15px;
+        width: 788px;
+        margin-left: 9px;
+    }
+    #categories-viewbutton {
+        border-radius: 21px;
+        background: black;
+        color: white;
+        width: 162px;
+        margin-left: 311px;
+        border: none;
+        text-align: center;
+        margin-top: -1px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (device-width:1024px) {
+    .productdetail-image {
+        width: 257px;
+        height: 246px;
+        margin-left: 372px;
+        margin-top: 0px;
+        margin-bottom: 22px;
+    }
+    .productoffer-image {
+        margin-right: 32px;
+        float: right;
+        width: 8%;
+        margin-top: -37px;
+    }
+    .productdetail-heart {
+        margin-left: 927px;
+        width: 53px;
+        margin-top: -47px;
+    }
+    .quantity {
+        font-family: Ovsyanka;
+        margin-bottom: 0px;
+        margin-left: 455px;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: left;
+    }
+    #quantity {
+        border: 1px solid #CCCCCC;
+        border-radius: 0;
+        background-color: white;
+        width: 105px;
+        height: 40px;
+        margin-left: -50px;
+        text-align: center;
+    }
+    #minus {
+        width: 35px;
+        margin-top: 2px;
+        margin-left: 66px;
+    }
+    #plus {
+        width: 35px;
+        margin-top: 2px;
+        margin-left: -97px;
+    }
+    .ui-block-a,
+    .ui-block-b,
+    .ui-block-c,
+    .ui-block-d,
+    .ui-block-e {
+        margin: 0;
+        padding: 21px;
+        border: 0;
+        float: left;
+        min-height: 1px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #commentTextarea {
+        margin-top: -15px;
+        width: 1002px;
+        margin-left: 9px;
+    }
+    #categories-viewbutton {
+        border-radius: 21px;
+        background: black;
+        color: white;
+        width: 162px;
+        margin-left: 390px;
+        border: none;
+        text-align: center;
+        margin-top: -1px;
+        font-weight: bold;
+    }
 }
