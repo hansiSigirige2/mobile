@@ -401,6 +401,10 @@ pre {
     color: #888;
 }
 
+.modal-dialog {
+    margin-top: 327px !important;
+}
+
 
 /* Rating Star Widgets Style */
 

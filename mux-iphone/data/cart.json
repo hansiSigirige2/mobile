@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 []
+=======
+[{ "product_id": "2", "product_name": "Avocado", "product_price": "330", "category_name": "Vegetables", "discounted_price": "165", "image": "..\/assets\/images\/avocado.jpg", "link": "", "product_detail": " Fresh Avocados from CIC Farms. Price per Kilo ", "quantity": "1" }, { "product_id": "2", "product_name": "Avocado", "product_price": "330", "category_name": "Vegetables", "discounted_price": "165", "image": "..\/assets\/images\/avocado.jpg", "link": "", "product_detail": " Fresh Avocados from CIC Farms. Price per Kilo ", "quantity": "1" }]
+>>>>>>> 249e15238a1d83552850aef217ee84fd4772f453
