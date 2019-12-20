@@ -123,7 +123,7 @@
         }
     ?>
 
-        <form method="post"> 
+        <form method="post" onsubmit="return openPopup()"> 
             <input type="submit" name="addToCard" value="ADD TO CART"/> 
             <input type="hidden" name="quantity" value='1' id="hiddenCount">
 
@@ -194,7 +194,14 @@
         <div id="commentList"></div>
     </div>
 
+    
     <script type="text/javascript" src="./script.js"></script>
+    <script>
+    function openPopup(){
+      alert("Successfully added to Cart")
+    }
+
+  </script> 
 
 </div>
 </div>
