@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-[]
-=======
-[{ "product_id": "2", "product_name": "Avocado", "product_price": "330", "category_name": "Vegetables", "discounted_price": "165", "image": "..\/assets\/images\/avocado.jpg", "link": "", "product_detail": " Fresh Avocados from CIC Farms. Price per Kilo ", "quantity": "1" }, { "product_id": "2", "product_name": "Avocado", "product_price": "330", "category_name": "Vegetables", "discounted_price": "165", "image": "..\/assets\/images\/avocado.jpg", "link": "", "product_detail": " Fresh Avocados from CIC Farms. Price per Kilo ", "quantity": "1" }]
->>>>>>> 249e15238a1d83552850aef217ee84fd4772f453
+[{"product_id":"1","product_name":"Carrots","product_price":"220","category_name":"Vegetables","discounted_price":"110","image":"..\/assets\/images\/carrot.png","link":"","product_detail":" Organic and freshly grown in Nuwara Eliya. Price per Kilo","quantity":"4"},{"product_id":"8","product_name":"Pork Chop","product_price":"700","category_name":"Meat","discounted_price":"350","image":"..\/assets\/images\/chops.jpg","link":"","product_detail":" Best Halal Pork Chops in town ","quantity":"3"}]

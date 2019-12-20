@@ -42,7 +42,20 @@ var count = 1;
     <?php
 		
 		$products_json = file_get_contents('../data/cart.json');
-		$prod_arr = json_decode($products_json, true);		
+        $prod_arr = json_decode($products_json, true);
+        
+        
+            $cart_subtotal=0;
+            $cart_discount=0;
+            $cart_total=0;
+
+            foreach($prod_arr as $var){
+                $cart_subtotal += ($var['product_price'] * $var['quantity']);  
+                $cart_discount += (($var['product_price'] - $var['discounted_price'])* $var['quantity']);
+                $cart_total += ($var['discounted_price'] * $var['quantity']);
+
+            }
+           
   
             foreach($prod_arr as $var){
             echo '<div class="ui-grid-a">';
@@ -93,9 +106,11 @@ var count = 1;
                     </div>
 
                     <div class = "ui-block-b amount-block">
-                        <div class = "amount">Rs 1160 </div>
-                        <div class = "amount">Rs 460 </div>
-                        <div class = "amount">Rs 700 </div>
+                <?php  echo'
+                        <div class = "amount">Rs'.$cart_subtotal.' </div>
+                        <div class = "discount-amount">Rs'.$cart_discount.' </div>
+                        <div class = "amount">Rs'.$cart_total.' </div>
+                '?>
                     </div>
                 </div>
 
