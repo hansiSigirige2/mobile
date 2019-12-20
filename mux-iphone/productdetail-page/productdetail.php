@@ -94,14 +94,15 @@
 
                 <div class="product-name">'.$obj['product_detail'].'</div>
     
-                <div class="ui-grid-a" style="padding: 10px 20px">
+                <div class="ui-grid-a" style="padding: 10px -1px">
     
                     <div class="pprice" id="product-discount-price">'.$obj['discounted_price'].'</div>
                     <div class="sprice"><strike id="product-price">'.$obj['product_price'].'</strike></div>
-    
+                    <span class="quantity" ">QUANTITY </span>
+                    <br>
                     <div class="ui-grid-a">
                         <div class="ui-block-a" style="margin-top: 10px; width: 30% !important" >
-                            <span class="quantity" ">QUANTITY </span>
+                            
                         </div>
                         <div class="ui-block-b">
                             <fieldset class="ui-grid-b">

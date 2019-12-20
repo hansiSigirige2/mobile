@@ -40,6 +40,19 @@
 <h5 class = "address">No 08, Serpentine Road, Colombo</h5>
 <img src="../assets/images/google map.jpg" class="contactus-googlemap">
 
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3mFoVhiQaQ3uD-UGr4fdxzV6Xz3i6LDk&callback=initMap"
+    async defer></script>
+
 <br>
 <img src="../assets/images/phone.png" class="contactus2-image">
 <h5 class = "telephone">07861166325</h5>
