@@ -9,36 +9,10 @@
 .ui-input-text input{
     text-align: center !important;
 }
-
-#quantity{
-    border: 1px solid #CCCCCC;
-    border-radius: 0;
-    background-color: white;
-}
-
-.quantity{
-    width: 120px;
-    /* text-align: center; */
-    /* display: inline; */
-    margin: auto;
-}
-
-#minus{
-    width: 33px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-#plus{
-    width: 33px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
 .cart-title{
     font-family: Ovsyanka;
     margin-top: 15px;
-    margin-left: 2px;
+    margin-left: 24px;
     font-size: 20px;
     text-align: left;
 }
@@ -46,14 +20,10 @@
 .item-title{
     font-family: Ovsyanka;
     margin-top: 15px;
+    margin-left:112px;
     margin-right: 10px;
     font-size: 20px;
     text-align: right;
-}
-.favourites-bin{
-    width: 18% !important;
-    margin-left: 130px !important;
-    margin-top: 10px !important;
 }
 
 .product-name{
@@ -72,23 +42,25 @@
     font-size: 18px;
     text-align: left;
 }
-.nprice{
+.price{
     color: red;
-    font-family: Ovsyanka;
-    margin-top: 15px;
-    margin-left: 2px;
-    font-size: 14px;
-    text-align: left;
-}
-
-.quantity{
     font-family: Ovsyanka;
     margin-top: 15px;
     margin-left: 2px;
     font-size: 16px;
     text-align: left;
+    text-decoration: line-through;
 }
 
+
+#product-image{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 40px;
+    height: 125.7px;
+    width:  125.7px;
+}
 #product-image{
     border: 1px solid #000000;
     border-radius: 10px;
@@ -148,39 +120,28 @@
     and (-webkit-device-pixel-ratio : 3)
     and (orientation : landscape)
     {
-        #product-image{
-            border: 1px solid #000000;
-            border-radius: 10px;
-            margin-top: 20px;
-            margin-left: 180px;
-            width: 45%;
-        }
+        
 
         .item-title{
             font-family: Ovsyanka;
             margin-top: 5px;
             margin-right: 35px;
-            font-size: 25px;
+            margin-left:314px;
+            font-size: 30px;
             text-align: right;
-        }
-
-        .favourites-bin{
-            width: 8% !important;
-            margin-left: 320px !important;
-            margin-top: 10px !important;
         }
         .cart-title{
             font-family: Ovsyanka;
-            margin-left: 2px;
+            margin-left: 111px;
             text-align: left;
-            font-size: 25px;
+            font-size: 30px;
             margin-top: 5px;
         }
         .product-name{
             font-family: Ovsyanka;
             margin-top: 20px;
             margin-left: 120px;
-            font-size: 20px;
+            font-size: 28px;
             text-align: left;
         }
         
@@ -189,33 +150,18 @@
             font-family: Ovsyanka;
             margin-top: 25px;
             margin-left: 120px;
-            font-size: 20px;
+            font-size: 28px;
             text-align: left;
         }
-        .nprice{
+        .price{
             color: red;
             font-family: Ovsyanka;
             margin-top: 25px;
             margin-left: 20px;
-            font-size: 18px;
+            font-size: 24px;
             text-align: left;
         }
         
-        .quantity{
-            font-family: Ovsyanka;
-            margin-top: 15px;
-            margin-left: 120px;
-            font-size: 20px;
-            text-align: left;
-        }
-
-        
-            #minus{
-                width: 33px;
-                margin-top: 10px;
-                margin-left: 85px;
-            }
-
             .share-button{
                 margin-left:570px;
                 width: 30% !important;
@@ -230,10 +176,166 @@
                 width: 35% !important;
                 margin-left: 250px !important;
             }
+            #product-image{
+                border: 1px solid #000000;
+                border-radius: 10px;
+                margin-top: 15px;
+                margin-left: 164px;
+                height: 173.7px;
+                width:  173.7px;
+            }
     }
 
     @media only screen 
     and (device-width : 768px)
     {
+        #product-image{
+            border: 1px solid #000000;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-left: 134px;
+            height: 200px;
+            width:  200px;
+        }
         
-    }
+        .cart-title{
+            font-family: Ovsyanka;
+            margin-left: 127px;
+            text-align: left;
+            font-size: 32px;
+            margin-top: 5px;
+        }
+
+            .item-title{
+                font-family: Ovsyanka;
+                margin-top: 5px;
+                margin-right: 35px;
+                margin-left:265px;
+                font-size: 30px;
+                text-align: right;
+            }
+            .cart-title{
+                font-family: Ovsyanka;
+                margin-left: 111px;
+                text-align: left;
+                font-size: 30px;
+                margin-top: 5px;
+            }
+            .product-name{
+                font-family: Ovsyanka;
+                margin-top: 20px;
+                margin-left: 120px;
+                font-size: 28px;
+                text-align: left;
+            }
+            
+            .dprice{
+                color:green;
+                font-family: Ovsyanka;
+                margin-top: 25px;
+                margin-left: 120px;
+                font-size: 28px;
+                text-align: left;
+            }
+            .price{
+                color: red;
+                font-family: Ovsyanka;
+                margin-top: 25px;
+                margin-left: 20px;
+                font-size: 24px;
+                text-align: left;
+            }
+            
+                .share-button{
+                    margin-left:515px;
+                    width: 30% !important;
+                    
+                }
+    
+                .add-button{
+                    width : 35% !important;
+                    margin-left:250px !important;
+                }
+    
+                .submit-button{
+                    width: 35% !important;
+                    margin-left: 250px !important;
+                }
+                
+    
+            }
+    @media only screen 
+        and (device-width : 1024px){
+            #product-image{
+                border: 1px solid #000000;
+                border-radius: 10px;
+                margin-top: 15px;
+                margin-left: 250px;
+                height: 210px;
+                width:  210px;
+            }
+            
+            .cart-title{
+                font-family: Ovsyanka;
+                margin-left: 129px;
+                text-align: left;
+                font-size: 36px;
+                margin-top: 20px;
+            }
+    
+                .item-title{
+                    font-family: Ovsyanka;
+                    margin-top: 20px;
+                    margin-right: 35px;
+                    margin-left:451px;
+                    font-size: 36px;
+                    text-align: right;
+                }
+                
+                
+                .product-name{
+                    font-family: Ovsyanka;
+                    margin-top: 20px;
+                    margin-left: 120px;
+                    font-size: 30px;
+                    text-align: left;
+                }
+                
+                .dprice{
+                    color:green;
+                    font-family: Ovsyanka;
+                    margin-top: 25px;
+                    margin-left: 120px;
+                    font-size: 30px;
+                    text-align: left;
+                }
+                .price{
+                    color: red;
+                    font-family: Ovsyanka;
+                    margin-top: 25px;
+                    margin-left: 20px;
+                    font-size: 26px;
+                    text-align: left;
+                }
+                
+                    .share-button{
+                        margin-left:689px;
+                        width: 30% !important;
+                        
+                    }
+        
+                    .add-button{
+                        width : 35% !important;
+                        margin-left:250px !important;
+                    }
+        
+                    .submit-button{
+                        width: 35% !important;
+                        margin-left: 250px !important;
+                    }
+                    
+        }
+
+            
+        
+    

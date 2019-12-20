@@ -5,7 +5,7 @@ function sendEmail() {
 
 	var favContent = '';
 	favouriteList.map(x => {
-		favContent += "Name:" + x.productName + ". Price: " +  x.productPrice + ". Discounted Price: " + x.discountedPrice + "           "
+		favContent += "Name:" + x.productName + "   Price: " +  x.productPrice + "   Discounted Price: " + x.discountedPrice + "           "
 	})
 
 	console.log(favContent)
