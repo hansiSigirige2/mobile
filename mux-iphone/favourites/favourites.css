@@ -16,6 +16,12 @@
     font-size: 20px;
     text-align: left;
 }
+#email-text-area{
+    height: 38px;
+    width: 230px;
+    margin-left: 145px;
+}
+
 
 .item-title{
     font-family: Ovsyanka;
@@ -134,6 +140,8 @@
             font-size: 30px;
             text-align: right;
         }
+
+        
         .cart-title{
             font-family: Ovsyanka;
             margin-left: 111px;
@@ -156,6 +164,11 @@
             margin-left: 120px;
             font-size: 28px;
             text-align: left;
+        }
+        #email-text-area{
+            width: 291px;
+            margin-left: 519px;
+
         }
         .price{
             color: red;
@@ -208,6 +221,11 @@
             text-align: left;
             font-size: 32px;
             margin-top: 5px;
+        }
+
+        #email-text-area{
+            width: 292px;
+            margin-left: 464px;
         }
 
             .item-title{
@@ -290,6 +308,10 @@
                 font-size: 36px;
                 margin-top: 20px;
             }
+            #email-text-area{
+            width: 324px;
+            margin-left: 684px;
+}
     
                 .item-title{
                     font-family: Ovsyanka;

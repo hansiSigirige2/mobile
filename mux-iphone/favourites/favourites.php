@@ -27,6 +27,7 @@
 
                 <div id="favList"></div>
                 <hr>
+                <textarea rows = "1" cols ="5" id = "email-text-area" placeholder = "Enter Email"></textarea> 
                 <button class = "share-button" onclick="sendEmail()">Share Favourites</button>
                 <button class = "add-button" onclick="window.location.href='../home-page/home.php';"> Continue Shopping  </button>
                 <br>

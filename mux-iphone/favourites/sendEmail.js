@@ -5,7 +5,7 @@ function sendEmail() {
 
 	var favContent = '';
 	favouriteList.map(x => {
-		favContent += "Name:" + x.productName + "   Price: " +  x.productPrice + "   Discounted Price: " + x.discountedPrice + "           "
+		favContent += "Name:" + x.productName + ",   Price: " +  x.productPrice + ",   Discounted Price: " + x.discountedPrice+" ||";
 	})
 
 	console.log(favContent)
@@ -19,6 +19,6 @@ function sendEmail() {
 		Subject : "Favourites List",
 		Body : favContent,
 	}).then(
-		message => alert("mail sent successfully")
+		message => alert("Your favourites list has been shared")
 	);
 }
