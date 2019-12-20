@@ -129,6 +129,7 @@
 
             <input type="submit" name="addToCard" value="BUY NOW" />
         </form> 
+        
 
         <h4 class="product-details-otherdeals">OTHER DEALS</h4>
 
