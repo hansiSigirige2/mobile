@@ -27,8 +27,8 @@
     <body>
         <div data-role = "page" id = "favourites-page">
 
-                <div class = "cart-title">Favourites</div>
-                <div class = "item-title">Items</div>
+                <span class = "cart-title">Favourites</span>
+                <span class = "item-title">Items</span>
 
                 <div id="favList"></div>
                 <hr>
@@ -54,8 +54,8 @@
                     <div class="ui-grid-a" style="padding: 10px 20px"    >
                         <div class="ui-block-a"> 
                             <div class = "product-name">${x.productName}</div>
-                            <span class = "price">${x.productPrice}</span>
-                            <span class = "dprice">${x.discountedPrice}</span>
+                            <span class = "dprice">${x.productPrice}</span>
+                            <span class = "price">${x.discountedPrice}</span>
                         </div>
 
                         <div class="ui-block-b">
