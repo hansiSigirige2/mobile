@@ -37,6 +37,8 @@ var count = 1;
 </script>
     </head> 
     <body>
+    <span class = "cart-title"> Shopping Cart </span>
+    <span class = "item-title"> Item  </span>
     <?php
 		
 		$products_json = file_get_contents('../data/cart.json');
@@ -82,38 +84,7 @@ var count = 1;
 
             <button id="clear-button" onclick="window.location.href='../cart/cart-empty.php';" >Clear Cart</button>
 
-                <!-- <div class="ui-grid-a" style="padding: 10px 20px"    >
-                        <div class="ui-block-a detail-block"> 
-                            <div class = "product-name">Ambewela Fresh Milk </div>
-                            <span class = "dprice">Rs 110</span>
-                            <span class = "nprice"><strike> Rs 220</strike></span>
-                            <div class = "quantity">Quantity</div>
-                                            <fieldset class="ui-grid-b">
-                                                <div class="ui-block-a minus-box">
-                                                    <span ><input type = "button" img id="minus" src="minus.svg" onclick="minus()"></span>
-                                                </div>
-                                                <div class="ui-block-b quantity-box">
-                                                    <input type="number" name="quantity" id="count" value="1" />
-                                                </div>
-                                                <div class="ui-block-c plus-box">
-                                                <span ><input type ="button" img id="plus" src="plus.svg" onclick="plus()"></span>
-                                                </div>
-                                            </fieldset>
-                                        
-                        </div>
- 
-                       
-
-                        <div class="ui-block-b image-block">
-                            <img src = "../assets/images/apple.jpg" id = "product-image">
-                            <br><br>
-                            <img src = "..../assets/images/bin.png" class = "cart-bin">
-                        </div>
-                </div>
-                <hr>
                
-                <button id = "clear-button" onclick="window.location.href='../cart/cart-empty.php';"  >Clear Cart</button>
-                        
                 <div class = "ui-grid-a" style="padding: 10px 20px">
                     <div class = "ui-block-a bill-block">
                         <div class = "bill"> Subtotal </div>
@@ -128,14 +99,11 @@ var count = 1;
                     </div>
                 </div>
 
-                <button class = "submit-button"> Proceed to Checkout </button>
+                <button class = "submit-button" onclick="window.location.href='../checkout/checkout.php';"> Proceed to Checkout </button>
             
-</body>
-
+</body> 
 <div class="footer-padding"></div>
 
 
                     
                     
-
-         -->
