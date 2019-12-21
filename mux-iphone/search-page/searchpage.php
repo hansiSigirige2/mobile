@@ -1,3 +1,5 @@
+<div data-role="page" id="search" class="page-full" style="background-color: white;">
+
 <?php 
 		session_start();
 		$_SESSION['page-type']= 'search';
